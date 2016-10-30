@@ -369,5 +369,15 @@ GlApi('glClearBufferData', 'void', [
 	GlArg('data', 'const void *')
 ])
 
+GlApi('glClearBufferSubData', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('internalformat', 'GLenum'),
+	GlArg('offset', 'GLintptr'),
+	GlArg('size', 'GLsizeiptr'),
+	GlArg('format', 'GLenum'),
+	GlArg('type', 'GLenum'),
+	GlArg('data', 'const void *')
+])
+
 conn.commit()
 conn.close()
