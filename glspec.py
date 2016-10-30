@@ -361,5 +361,13 @@ GlApi('glClearBufferfi', 'void', [
 	GlArg('stencil', 'GLint')
 ])
 
+GlApi('glClearBufferData', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('internalformat', 'GLenum'),
+	GlArg('format', 'GLenum'),
+	GlArg('type', 'GLenum'),
+	GlArg('data', 'const void *')
+])
+
 conn.commit()
 conn.close()
