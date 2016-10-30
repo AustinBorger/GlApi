@@ -466,5 +466,17 @@ GlApi('glCompressedTexImage2D', 'void', [
 	GlArg('data', 'const GLvoid *')
 ])
 
+GlApi('glCompressedTexImage3D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('internalformat', 'GLenum'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei'),
+	GlArg('depth', 'GLsizei'),
+	GlArg('border', 'GLint'),
+	GlArg('imageSize', 'GLsizei'),
+	GlArg('data', 'const GLvoid *')
+])
+
 conn.commit()
 conn.close()
