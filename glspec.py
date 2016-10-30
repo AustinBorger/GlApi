@@ -332,5 +332,34 @@ GlApi('glClampColor', 'void', [
 	GlArg('clamp', 'GLenum')
 ])
 
+GlApi('glClear', 'void', [
+	GlArg('mask', 'GLbitfield')
+])
+
+GlApi('glClearBufferiv', 'void', [
+	GlArg('buffer', 'GLenum'),
+	GlArg('drawBuffer', 'GLint'),
+	GlArg('value', 'const GLint *')
+])
+
+GlApi('glClearBufferuiv', 'void', [
+	GlArg('buffer', 'GLenum'),
+	GlArg('drawBuffer', 'GLint'),
+	GlArg('value', 'const GLuint *')
+])
+
+GlApi('glClearBufferfv', 'void', [
+	GlArg('buffer', 'GLenum'),
+	GlArg('drawBuffer', 'GLint'),
+	GlArg('value', 'const GLfloat *')
+])
+
+GlApi('glClearBufferfi', 'void', [
+	GlArg('buffer', 'GLenum'),
+	GlArg('drawBuffer', 'GLint'),
+	GlArg('depth', 'GLfloat'),
+	GlArg('stencil', 'GLint')
+])
+
 conn.commit()
 conn.close()
