@@ -420,5 +420,26 @@ GlApi('glClearTexSubImage', 'void', [
 	GlArg('data', 'const void *')
 ])
 
+GlApi('glClientWaitSync', 'GLenum', [
+	GlArg('sync', 'GLsync'),
+	GlArg('flags', 'GLbitfield'),
+	GlArg('timeout', 'GLuint64')
+])
+
+GlApi('glColorMask', 'void', [
+	GlArg('red', 'GLboolean'),
+	GlArg('green', 'GLboolean'),
+	GlArg('blue', 'GLboolean'),
+	GlArg('alpha', 'GLboolean')
+])
+
+GlApi('glColorMaski', 'void', [
+	GlArg('buf', 'GLuint'),
+	GlArg('red', 'GLboolean'),
+	GlArg('green', 'GLboolean'),
+	GlArg('blue', 'GLboolean'),
+	GlArg('alpha', 'GLboolean')
+])
+
 conn.commit()
 conn.close()
