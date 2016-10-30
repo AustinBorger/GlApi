@@ -394,5 +394,31 @@ GlApi('glClearDepthf', 'void', [
 	GlArg('depth', 'GLfloat')
 ])
 
+GlApi('glClearStencil', 'void', [
+	GlArg('s', 'GLint')
+])
+
+GlApi('glClearTexImage', 'void', [
+	GlArg('texture', 'GLuint'),
+	GlArg('level', 'GLint'),
+	GlArg('format', 'GLenum'),
+	GlArg('type', 'GLenum'),
+	GlArg('data', 'const void *')
+])
+
+GlApi('glClearTexSubImage', 'void', [
+	GlArg('texture', 'GLuint'),
+	GlArg('level', 'GLint'),
+	GlArg('xoffset', 'GLint'),
+	GlArg('yoffset', 'GLint'),
+	GlArg('zoffset', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei'),
+	GlArg('depth', 'GLsizei'),
+	GlArg('format', 'GLenum'),
+	GlArg('type', 'GLenum'),
+	GlArg('data', 'const void *')
+])
+
 conn.commit()
 conn.close()
