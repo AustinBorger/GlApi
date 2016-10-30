@@ -379,5 +379,20 @@ GlApi('glClearBufferSubData', 'void', [
 	GlArg('data', 'const void *')
 ])
 
+GlApi('glClearColor', 'void', [
+	GlArg('red', 'GLfloat'),
+	GlArg('green', 'GLfloat'),
+	GlArg('blue', 'GLfloat'),
+	GlArg('alpha', 'GLfloat')
+])
+
+GlApi('glClearDepth', 'void', [
+	GlArg('depth', 'GLdouble')
+])
+
+GlApi('glClearDepthf', 'void', [
+	GlArg('depth', 'GLfloat')
+])
+
 conn.commit()
 conn.close()
