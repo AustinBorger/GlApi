@@ -478,5 +478,41 @@ GlApi('glCompressedTexImage3D', 'void', [
 	GlArg('data', 'const GLvoid *')
 ])
 
+GlApi('glCompressedTexSubImage1D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('xoffset', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('format', 'GLenum'),
+	GlArg('imageSize', 'GLsizei'),
+	GlArg('data', 'const GLvoid *')
+])
+
+GlApi('glCompressedTexSubImage2D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('xoffset', 'GLint'),
+	GlArg('yoffset', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei'),
+	GlArg('format', 'GLenum'),
+	GlArg('imageSize', 'GLsizei'),
+	GlArg('data', 'const GLvoid *')
+])
+
+GlApi('glCompressedTexSubImage3D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('xoffset', 'GLint'),
+	GlArg('yoffset', 'GLint'),
+	GlArg('zoffset', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei'),
+	GlArg('depth', 'GLsizei'),
+	GlArg('format', 'GLenum'),
+	GlArg('imageSize', 'GLsizei'),
+	GlArg('data', 'const GLvoid *')
+])
+
 conn.commit()
 conn.close()
