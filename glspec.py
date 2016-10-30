@@ -441,5 +441,19 @@ GlApi('glColorMaski', 'void', [
 	GlArg('alpha', 'GLboolean')
 ])
 
+GlApi('glCompileShader', 'void', [
+	GlArg('shader', 'GLuint')
+])
+
+GlApi('glCompressedTexImage1D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('internalformat', 'GLenum'),
+	GlArg('width', 'GLsizei'),
+	GlArg('border', 'GLint'),
+	GlArg('imageSize', 'GLsizei'),
+	GlArg('data', 'const GLvoid *')
+])
+
 conn.commit()
 conn.close()
