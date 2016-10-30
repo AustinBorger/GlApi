@@ -601,5 +601,21 @@ GlApi('glBindVertexBuffers', 'void', [
 	GlArg('strides', 'const GLsizei *')
 ])
 
+GlApi('glCreateProgram', 'GLuint', [])
+
+GlApi('glCreateShaders', 'GLuint', [
+	GlArg('shaderType', 'GLenum')
+])
+
+GlApi('glCreateShaderProgramv', 'GLuint', [
+	GlArg('type', 'GLenum'),
+	GlArg('count', 'GLsizei'),
+	GlArg('strings', 'const char **')
+])
+
+GlApi('glCullFace', 'void', [
+	GlArg('mode', 'GLenum')
+])
+
 conn.commit()
 conn.close()
