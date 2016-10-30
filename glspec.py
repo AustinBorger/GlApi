@@ -593,5 +593,13 @@ GlApi('glCopyTexSubImage3D', 'void', [
 	GlArg('height', 'GLsizei')
 ])
 
+GlApi('glBindVertexBuffers', 'void', [
+	GlArg('first', 'GLuint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('buffers', 'const GLuint *'),
+	GlArg('offsets', 'const GLintptr *'),
+	GlArg('strides', 'const GLsizei *')
+])
+
 conn.commit()
 conn.close()
