@@ -514,5 +514,31 @@ GlApi('glCompressedTexSubImage3D', 'void', [
 	GlArg('data', 'const GLvoid *')
 ])
 
+GlApi('glCopyBufferSubData', 'void', [
+	GlArg('readtarget', 'GLenum'),
+	GlArg('writetarget', 'GLenum'),
+	GlArg('readoffset', 'GLintptr'),
+	GlArg('writeoffset', 'GLintptr'),
+	GlArg('size', 'GLsizeiptr')
+])
+
+GlApi('glCopyImageSubData', 'void', [
+	GlArg('srcName', 'GLuint'),
+	GlArg('srcTarget', 'GLenum'),
+	GlArg('srcLevel', 'GLint'),
+	GlArg('srcX', 'GLint'),
+	GlArg('srcY', 'GLint'),
+	GlArg('srcZ', 'GLint'),
+	GlArg('dstName', 'GLuint'),
+	GlArg('dstTarget', 'GLenum'),
+	GlArg('dstLevel', 'GLint'),
+	GlArg('dstX', 'GLint'),
+	GlArg('dstY', 'GLint'),
+	GlArg('dstZ', 'GLint'),
+	GlArg('srcWidth', 'GLsizei'),
+	GlArg('srcHeight', 'GLsizei'),
+	GlArg('srcDepth', 'GLsizei')
+])
+
 conn.commit()
 conn.close()
