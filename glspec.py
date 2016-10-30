@@ -561,5 +561,37 @@ GlApi('glCopyTexImage2D', 'void', [
 	GlArg('border', 'GLint')
 ])
 
+GlApi('glCopyTexSubImage1D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('xoffset', 'GLint'),
+	GlArg('x', 'GLint'),
+	GlArg('y', 'GLint'),
+	GlArg('width', 'GLsizei')
+])
+
+GlApi('glCopyTexSubImage2D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('xoffset', 'GLint'),
+	GlArg('yoffset', 'GLint'),
+	GlArg('x', 'GLint'),
+	GlArg('y', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei')
+])
+
+GlApi('glCopyTexSubImage3D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('xoffset', 'GLint'),
+	GlArg('yoffset', 'GLint'),
+	GlArg('zoffset', 'GLint'),
+	GlArg('x', 'GLint'),
+	GlArg('y', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei')
+])
+
 conn.commit()
 conn.close()
