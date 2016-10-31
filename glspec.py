@@ -841,5 +841,24 @@ GlApi('glDrawElementsInstancedBaseInstance', 'void', [
 	GlArg('baseinstance', 'GLuint')
 ])
 
+GlApi('glDrawElementsInstancedBaseVertex', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('count', 'GLsizei'),
+	GlArg('type', 'GLenum'),
+	GlArg('indices', 'GLvoid *'),
+	GlArg('primcount', 'GLsizei'),
+	GlArg('basevertex', 'GLint')
+])
+
+GlApi('glDrawElementsInstanceBaseVertexBaseInstance', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('count', 'GLsizei'),
+	GlArg('type', 'GLenum'),
+	GlArg('indices', 'GLvoid *'),
+	GlArg('primcount', 'GLsizei'),
+	GlArg('basevertex', 'GLint'),
+	GlArg('baseinstance', 'GLuint')
+])
+
 conn.commit()
 conn.close()
