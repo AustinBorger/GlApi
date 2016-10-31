@@ -1365,5 +1365,11 @@ GlApi('glGetProgramStageiv', 'void', [
 	GlArg('values', 'GLint *')
 ])
 
+GlApi('glGetQueryiv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
 conn.commit()
 conn.close()
