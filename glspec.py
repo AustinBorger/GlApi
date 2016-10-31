@@ -1402,5 +1402,35 @@ GlApi('glGetQueryObjectui64v', 'void', [
 	GlArg('params', 'GLuint64 *')
 ])
 
+GlApi('glGetRenderbufferParameteriv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetSamplerParameterfv', 'void', [
+	GlArg('sampler', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLfloat *')
+])
+
+GlApi('glGetSamplerParameteriv', 'void', [
+	GlArg('sampler', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetSamplerParameterIiv', 'void', [
+	GlArg('sampler', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetSamplerParameterIuiv', 'void', [
+	GlArg('sampler', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLuint *')
+])
+
 conn.commit()
 conn.close()
