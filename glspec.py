@@ -692,5 +692,28 @@ GlApi('glDeleteTransformFeedbacks', 'void', [
 	GlArg('ids', 'const GLuint *')
 ])
 
+GlApi('glDeleteVertexArrays', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('arrays', 'const GLuint *')
+])
+
+GlApi('glDepthFunc', 'void', [
+	GlArg('func', 'GLenum')
+])
+
+GlApi('glDepthMask', 'void', [
+	GlArg('flag', 'GLboolean')
+])
+
+GlApi('glDepthRange', 'void', [
+	GlArg('nearVal', 'GLdouble'),
+	GlArg('farVal', 'GLdouble')
+])
+
+GlApi('glDepthRangef', 'void', [
+	GlArg('nearVal', 'GLfloat'),
+	GlArg('farVal', 'GLfloat')
+])
+
 conn.commit()
 conn.close()
