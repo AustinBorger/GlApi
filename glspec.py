@@ -13,7 +13,7 @@ conn = sqlite3.connect(sys.argv[1])
 
 c = conn.cursor()
 
-c.execute('''
+r = c.execute('''
 	CREATE TABLE functions
 	(
 		func_id INT PRIMARY KEY NOT NULL,
@@ -1093,6 +1093,15 @@ GlApi('glGetActiveAttrib', 'void', [
 	GlArg('length', 'GLsizei *'),
 	GlArg('size', 'GLint *'),
 	GlArg('type', 'GLenum *'),
+	GlArg('name', 'GLchar *')
+])
+
+GlApi('glGetActiveSubroutineName', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('shadertype', 'GLenum'),
+	GlArg('index', 'GLuint'),
+	GlArg('bufsize', 'GLsizei'),
+	GlArg('length', 'GLsizei *'),
 	GlArg('name', 'GLchar *')
 ])
 
