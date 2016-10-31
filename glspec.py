@@ -1049,5 +1049,35 @@ GlApi('glGetInteger64v', 'void', [
 	GlArg('params', 'GLint64 *')
 ])
 
+GlApi('glGetBooleani_v', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('index', 'GLuint'),
+	GlArg('data', 'GLboolean *')
+])
+
+GlApi('glGetIntegeri_v', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('index', 'GLuint'),
+	GlArg('data', 'GLint *')
+])
+
+GlApi('glGetFloati_v', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('index', 'GLuint'),
+	GlArg('data', 'GLfloat *')
+])
+
+GlApi('glGetDoublei_v', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('index', 'GLuint'),
+	GlArg('data', 'GLdouble *')	
+])
+
+GlApi('glGetInteger64i_v', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('index', 'GLuint'),
+	GlArg('data', 'GLint64 *')
+])
+
 conn.commit()
 conn.close()
