@@ -1014,5 +1014,40 @@ GlApi('glGenTextures', 'void', [
 	GlArg('textures', 'GLuint *')
 ])
 
+GlApi('glGenTransformFeedbacks', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('ids', 'GLuint *')
+])
+
+GlApi('glGenVertexArrays', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('arrays', 'GLuint *')
+])
+
+GlApi('glGetBooleanv', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLboolean *')
+])
+
+GlApi('glGetDoublev', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLdouble *')
+])
+
+GlApi('glFloatv', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLfloat *')
+])
+
+GlApi('glGetIntegerv', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetInteger64v', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint64 *')
+])
+
 conn.commit()
 conn.close()
