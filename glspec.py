@@ -674,5 +674,23 @@ GlApi('glDeleteSamplers', 'void', [
 	GlArg('samplers', 'const GLuint *')
 ])
 
+GlApi('glDeleteShader', 'void', [
+	GlArg('shader', 'GLuint')
+])
+
+GlApi('glDeleteSync', 'void', [
+	GlArg('sync', 'GLsync')
+])
+
+GlApi('glDeleteTextures', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('textures', 'const GLuint *')
+])
+
+GlApi('glDeleteTransformFeedbacks', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('ids', 'const GLuint *')
+])
+
 conn.commit()
 conn.close()
