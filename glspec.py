@@ -1378,5 +1378,29 @@ GlApi('glGetQueryIndexediv', 'void', [
 	GlArg('params', 'GLint *')
 ])
 
+GlApi('glGetQueryObjectiv', 'void', [
+	GlArg('id', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetQueryObjectuiv', 'void', [
+	GlArg('id', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLuint *')
+])
+
+GlApi('glGetQueryObjecti64v', 'void', [
+	GlArg('id', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint64 *')
+])
+
+GlApi('glGetQueryObjectui64v', 'void', [
+	GlArg('id', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLuint64 *')
+])
+
 conn.commit()
 conn.close()
