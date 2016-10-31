@@ -631,5 +631,14 @@ GlApi('glDebugMessageControl', 'void', [
 	GlArg('enabled', 'GLboolean')
 ])
 
+GlApi('glDebugMessageInsert', 'void', [
+	GlArg('source', 'GLenum'),
+	GlArg('type', 'GLenum'),
+	GlArg('id', 'GLuint'),
+	GlArg('severity', 'GLenum'),
+	GlArg('length', 'GLsizei'),
+	GlArg('message', 'const char *')
+])
+
 conn.commit()
 conn.close()
