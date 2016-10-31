@@ -1193,5 +1193,18 @@ GlApi('glGetBufferPointerv', 'void', [
 	GlArg('params', 'GLvoid **')
 ])
 
+GlApi('glGetBufferSubData', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('offset', 'GLintptr'),
+	GlArg('size', 'GLsizeiptr'),
+	GlArg('data', 'GLvoid *')
+])
+
+GlApi('glGetCompressedTexImage', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('lod', 'GLint'),
+	GlArg('img', 'GLvoid *')
+])
+
 conn.commit()
 conn.close()
