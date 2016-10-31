@@ -1452,5 +1452,12 @@ GlApi('glGetShaderPrecisionFormat', 'void', [
 	GlArg('precision', 'GLint *')
 ])
 
+GlApi('glGetShaderSource', 'void', [
+	GlArg('shader', 'GLuint'),
+	GlArg('bufSize', 'GLsizei'),
+	GlArg('length', 'GLsizei *'),
+	GlArg('source', 'GLchar *')
+])
+
 conn.commit()
 conn.close()
