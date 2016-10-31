@@ -1272,5 +1272,33 @@ GlApi('glGetObjectLabel', 'void', [
 	GlArg('label', 'char *')
 ])
 
+GlApi('glGetObjectPtrLabel', 'void', [
+	GlArg('ptr', 'void *'),
+	GlArg('bufSize', 'GLsizei'),
+	GlArg('length', 'GLsizei *'),
+	GlArg('label', 'char *')
+])
+
+GlApi('glGetProgramiv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetProgramBinary', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('bufSize', 'GLsizei'),
+	GlArg('length', 'GLsizei *'),
+	GlArg('binaryFormat', 'GLenum *'),
+	GlArg('binary', 'void *')
+])
+
+GlApi('glGetProgramInfoLog', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('maxLength', 'GLsizei'),
+	GlArg('length', 'GLsizei *'),
+	GlArg('infoLog', 'GLchar *')
+])
+
 conn.commit()
 conn.close()
