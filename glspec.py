@@ -732,5 +732,31 @@ GlApi('glDetatchShader', 'void', [
 	GlArg('shader', 'GLuint')
 ])
 
+GlApi('glEnable', 'void', [
+	GlArg('cap', 'GLenum')
+])
+
+GlApi('glDisable', 'void', [
+	GlArg('cap', 'GLenum')
+])
+
+GlApi('glEnablei', 'void', [
+	GlArg('cap', 'GLenum'),
+	GlArg('index', 'GLuint')
+])
+
+GlApi('glDisablei', 'void', [
+	GlArg('cap', 'GLenum'),
+	GlArg('index', 'GLuint')
+])
+
+GlApi('glEnableVertexAttribArray', 'void', [
+	GlArg('index', 'GLuint')
+])
+
+GlApi('glDisableVertexAttribArray', 'void', [
+	GlArg('index', 'GLuint')
+])
+
 conn.commit()
 conn.close()
