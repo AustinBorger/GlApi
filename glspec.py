@@ -1163,5 +1163,35 @@ GlApi('glGetActiveUniformsiv', 'void', [
 	GlArg('params', 'GLint *')
 ])
 
+GlApi('glGetAttachedShaders', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('maxCount', 'GLsizei'),
+	GlArg('count', 'GLsizei *'),
+	GlArg('shaders', 'GLuint *')
+])
+
+GlApi('glGetAttribLocation', 'GLint', [
+	GlArg('program', 'GLuint'),
+	GlArg('name', 'const GLchar *')
+])
+
+GlApi('glGetBufferParameteriv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('value', 'GLenum'),
+	GlArg('data', 'GLint *')
+])
+
+GlApi('glGetBufferParameteri64v', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('value', 'GLenum'),
+	GlArg('data', 'GLint64 *')
+])
+
+GlApi('glGetBufferPointerv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLvoid **')
+])
+
 conn.commit()
 conn.close()
