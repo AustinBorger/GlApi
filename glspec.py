@@ -1206,5 +1206,16 @@ GlApi('glGetCompressedTexImage', 'void', [
 	GlArg('img', 'GLvoid *')
 ])
 
+GlApi('glGetDebugMessageLog', 'GLuint', [
+	GlArg('count', 'GLuint'),
+	GlArg('bufSize', 'GLsizei'),
+	GlArg('sources', 'GLenum *'),
+	GlArg('types', 'GLenum *'),
+	GlArg('ids', 'GLuint *'),
+	GlArg('severities', 'GLenum *'),
+	GlArg('lengths', 'GLsizei *'),
+	GlArg('messageLog', 'GLchar *')
+])
+
 conn.commit()
 conn.close()
