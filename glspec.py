@@ -617,5 +617,19 @@ GlApi('glCullFace', 'void', [
 	GlArg('mode', 'GLenum')
 ])
 
+GlApi('glDebugMessageCallback', 'void', [
+	GlArg('callback', 'DEBUGPROC'),
+	GlArg('userParam', 'void *')
+])
+
+GlApi('glDebugMessageControl', 'void', [
+	GlArg('source', 'GLenum'),
+	GlArg('type', 'GLenum'),
+	GlArg('severity', 'GLenum'),
+	GlArg('count', 'GLsizei'),
+	GlArg('ids', 'const GLuint *'),
+	GlArg('enabled', 'GLboolean')
+])
+
 conn.commit()
 conn.close()
