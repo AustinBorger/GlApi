@@ -912,5 +912,56 @@ GlApi('glFinish', 'void', [])
 
 GlApi('glFlush', 'void', [])
 
+GlApi('glFlushMappedBufferRange', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('offset', 'GLintptr'),
+	GlArg('length', 'GLsizeiptr')
+])
+
+GlApi('glFramebufferParameteri', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('param', 'GLint')
+])
+
+GlApi('glFramebufferRenderbuffer', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('attachment', 'GLenum'),
+	GlArg('renderbuffertarget', 'GLenum'),
+	GlArg('renderbuffer', 'GLuint')
+])
+
+GlApi('glFramebufferTexture', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('attachment', 'GLenum'),
+	GlArg('texture', 'GLuint'),
+	GlArg('level', 'GLint')
+])
+
+GlApi('glFramebufferTexture1D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('attachment', 'GLenum'),
+	GlArg('textarget', 'GLenum'),
+	GlArg('texture', 'GLuint'),
+	GlArg('level', 'GLint')
+])
+
+GlApi('glFramebufferTexture2D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('attachment', 'GLenum'),
+	GlArg('textarget', 'GLenum'),
+	GlArg('texture', 'GLuint'),
+	GlArg('level', 'GLint')
+])
+
+GlApi('glFramebufferTexture3D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('attachment', 'GLenum'),
+	GlArg('textarget', 'GLenum'),
+	GlArg('texture', 'GLuint'),
+	GlArg('level', 'GLint'),
+	GlArg('layer', 'GLint')
+])
+
 conn.commit()
 conn.close()
