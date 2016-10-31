@@ -1079,5 +1079,22 @@ GlApi('glGetInteger64i_v', 'void', [
 	GlArg('data', 'GLint64 *')
 ])
 
+GlApi('glGetActiveAtomicCounterBufferiv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('bufferIndex', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetActiveAttrib', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('index', 'GLuint'),
+	GlArg('bufSize', 'GLsizei'),
+	GlArg('length', 'GLsizei *'),
+	GlArg('size', 'GLint *'),
+	GlArg('type', 'GLenum *'),
+	GlArg('name', 'GLchar *')
+])
+
 conn.commit()
 conn.close()
