@@ -832,5 +832,14 @@ GlApi('glDrawElementsInstanced', 'void', [
 	GlArg('primcount', 'GLsizei')
 ])
 
+GlApi('glDrawElementsInstancedBaseInstance', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('count', 'GLsizei'),
+	GlArg('type', 'GLenum'),
+	GlArg('indices', 'const void *'),
+	GlArg('primcount', 'GLsizei'),
+	GlArg('baseinstance', 'GLuint')
+])
+
 conn.commit()
 conn.close()
