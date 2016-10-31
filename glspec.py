@@ -1258,5 +1258,19 @@ GlApi('glGetInternalformati64v', 'void', [
 	GlArg('params', 'GLint64 *')
 ])
 
+GlApi('glGetMultisamplefv', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('index', 'GLuint'),
+	GlArg('val', 'GLfloat *')
+])
+
+GlApi('glGetObjectLabel', 'void', [
+	GlArg('identifier', 'GLenum'),
+	GlArg('name', 'GLuint'),
+	GlArg('bufSize', 'GLsizei'),
+	GlArg('length', 'GLsizei *'),
+	GlArg('label', 'char *')
+])
+
 conn.commit()
 conn.close()
