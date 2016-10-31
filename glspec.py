@@ -879,5 +879,29 @@ GlApi('glDrawRangeElementsBaseVertex', 'void', [
 	GlArg('basevertex', 'GLint')
 ])
 
+GlApi('glDrawTransformFeedback', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('id', 'GLuint')
+])
+
+GlApi('glDrawTransformFeedbackInstanced', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('id', 'GLuint'),
+	GlArg('instancecount', 'GLsizei')
+])
+
+GlApi('glDrawTransformFeedbackStream', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('id', 'GLuint'),
+	GlArg('stream', 'GLuint')
+])
+
+GlApi('glDrawTransformFeedbackStreamInstanced', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('id', 'GLuint'),
+	GlArg('stream', 'GLuint'),
+	GlArg('instancecount', 'GLsizei')
+])
+
 conn.commit()
 conn.close()
