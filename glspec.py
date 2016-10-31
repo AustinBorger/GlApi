@@ -1217,5 +1217,30 @@ GlApi('glGetDebugMessageLog', 'GLuint', [
 	GlArg('messageLog', 'GLchar *')
 ])
 
+GlApi('glGetError', 'GLenum', [])
+
+GlApi('glGetFragDataIndex', 'GLint', [
+	GlArg('program', 'GLuint'),
+	GlArg('name', 'const char *')
+])
+
+GlApi('glGetFragDataLocation', 'GLint', [
+	GlArg('program', 'GLuint'),
+	GlArg('name', 'const char *')
+])
+
+GlApi('glGetFramebufferAttachmentParameteriv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('attachment', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetFramebufferParameteriv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
 conn.commit()
 conn.close()
