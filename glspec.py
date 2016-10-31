@@ -721,5 +721,16 @@ GlApi('glDepthRangeArrayv', 'void', [
 	GlArg('v', 'const GLdouble *')
 ])
 
+GlApi('glDepthRangeIndexed', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('nearVal', 'GLdouble'),
+	GlArg('farVal', 'GLdouble')
+])
+
+GlApi('glDetatchShader', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('shader', 'GLuint')
+])
+
 conn.commit()
 conn.close()
