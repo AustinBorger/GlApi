@@ -903,5 +903,14 @@ GlApi('glDrawTransformFeedbackStreamInstanced', 'void', [
 	GlArg('instancecount', 'GLsizei')
 ])
 
+GlApi('glFenceSync', 'GLsync', [
+	GlArg('condition', 'GLenum'),
+	GlArg('flags', 'GLbitfield')
+])
+
+GlApi('glFinish', 'void', [])
+
+GlApi('glFlush', 'void', [])
+
 conn.commit()
 conn.close()
