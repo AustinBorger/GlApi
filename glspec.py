@@ -1113,5 +1113,14 @@ GlApi('glGetActiveSubroutineUniformiv', 'void', [
 	GlArg('values', 'GLint *')
 ])
 
+GlApi('glGetActiveSubroutineUniformName', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('shadertype', 'GLenum'),
+	GlArg('index', 'GLuint'),
+	GlArg('bufsize', 'GLsizei'),
+	GlArg('length', 'GLsizei *'),
+	GlArg('name', 'GLchar *')
+])
+
 conn.commit()
 conn.close()
