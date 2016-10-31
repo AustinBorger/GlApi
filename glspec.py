@@ -1371,5 +1371,12 @@ GlApi('glGetQueryiv', 'void', [
 	GlArg('params', 'GLint *')
 ])
 
+GlApi('glGetQueryIndexediv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('index', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
 conn.commit()
 conn.close()
