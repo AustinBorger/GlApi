@@ -764,5 +764,35 @@ GlApi('glDispatchCompute', 'void', [
 	GlArg('num_groups_z', 'GLuint')
 ])
 
+GlApi('glDispatchComputeIndirect', 'void', [
+	GlArg('indirect', 'GLintptr')
+])
+
+GlApi('glDrawArrays', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('first', 'GLint'),
+	GlArg('count', 'GLsizei')
+])
+
+GlApi('glDrawArraysIndirect', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('indirect', 'const void *')
+])
+
+GlApi('glDrawArraysInstanced', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('first', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('primcount', 'GLsizei')
+])
+
+GlApi('glDrawArraysInstancedBaseInstance', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('first', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('primcount', 'GLsizei'),
+	GlArg('baseinstance', 'GLuint')
+])
+
 conn.commit()
 conn.close()
