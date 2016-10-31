@@ -1242,5 +1242,13 @@ GlApi('glGetFramebufferParameteriv', 'void', [
 	GlArg('params', 'GLint *')
 ])
 
+GlApi('glGetInternalformativ', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('internalformat', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('bufSize', 'GLsizei'),
+	GlArg('params', 'GLint *')
+])
+
 conn.commit()
 conn.close()
