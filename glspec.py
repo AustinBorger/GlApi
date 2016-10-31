@@ -821,7 +821,15 @@ GlApi('glDrawElementsBaseVertex', 'void', [
 GlApi('glDrawElementsIndirect', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('type', 'GLenum'),
-	GlArg('indirect' 'const void *')
+	GlArg('indirect', 'const void *')
+])
+
+GlApi('glDrawElementsInstanced', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('count', 'GLsizei'),
+	GlArg('type', 'GLenum'),
+	GlArg('indices', 'const void *'),
+	GlArg('primcount', 'GLsizei')
 ])
 
 conn.commit()
