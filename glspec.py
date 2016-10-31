@@ -1349,5 +1349,21 @@ GlApi('glGetProgramResourceIndex', 'GLuint', [
 	GlArg('name', 'const char *')
 ])
 
+GlApi('glGetProgramResourceName', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('programInterface', 'GLenum'),
+	GlArg('index', 'GLuint'),
+	GlArg('bufSize', 'GLsizei'),
+	GlArg('length', 'GLsizei *'),
+	GlArg('name', 'char *')
+])
+
+GlApi('glGetProgramStageiv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('shadertype', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('values', 'GLint *')
+])
+
 conn.commit()
 conn.close()
