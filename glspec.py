@@ -1300,5 +1300,54 @@ GlApi('glGetProgramInfoLog', 'void', [
 	GlArg('infoLog', 'GLchar *')
 ])
 
+GlApi('glGetProgramInterfaceiv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('programInterface', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetProgramPipelineiv', 'void', [
+	GlArg('pipeline', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetProgramPipelineInfoLog', 'void', [
+	GlArg('pipeline', 'GLuint'),
+	GlArg('bufSize', 'GLsizei'),
+	GlArg('length', 'GLsizei *'),
+	GlArg('infoLog', 'GLchar *')
+])
+
+GlApi('glGetProgramResourceiv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('programInterface', 'GLenum'),
+	GlArg('index', 'GLuint'),
+	GlArg('propCount', 'GLsizei'),
+	GlArg('props', 'const GLenum *'),
+	GlArg('bufSize', 'GLsizei'),
+	GlArg('length', 'GLsizei *'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetProgramResourceLocation', 'GLint', [
+	GlArg('program', 'GLuint'),
+	GlArg('programInterface', 'GLenum'),
+	GlArg('name', 'const char *')
+])
+
+GlApi('glGetProgramResourceLocationIndex', 'GLint', [
+	GlArg('program', 'GLuint'),
+	GlArg('programInterface', 'GLenum'),
+	GlArg('name', 'const char *')
+])
+
+GlApi('glGetProgramResourceIndex', 'GLuint', [
+	GlArg('program', 'GLuint'),
+	GlArg('programInterface', 'GLenum'),
+	GlArg('name', 'const char *')
+])
+
 conn.commit()
 conn.close()
