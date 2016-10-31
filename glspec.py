@@ -640,5 +640,24 @@ GlApi('glDebugMessageInsert', 'void', [
 	GlArg('message', 'const char *')
 ])
 
+GlApi('glDeleteBuffers', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('buffers', 'const GLuint *')
+])
+
+GlApi('glDeleteFramebuffers', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('framebuffers', 'GLuint *')
+])
+
+GlApi('glDeleteProgram', 'void', [
+	GlArg('program', 'GLuint')
+])
+
+GlApi('glDeleteProgramPipelines', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('pipelines', 'const GLuint *')
+])
+
 conn.commit()
 conn.close()
