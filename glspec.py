@@ -715,5 +715,11 @@ GlApi('glDepthRangef', 'void', [
 	GlArg('farVal', 'GLfloat')
 ])
 
+GlApi('glDepthRangeArrayv', 'void', [
+	GlArg('first', 'GLuint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('v', 'const GLdouble *')
+])
+
 conn.commit()
 conn.close()
