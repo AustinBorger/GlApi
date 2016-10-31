@@ -758,5 +758,11 @@ GlApi('glDisableVertexAttribArray', 'void', [
 	GlArg('index', 'GLuint')
 ])
 
+GlApi('glDispatchCompute', 'void', [
+	GlArg('num_groups_x', 'GLuint'),
+	GlArg('num_groups_y', 'GLuint'),
+	GlArg('num_groups_z', 'GLuint')
+])
+
 conn.commit()
 conn.close()
