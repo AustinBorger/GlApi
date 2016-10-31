@@ -1132,5 +1132,36 @@ GlApi('glGetActiveUniform', 'void', [
 	GlArg('name', 'GLchar *')
 ])
 
+GlApi('glGetActiveUniformBlockiv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('uniformBlockIndex', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetActiveUniformBlockName', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('uniformBlockIndex', 'GLuint'),
+	GlArg('bufSize', 'GLsizei'),
+	GlArg('length', 'GLsizei *'),
+	GlArg('uniformBlockName', 'GLchar *')
+])
+
+GlApi('glGetActiveUniformName', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('uniformIndex', 'GLuint'),
+	GlArg('bufSize', 'GLsizei'),
+	GlArg('length', 'GLsizei *'),
+	GlArg('uniformName', 'GLchar *')
+])
+
+GlApi('glGetActiveUniformsiv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('uniformCount', 'GLsizei'),
+	GlArg('uniformIndices', 'const GLuint *'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
 conn.commit()
 conn.close()
