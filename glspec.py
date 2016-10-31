@@ -975,5 +975,24 @@ GlApi('glFrontFace', 'void', [
 	GlArg('mode', 'GLenum')
 ])
 
+GlApi('glGenBuffers', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('buffers', 'GLuint *')
+])
+
+GlApi('glGenerateMipmap', 'void', [
+	GlArg('target', 'GLenum')
+])
+
+GlApi('glGenFramebuffers', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('id', 'GLuint *')
+])
+
+GlApi('glGenProgramPipelines', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('pipelines', 'GLuint')
+])
+
 conn.commit()
 conn.close()
