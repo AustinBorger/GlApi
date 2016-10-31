@@ -659,5 +659,20 @@ GlApi('glDeleteProgramPipelines', 'void', [
 	GlArg('pipelines', 'const GLuint *')
 ])
 
+GlApi('glDeleteQueries', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('ids', 'const GLuint *')
+])
+
+GlApi('glDeleteRenderbuffers', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('renderbuffers', 'GLuint *')
+])
+
+GlApi('glDeleteSamplers', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('samplers', 'const GLuint *')
+])
+
 conn.commit()
 conn.close()
