@@ -1432,5 +1432,25 @@ GlApi('glGetSamplerParameterIuiv', 'void', [
 	GlArg('params', 'GLuint *')
 ])
 
+GlApi('glGetShaderiv', 'void', [
+	GlArg('shader', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetShaderInfoLog', 'void', [
+	GlArg('shader', 'GLuint'),
+	GlArg('maxLength', 'GLsizei'),
+	GlArg('length', 'GLsizei *'),
+	GlArg('infoLog', 'GLchar *')
+])
+
+GlApi('glGetShaderPrecisionFormat', 'void', [
+	GlArg('shaderType', 'GLenum'),
+	GlArg('precisionType', 'GLenum'),
+	GlArg('range', 'GLint *'),
+	GlArg('precision', 'GLint *')
+])
+
 conn.commit()
 conn.close()
