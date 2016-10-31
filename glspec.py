@@ -994,5 +994,25 @@ GlApi('glGenProgramPipelines', 'void', [
 	GlArg('pipelines', 'GLuint')
 ])
 
+GlApi('glGenQueries', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('ids', 'GLuint *')
+])
+
+GlApi('glGenRenderbuffers', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('renderbuffers', 'GLuint *')
+])
+
+GlApi('glGenSamplers', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('samplers', 'GLuint *')
+])
+
+GlApi('glGenTextures', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('textures', 'GLuint *')
+])
+
 conn.commit()
 conn.close()
