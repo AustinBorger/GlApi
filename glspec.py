@@ -963,5 +963,17 @@ GlApi('glFramebufferTexture3D', 'void', [
 	GlArg('layer', 'GLint')
 ])
 
+GlApi('glFramebufferTextureLayer', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('attachment', 'GLenum'),
+	GlArg('texture', 'GLuint'),
+	GlArg('level', 'GLint'),
+	GlArg('layer', 'GLint')
+])
+
+GlApi('glFrontFace', 'void', [
+	GlArg('mode', 'GLenum')
+])
+
 conn.commit()
 conn.close()
