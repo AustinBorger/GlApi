@@ -794,5 +794,35 @@ GlApi('glDrawArraysInstancedBaseInstance', 'void', [
 	GlArg('baseinstance', 'GLuint')
 ])
 
+GlApi('glDrawBuffer', 'void', [
+	GlArg('mode', 'GLenum')
+])
+
+GlApi('glDrawBuffers', 'void', [
+	GlArg('n', 'GLsizei'),
+	GlArg('bufs', 'const GLenum *')
+])
+
+GlApi('glDrawElements', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('count', 'GLsizei'),
+	GlArg('type', 'GLenum'),
+	GlArg('indices', 'const GLvoid *')
+])
+
+GlApi('glDrawElementsBaseVertex', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('count', 'GLsizei'),
+	GlArg('type', 'GLenum'),
+	GlArg('indices', 'GLvoid *'),
+	GlArg('basevertex', 'GLint')
+])
+
+GlApi('glDrawElementsIndirect', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('type', 'GLenum'),
+	GlArg('indirect' 'const void *')
+])
+
 conn.commit()
 conn.close()
