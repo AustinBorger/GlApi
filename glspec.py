@@ -1544,5 +1544,29 @@ GlApi('glGetTransformFeedbackVarying', 'void', [
 	GlArg('name', 'char *')
 ])
 
+GlApi('glGetUniformfv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('params', 'GLfloat *')
+])
+
+GlApi('glGetUniformiv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetUniformuiv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('params', 'GLuint *')
+])
+
+GlApi('glGetUniformdv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('params', 'GLdouble *')
+])
+
 conn.commit()
 conn.close()
