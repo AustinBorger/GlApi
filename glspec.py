@@ -1459,5 +1459,14 @@ GlApi('glGetShaderSource', 'void', [
 	GlArg('source', 'GLchar *')
 ])
 
+GlApi('glGetString', 'const GLubyte *', [
+	GlArg('name', 'GLenum')
+])
+
+GlApi('glGetStringi', 'const GLubyte *', [
+	GlArg('name', 'GLenum'),
+	GlArg('index', 'GLuint')
+])
+
 conn.commit()
 conn.close()
