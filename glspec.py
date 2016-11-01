@@ -1468,5 +1468,81 @@ GlApi('glGetStringi', 'const GLubyte *', [
 	GlArg('index', 'GLuint')
 ])
 
+GlApi('glGetSubroutineIndex', 'GLuint', [
+	GlArg('program', 'GLuint'),
+	GlArg('shadertype', 'GLenum'),
+	GlArg('name', 'const GLchar *')
+])
+
+GlApi('glGetSubroutineUniformLocation', 'GLint', [
+	GlArg('program', 'GLuint'),
+	GlArg('shadertype', 'GLenum'),
+	GlArg('name', 'const GLchar *')
+])
+
+GlApi('glGetSynciv', 'void', [
+	GlArg('sync', 'GLsync'),
+	GlArg('pname', 'GLenum'),
+	GlArg('bufSize', 'GLsizei'),
+	GlArg('length', 'GLsizei *'),
+	GlArg('values', 'GLint *')
+])
+
+GlApi('glGetTexImage', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('format', 'GLenum'),
+	GlArg('type', 'GLenum'),
+	GlArg('img', 'GLvoid *')
+])
+
+GlApi('glGetTexLevelParameterfv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLfloat *')
+])
+
+GlApi('glGetTexLevelParameteriv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetTexParameterfv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLfloat *')
+])
+
+GlApi('glGetTexParameteriv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetTexParameterIiv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetTexParameterIuiv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLuint *')
+])
+
+GlApi('glGetTransformFeedbackVarying', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('index', 'GLuint'),
+	GlArg('bufSize', 'GLsizei'),
+	GlArg('length', 'GLsizei *'),
+	GlArg('size', 'GLsizei'),
+	GlArg('type', 'GLenum *'),
+	GlArg('name', 'char *')
+])
+
 conn.commit()
 conn.close()
