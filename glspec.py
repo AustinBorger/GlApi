@@ -1680,5 +1680,30 @@ GlApi('glInvalidateTexSubImage', 'void', [
 	GlArg('depth', 'GLsizei')
 ])
 
+GlApi('glIsBuffer', 'GLboolean', [
+	GlArg('buffer', 'GLuint')
+])
+
+GlApi('glIsEnabled', 'GLboolean', [
+	GlArg('cap', 'GLenum')
+])
+
+GlApi('glIsEnabledi', 'GLboolean', [
+	GlArg('cap', 'GLenum'),
+	GlArg('index', 'GLuint')
+])
+
+GlApi('glIsFramebuffer', 'GLboolean', [
+	GlArg('framebuffer', 'GLuint')
+])
+
+GlApi('glIsProgram', 'GLboolean', [
+	GlArg('program', 'GLuint')
+])
+
+GlApi('glIsProgramPipeline', 'GLboolean', [
+	GlArg('pipeline', 'GLuint')
+])
+
 conn.commit()
 conn.close()
