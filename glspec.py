@@ -1633,5 +1633,26 @@ GlApi('glGetVertexAttribPointerv', 'void', [
 	GlArg('pointer', 'GLvoid **')
 ])
 
+GlApi('glHint', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('mode', 'GLenum')
+])
+
+GlApi('glInvalidateBufferData', 'void', [
+	GlArg('buffer', 'GLuint')
+])
+
+GlApi('glInvalidateBufferSubData', 'void', [
+	GlArg('buffer', 'GLuint'),
+	GlArg('offset', 'GLintptr'),
+	GlArg('length', 'GLsizeiptr')
+])
+
+GlApi('glInvalidateFramebuffer', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('numAttachments', 'GLsizei'),
+	GlArg('attachments', 'const GLenum *')
+])
+
 conn.commit()
 conn.close()
