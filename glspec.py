@@ -1835,5 +1835,53 @@ GlApi('glPatchParameterfv', 'void', [
 	GlArg('values', 'const GLfloat *')
 ])
 
+GlApi('glPauseTransformFeedback', 'void', [])
+
+GlApi('glPixelStoref', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('param', 'GLfloat')
+])
+
+GlApi('glPixelStorei', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('param', 'GLint')
+])
+
+GlApi('glPointParameterf', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('param', 'GLfloat')
+])
+
+GlApi('glPointParameteri', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('param', 'GLint')
+])
+
+GlApi('glPointParameterfv', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'const GLfloat *')
+])
+
+GlApi('glPointParameteriv', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'const GLint *')
+])
+
+GlApi('glPointSize', 'void', [
+	GlArg('size', 'GLfloat')
+])
+
+GlApi('glPolygonMode', 'void', [
+	GlArg('face', 'GLenum'),
+	GlArg('mode', 'GLenum')
+])
+
+GlApi('glPolygonOffset', 'void', [
+	GlArg('factor', 'GLfloat'),
+	GlArg('units', 'GLfloat')
+])
+
+GlApi('glPopDebugGroup', 'void', [])
+
 conn.commit()
 conn.close()
