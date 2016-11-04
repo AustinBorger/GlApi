@@ -1749,5 +1749,51 @@ GlApi('glLogicOp', 'void', [
 	GlArg('opcode', 'GLenum')
 ])
 
+GlApi('glMapBuffer', 'void *', [
+	GlArg('target', 'GLenum'),
+	GlArg('access', 'GLenum')
+])
+
+GlApi('glUnmapBuffer', 'GLboolean', [
+	GlArg('target', 'GLenum')
+])
+
+GlApi('glMapBufferRange', 'void *', [
+	GlArg('target', 'GLenum'),
+	GlArg('offset', 'GLintptr'),
+	GlArg('length', 'GLsizeiptr'),
+	GlArg('access', 'GLbitfield')
+])
+
+GlApi('glMemoryBarrier', 'void', [
+	GlArg('barriers', 'GLbitfield')
+])
+
+GlApi('glMinSampleShading', 'void', [
+	GlArg('value', 'GLfloat')
+])
+
+GlApi('glMultiDrawArrays', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('first', 'const GLint *'),
+	GlArg('count', 'const GLsizei *'),
+	GlArg('drawcount', 'GLsizei')
+])
+
+GlApi('glMultiDrawArraysIndirect', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('indirect', 'const void *'),
+	GlArg('drawcount', 'GLsizei'),
+	GlArg('stride', 'GLsizei')
+])
+
+GlApi('glMultiDrawElements', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('count', 'const GLsizei *'),
+	GlArg('type', 'GLenum'),
+	GlArg('indices', 'const GLvoid * const *'),
+	GlArg('drawcount', 'GLsizei')
+])
+
 conn.commit()
 conn.close()
