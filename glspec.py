@@ -1795,5 +1795,35 @@ GlApi('glMultiDrawElements', 'void', [
 	GlArg('drawcount', 'GLsizei')
 ])
 
+GlApi('glMultiDrawElementsBaseVertex', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('count', 'const GLsizei *'),
+	GlArg('type', 'GLenum'),
+	GlArg('indices', 'const GLvoid * const *'),
+	GlArg('drawcount', 'GLsizei'),
+	GlArg('basevertex', 'const GLint *')
+])
+
+GlApi('glMultiDrawElementsIndirect', 'void', [
+	GlArg('mode', 'GLenum'),
+	GlArg('type', 'GLenum'),
+	GlArg('indirect', 'const void *'),
+	GlArg('drawcount', 'GLsizei'),
+	GlArg('stride', 'GLsizei')
+])
+
+GlApi('glObjectLabel', 'void', [
+	GlArg('identifier', 'GLenum'),
+	GlArg('name', 'GLuint'),
+	GlArg('length', 'GLsizei'),
+	GlArg('label', 'const char *')
+])
+
+GlApi('glObjectPtrLabel', 'void', [
+	GlArg('ptr', 'void *'),
+	GlArg('length', 'GLsizei'),
+	GlArg('label', 'const char *')
+])
+
 conn.commit()
 conn.close()
