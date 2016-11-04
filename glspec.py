@@ -2146,5 +2146,16 @@ GlApi('glProgramUniformMatrix4x3fv', 'void', [
 	GlArg('value', 'const GLfloat *')
 ])
 
+GlApi('glProvokingVertex', 'void', [
+	GlArg('provokeMode', 'GLenum')
+])
+
+GlApi('glPushDebugGroup', 'void', [
+	GlArg('source', 'GLenum'),
+	GlArg('id', 'GLuint'),
+	GlArg('length', 'GLsizei'),
+	GlArg('message', 'const char *')
+])
+
 conn.commit()
 conn.close()
