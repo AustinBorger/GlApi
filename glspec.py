@@ -1568,5 +1568,64 @@ GlApi('glGetUniformdv', 'void', [
 	GlArg('params', 'GLdouble *')
 ])
 
+GlApi('glGetUniformBlockIndex', 'GLuint', [
+	GlArg('program', 'GLuint'),
+	GlArg('uniformBlockName', 'const GLchar *')
+])
+
+GlApi('glGetUniformIndices', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('uniformCount', 'GLsizei'),
+	GlArg('uniformNames', 'const GLchar **'),
+	GlArg('uniformIndices', 'GLuint *')
+])
+
+GlApi('glGetUniformLocation', 'GLint', [
+	GlArg('program', 'GLuint'),
+	GlArg('name', 'const GLchar *')
+])
+
+GlApi('glGetUniformSubroutineuiv', 'void', [
+	GlArg('shadertype', 'GLenum'),
+	GlArg('location', 'GLint'),
+	GlArg('values', 'GLuint *')
+])
+
+GlApi('glGetVertexAttribdv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLdouble *')
+])
+
+GlApi('glGetVertexAttribfv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLfloat *')
+])
+
+GlApi('glGetVertexAttribiv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetVertexAttribIiv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLint *')
+])
+
+GlApi('glGetVertexAttribIuiv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLuint *')
+])
+
+GlApi('glGetVertexAttribLdv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'GLdouble *')
+])
+
 conn.commit()
 conn.close()
