@@ -1627,5 +1627,11 @@ GlApi('glGetVertexAttribLdv', 'void', [
 	GlArg('params', 'GLdouble *')
 ])
 
+GlApi('glGetVertexAttribPointerv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('pointer', 'GLvoid **')
+])
+
 conn.commit()
 conn.close()
