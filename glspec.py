@@ -1705,5 +1705,37 @@ GlApi('glIsProgramPipeline', 'GLboolean', [
 	GlArg('pipeline', 'GLuint')
 ])
 
+GlApi('glIsQuery', 'GLboolean', [
+	GlArg('id', 'GLuint')
+])
+
+GlApi('glIsRenderbuffer', 'GLboolean', [
+	GlArg('renderbuffer', 'GLuint')
+])
+
+GlApi('glIsSampler', 'GLboolean', [
+	GlArg('id', 'GLuint')
+])
+
+GlApi('glIsShader', 'GLboolean', [
+	GlArg('shader', 'GLuint')
+])
+
+GlApi('glIsSync', 'GLboolean', [
+	GlArg('sync', 'GLsync')
+])
+
+GlApi('glIsTexture', 'GLboolean', [
+	GlArg('texture', 'GLuint')
+])
+
+GlApi('glIsTransformFeedback', 'GLboolean', [
+	GlArg('id', 'GLuint')
+])
+
+GlApi('glIsVertexArray', 'GLboolean', [
+	GlArg('array', 'GLuint')
+])
+
 conn.commit()
 conn.close()
