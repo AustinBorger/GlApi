@@ -2074,5 +2074,29 @@ GlApi('glProgramUniform4uiv', 'void', [
 	GlArg('value', 'const GLuint *')
 ])
 
+GlApi('glProgramUniformMatrix2fv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('transpose', 'GLboolean'),
+	GlArg('value', 'const GLfloat *')
+])
+
+GlApi('glProgramUniformMatrix3fv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('transpose', 'GLboolean'),
+	GlArg('value', 'const GLfloat *')
+])
+
+GlApi('glProgramUniformMatrix4fv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('transpose', 'GLboolean'),
+	GlArg('value', 'const GLfloat *')
+])
+
 conn.commit()
 conn.close()
