@@ -1883,5 +1883,22 @@ GlApi('glPolygonOffset', 'void', [
 
 GlApi('glPopDebugGroup', 'void', [])
 
+GlApi('glPrimitiveRestartIndex', 'void', [
+	GlArg('index', 'GLuint')
+])
+
+GlApi('glProgramBinary', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('binaryFormat', 'GLenum'),
+	GlArg('binary', 'const void *'),
+	GlArg('length', 'GLsizei')
+])
+
+GlApi('glProgramParameteri', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('value', 'GLint')
+])
+
 conn.commit()
 conn.close()
