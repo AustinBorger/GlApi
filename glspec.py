@@ -1737,5 +1737,17 @@ GlApi('glIsVertexArray', 'GLboolean', [
 	GlArg('array', 'GLuint')
 ])
 
+GlApi('glLineWidth', 'void', [
+	GlArg('width', 'GLfloat')
+])
+
+GlApi('glLinkProgram', 'void', [
+	GlArg('program', 'GLuint')
+])
+
+GlApi('glLogicOp', 'void', [
+	GlArg('opcode', 'GLenum')
+])
+
 conn.commit()
 conn.close()
