@@ -2157,5 +2157,10 @@ GlApi('glPushDebugGroup', 'void', [
 	GlArg('message', 'const char *')
 ])
 
+GlApi('glQueryCounter', 'void', [
+	GlArg('id', 'GLuint'),
+	GlArg('target', 'GLenum')
+])
+
 conn.commit()
 conn.close()
