@@ -1960,5 +1960,35 @@ GlApi('glProgramUniform4i', 'void', [
 	GlArg('v3', 'GLint')
 ])
 
+GlApi('glProgramUniform1ui', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLuint')
+])
+
+GlApi('glProgramUniform2ui', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLuint'),
+	GlArg('v1', 'GLuint')
+])
+
+GlApi('glProgramUniform3ui', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLuint'),
+	GlArg('v1', 'GLuint'),
+	GlArg('v2', 'GLuint')
+])
+
+GlApi('glProgramUniform4ui', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLuint'),
+	GlArg('v1', 'GLuint'),
+	GlArg('v2', 'GLuint'),
+	GlArg('v3', 'GLuint')
+])
+
 conn.commit()
 conn.close()
