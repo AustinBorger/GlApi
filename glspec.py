@@ -2018,5 +2018,33 @@ GlApi('glProgramUniform4fv', 'void', [
 	GlArg('value', 'const GLfloat *')
 ])
 
+GlApi('glProgramUniform1iv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('value', 'const GLint *')
+])
+
+GlApi('glProgramUniform2iv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('value', 'const GLint *')
+])
+
+GlApi('glProgramUniform3iv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('value', 'const GLint *')
+])
+
+GlApi('glProgramUniform4iv', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('value', 'const GLint *')
+])
+
 conn.commit()
 conn.close()
