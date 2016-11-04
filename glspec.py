@@ -1900,5 +1900,35 @@ GlApi('glProgramParameteri', 'void', [
 	GlArg('value', 'GLint')
 ])
 
+GlApi('glProgramUniform1f', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLfloat')
+])
+
+GlApi('glProgramUniform2f', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLfloat'),
+	GlArg('v1', 'GLfloat')
+])
+
+GlApi('glProgramUniform3f', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLfloat'),
+	GlArg('v1', 'GLfloat'),
+	GlArg('v2', 'GLfloat')
+])
+
+GlApi('glProgramUniform4f', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLfloat'),
+	GlArg('v1', 'GLfloat'),
+	GlArg('v2', 'GLfloat'),
+	GlArg('v3', 'GLfloat')
+])
+
 conn.commit()
 conn.close()
