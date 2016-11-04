@@ -1825,5 +1825,15 @@ GlApi('glObjectPtrLabel', 'void', [
 	GlArg('label', 'const char *')
 ])
 
+GlApi('glPatchParameteri', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('value', 'GLint')
+])
+
+GlApi('glPatchParameterfv', 'void', [
+	GlArg('pname', 'GLenum'),
+	GlArg('values', 'const GLfloat *')
+])
+
 conn.commit()
 conn.close()
