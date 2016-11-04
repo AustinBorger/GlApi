@@ -1654,5 +1654,31 @@ GlApi('glInvalidateFramebuffer', 'void', [
 	GlArg('attachments', 'const GLenum *')
 ])
 
+GlApi('glInvalidateSubFramebuffer', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('numAttachments', 'GLsizei'),
+	GlArg('attachments', 'const GLenum *'),
+	GlArg('x', 'GLint'),
+	GlArg('y', 'GLint'),
+	GlArg('width', 'GLint'),
+	GlArg('height', 'GLint')
+])
+
+GlApi('glInvalidateTexImage', 'void', [
+	GlArg('texture', 'GLuint'),
+	GlArg('level', 'GLint')
+])
+
+GlApi('glInvalidateTexSubImage', 'void', [
+	GlArg('texture', 'GLuint'),
+	GlArg('level', 'GLint'),
+	GlArg('xoffset', 'GLint'),
+	GlArg('yoffset', 'GLint'),
+	GlArg('zoffset', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei'),
+	GlArg('depth', 'GLsizei')
+])
+
 conn.commit()
 conn.close()
