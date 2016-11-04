@@ -2162,5 +2162,21 @@ GlApi('glQueryCounter', 'void', [
 	GlArg('target', 'GLenum')
 ])
 
+GlApi('glReadBuffer', 'void', [
+	GlArg('mode', 'GLenum')
+])
+
+GlApi('glReadPixels', 'void', [
+	GlArg('x', 'GLint'),
+	GlArg('y', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei'),
+	GlArg('format', 'GLenum'),
+	GlArg('type', 'GLenum'),
+	GlArg('data', 'GLvoid *')
+])
+
+GlApi('glReleaseShaderCompiler', 'void', [])
+
 conn.commit()
 conn.close()
