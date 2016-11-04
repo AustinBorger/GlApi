@@ -2178,5 +2178,22 @@ GlApi('glReadPixels', 'void', [
 
 GlApi('glReleaseShaderCompiler', 'void', [])
 
+GlApi('glRenderbufferStorage', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('internalformat', 'GLenum'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei')
+])
+
+GlApi('glRenderbufferStorageMultisample', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('samples', 'GLsizei'),
+	GlArg('internalformat', 'GLenum'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei')
+])
+
+GlApi('glResumeTransformFeedback', 'void', [])
+
 conn.commit()
 conn.close()
