@@ -2675,5 +2675,68 @@ GlApi('glUniform4uiv', 'void', [
 	GlArg('value', 'const GLuint *')
 ])
 
+GlApi('glUniformMatrix2fv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('transpose', 'GLboolean'),
+	GlArg('value', 'const GLfloat *')
+])
+
+GlApi('glUniformMatrix3fv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('transpose', 'GLboolean'),
+	GlArg('value', 'const GLfloat *')
+])
+
+GlApi('glUniformMatrix4fv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('transpose', 'GLboolean'),
+	GlArg('value', 'const GLfloat *')
+])
+
+GlApi('glUniformMatrix2x3fv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('transpose', 'GLboolean'),
+	GlArg('value', 'const GLfloat *')
+])
+
+GlApi('glUniformMatrix3x2fv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('transpose', 'GLboolean'),
+	GlArg('value', 'const GLfloat *')
+])
+
+GlApi('glUniformMatrix2x4fv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('transpose', 'GLboolean'),
+	GlArg('value', 'const GLfloat *')
+])
+
+GlApi('glUniformMatrix4x2fv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('transpose', 'GLboolean'),
+	GlArg('value', 'const GLfloat *')
+])
+
+GlApi('glUniformMatrix3x4fv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('transpose', 'GLboolean'),
+	GlArg('value', 'const GLfloat *')
+])
+
+GlApi('glUniformMatrix4x3fv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('transpose', 'GLboolean'),
+	GlArg('value', 'const GLfloat *')
+])
+
 conn.commit()
 conn.close()
