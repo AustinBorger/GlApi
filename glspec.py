@@ -2195,5 +2195,51 @@ GlApi('glRenderbufferStorageMultisample', 'void', [
 
 GlApi('glResumeTransformFeedback', 'void', [])
 
+GlApi('glSampleCoverage', 'void', [
+	GlArg('value', 'GLfloat'),
+	GlArg('invert', 'GLboolean')
+])
+
+GlApi('glSampleMaski', 'void', [
+	GlArg('maskNumber', 'GLuint'),
+	GlArg('mask', 'GLbitfield')
+])
+
+GlApi('glSamplerParameterf', 'void', [
+	GlArg('sampler', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('param', 'GLfloat')
+])
+
+GlApi('glSamplerParameteri', 'void', [
+	GlArg('sampler', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('param', 'GLint')
+])
+
+GlApi('glSamplerParameterfv', 'void', [
+	GlArg('sampler', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'const GLfloat *')
+])
+
+GlApi('glSamplerParameteriv', 'void', [
+	GlArg('sampler', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'const GLint *')
+])
+
+GlApi('glSamplerParameterIiv', 'void', [
+	GlArg('sampler', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'const GLint *')
+])
+
+GlApi('glSamplerParameterIuiv', 'void', [
+	GlArg('sampler', 'GLuint'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'const GLuint *')
+])
+
 conn.commit()
 conn.close()
