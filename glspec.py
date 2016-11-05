@@ -3012,5 +3012,25 @@ GlApi('glVertexAttribI4iv', 'void', [
 	GlArg('v', 'const GLint *')
 ])
 
+GlApi('glVertexAttribI1uiv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLuint *')
+])
+
+GlApi('glVertexAttribI2uiv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLuint *')
+])
+
+GlApi('glVertexAttribI3uiv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLuint *')
+])
+
+GlApi('glVertexAttribI4uiv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLuint *')
+])
+
 conn.commit()
 conn.close()
