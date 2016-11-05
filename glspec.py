@@ -43,6 +43,17 @@ c.execute('''
 	)
 ''')
 
+c.execute('''
+	CREATE TABLE function_availabilities
+	(
+		availability_id INT PRIMARY KEY NOT NULL,
+		version_id INT,
+		func_id INT,
+		FOREIGN KEY (version_id) REFERENCES versions(version_id),
+		FOREIGN KEY (func_id) REFERENCES functions(func_id)
+	)
+''')
+
 conn.commit()
 
 class GlVersion:
