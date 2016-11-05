@@ -2294,5 +2294,34 @@ GlApi('glStencilFunc', 'void', [
 	GlArg('mask', 'GLuint')
 ])
 
+GlApi('glStencilFuncSeparate', 'void', [
+	GlArg('face', 'GLenum'),
+	GlArg('func', 'GLenum'),
+	GlArg('ref', 'GLint'),
+	GlArg('mask', 'GLuint')
+])
+
+GlApi('glStencilMask', 'void', [
+	GlArg('mask', 'GLuint')
+])
+
+GlApi('glStencilMaskSeparate', 'void', [
+	GlArg('face', 'GLenum'),
+	GlArg('mask', 'GLuint')
+])
+
+GlApi('glStencilOp', 'void', [
+	GlArg('sfail', 'GLenum'),
+	GlArg('dpfail', 'GLenum'),
+	GlArg('dppass', 'GLenum')
+])
+
+GlApi('glStencilOpSeparate', 'void', [
+	GlArg('face', 'GLenum'),
+	GlArg('sfail', 'GLenum'),
+	GlArg('dpfail', 'GLenum'),
+	GlArg('dppass', 'GLenum')	
+])
+
 conn.commit()
 conn.close()
