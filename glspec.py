@@ -2507,5 +2507,23 @@ GlApi('glTexSubImage3D', 'void', [
 	GlArg('data', 'const GLvoid *')
 ])
 
+GlApi('glTextureView', 'void', [
+	GlArg('texture', 'GLuint'),
+	GlArg('target', 'GLenum'),
+	GlArg('origtexture', 'GLuint'),
+	GlArg('internalformat', 'GLenum'),
+	GlArg('minlevel', 'GLuint'),
+	GlArg('numlevels', 'GLuint'),
+	GlArg('minlayer', 'GLuint'),
+	GlArg('numlayers', 'GLuint')
+])
+
+GlApi('glTransformFeedbackVaryings', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('varyings', 'const char **'),
+	GlArg('bufferMode', 'GLenum')
+])
+
 conn.commit()
 conn.close()
