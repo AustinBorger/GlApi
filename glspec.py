@@ -2972,5 +2972,25 @@ GlApi('glVertexAttrib4sv', 'void', [
 	GlArg('v', 'const GLshort *')
 ])
 
+GlApi('glVertexAttrib1dv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLdouble *')
+])
+
+GlApi('glVertexAttrib2dv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLdouble *')
+])
+
+GlApi('glVertexAttrib3dv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLdouble *')
+])
+
+GlApi('glVertexAttrib4dv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLdouble *')
+])
+
 conn.commit()
 conn.close()
