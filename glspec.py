@@ -2738,5 +2738,27 @@ GlApi('glUniformMatrix4x3fv', 'void', [
 	GlArg('value', 'const GLfloat *')
 ])
 
+GlApi('glUniformBlockBinding', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('uniformBlockIndex', 'GLuint'),
+	GlArg('uniformblockBinding', 'GLuint')
+])
+
+GlApi('glUniformSubroutinesuiv', 'void', [
+	GlArg('shadertype', 'GLenum'),
+	GlArg('count', 'GLsizei'),
+	GlArg('indices', 'const GLuint *')
+])
+
+GlApi('glUseProgram', 'void', [
+	GlArg('program', 'GLuint')
+])
+
+GlApi('glUseProgramStages', 'void', [
+	GlArg('pipeline', 'GLuint'),
+	GlArg('stages', 'GLbitfield'),
+	GlArg('program', 'GLuint')
+])
+
 conn.commit()
 conn.close()
