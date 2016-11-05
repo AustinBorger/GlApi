@@ -2525,5 +2525,83 @@ GlApi('glTransformFeedbackVaryings', 'void', [
 	GlArg('bufferMode', 'GLenum')
 ])
 
+GlApi('glUniform1f', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLfloat')
+])
+
+GlApi('glUniform2f', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLfloat'),
+	GlArg('v1', 'GLfloat')
+])
+
+GlApi('glUniform3f', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLfloat'),
+	GlArg('v1', 'GLfloat'),
+	GlArg('v2', 'GLfloat')
+])
+
+GlApi('glUniform4f', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLfloat'),
+	GlArg('v1', 'GLfloat'),
+	GlArg('v2', 'GLfloat'),
+	GlArg('v3', 'GLfloat')
+])
+
+GlApi('glUniform1i', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLint')
+])
+
+GlApi('glUniform2i', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLint'),
+	GlArg('v1', 'GLint')
+])
+
+GlApi('glUniform3i', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLint'),
+	GlArg('v1', 'GLint'),
+	GlArg('v2', 'GLint')
+])
+
+GlApi('glUniform4i', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLint'),
+	GlArg('v1', 'GLint'),
+	GlArg('v2', 'GLint'),
+	GlArg('v3', 'GLint')
+])
+
+GlApi('glUniform1ui', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLuint')
+])
+
+GlApi('glUniform2ui', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLuint'),
+	GlArg('v1', 'GLuint')
+])
+
+GlApi('glUniform3ui', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLuint'),
+	GlArg('v1', 'GLuint'),
+	GlArg('v2', 'GLuint')
+])
+
+GlApi('glUniform4ui', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('v0', 'GLuint'),
+	GlArg('v1', 'GLuint'),
+	GlArg('v2', 'GLuint'),
+	GlArg('v3', 'GLuint')
+])
+
 conn.commit()
 conn.close()
