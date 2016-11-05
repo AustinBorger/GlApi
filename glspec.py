@@ -2471,5 +2471,41 @@ GlApi('glTexStorage3DMultisample', 'void', [
 	GlArg('fixedsamplelocations', 'GLboolean')
 ])
 
+GlApi('glTexSubImage1D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('xoffset', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('format', 'GLenum'),
+	GlArg('type', 'GLenum'),
+	GlArg('data', 'const GLvoid *')
+])
+
+GlApi('glTexSubImage2D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('xoffset', 'GLint'),
+	GlArg('yoffset', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei'),
+	GlArg('format', 'GLenum'),
+	GlArg('type', 'GLenum'),
+	GlArg('data', 'const GLvoid *')
+])
+
+GlApi('glTexSubImage3D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('xoffset', 'GLint'),
+	GlArg('yoffset', 'GLint'),
+	GlArg('zoffset', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei'),
+	GlArg('depth', 'GLsizei'),
+	GlArg('format', 'GLenum'),
+	GlArg('type', 'GLenum'),
+	GlArg('data', 'const GLvoid *')
+])
+
 conn.commit()
 conn.close()
