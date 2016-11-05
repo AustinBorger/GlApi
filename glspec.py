@@ -3127,5 +3127,61 @@ GlApi('glVertexAttribI4usv', 'void', [
 	GlArg('v', 'const GLushort *')
 ])
 
+GlApi('glVertexAttribP1ui', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('type', 'GLenum'),
+	GlArg('normalized', 'GLboolean'),
+	GlArg('value', 'GLuint')
+])
+
+GlApi('glVertexAttribP2ui', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('type', 'GLenum'),
+	GlArg('normalized', 'GLboolean'),
+	GlArg('value', 'GLuint')
+])
+
+GlApi('glVertexAttribP3ui', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('type', 'GLenum'),
+	GlArg('normalized', 'GLboolean'),
+	GlArg('value', 'GLuint')
+])
+
+GlApi('glVertexAttribP4ui', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('type', 'GLenum'),
+	GlArg('normalized', 'GLboolean'),
+	GlArg('value', 'GLuint')
+])
+
+GlApi('glVertexAttribP1uiv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('type', 'GLenum'),
+	GlArg('normalized', 'GLboolean'),
+	GlArg('value', 'GLuint *')
+])
+
+GlApi('glVertexAttribP2uiv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('type', 'GLenum'),
+	GlArg('normalized', 'GLboolean'),
+	GlArg('value', 'GLuint *')
+])
+
+GlApi('glVertexAttribP3uiv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('type', 'GLenum'),
+	GlArg('normalized', 'GLboolean'),
+	GlArg('value', 'GLuint *')
+])
+
+GlApi('glVertexAttribP4uiv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('type', 'GLenum'),
+	GlArg('normalized', 'GLboolean'),
+	GlArg('value', 'GLuint *')
+])
+
 conn.commit()
 conn.close()
