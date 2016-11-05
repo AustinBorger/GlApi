@@ -2323,5 +2323,74 @@ GlApi('glStencilOpSeparate', 'void', [
 	GlArg('dppass', 'GLenum')	
 ])
 
+GlApi('glTexBuffer', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('internalFormat', 'GLenum'),
+	GlArg('buffer', 'GLuint')
+])
+
+GlApi('glTexBufferRange', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('internalFormat', 'GLenum'),
+	GlArg('buffer', 'GLuint'),
+	GlArg('offset', 'GLintptr'),
+	GlArg('size', 'GLsizeiptr')
+])
+
+GlApi('glTexImage1D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('internalFormat', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('border', 'GLint'),
+	GlArg('format', 'GLenum'),
+	GlArg('type', 'GLenum'),
+	GlArg('data', 'const GLvoid *')
+])
+
+GlApi('glTexImage2D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('internalFormat', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei'),
+	GlArg('border', 'GLint'),
+	GlArg('format', 'GLenum'),
+	GlArg('type', 'GLenum'),
+	GlArg('data', 'const GLvoid *')
+])
+
+GlApi('glTexImage2DMultisample', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('internalFormat', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei'),
+	GlArg('fixedsamplelocations', 'GLboolean')
+])
+
+GlApi('glTexImage3D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('internalFormat', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei'),
+	GlArg('depth', 'GLsizei'),
+	GlArg('border', 'GLint'),
+	GlArg('format', 'GLenum'),
+	GlArg('type', 'GLenum'),
+	GlArg('data', 'const GLvoid *')
+])
+
+GlApi('glTexImage3DMultisample', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('level', 'GLint'),
+	GlArg('internalFormat', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei'),
+	GlArg('depth', 'GLsizei'),
+	GlArg('fixedsamplelocations', 'GLboolean')
+])
+
 conn.commit()
 conn.close()
