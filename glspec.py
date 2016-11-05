@@ -2794,5 +2794,31 @@ GlApi('glVertexAttrib3f', 'void', [
 	GlArg('v3', 'GLfloat')
 ])
 
+GlApi('glVertexAttrib1s', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLshort')
+])
+
+GlApi('glVertexAttrib2s', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLshort'),
+	GlArg('v1', 'GLshort')
+])
+
+GlApi('glVertexAttrib3s', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLshort'),
+	GlArg('v1', 'GLshort'),
+	GlArg('v2', 'GLshort')
+])
+
+GlApi('glVertexAttrib3s', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLshort'),
+	GlArg('v1', 'GLshort'),
+	GlArg('v2', 'GLshort'),
+	GlArg('v3', 'GLshort')
+])
+
 conn.commit()
 conn.close()
