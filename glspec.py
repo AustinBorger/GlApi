@@ -2786,7 +2786,7 @@ GlApi('glVertexAttrib3f', 'void', [
 	GlArg('v2', 'GLfloat')
 ])
 
-GlApi('glVertexAttrib3f', 'void', [
+GlApi('glVertexAttrib4f', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLfloat'),
 	GlArg('v1', 'GLfloat'),
@@ -2812,12 +2812,38 @@ GlApi('glVertexAttrib3s', 'void', [
 	GlArg('v2', 'GLshort')
 ])
 
-GlApi('glVertexAttrib3s', 'void', [
+GlApi('glVertexAttrib4s', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLshort'),
 	GlArg('v1', 'GLshort'),
 	GlArg('v2', 'GLshort'),
 	GlArg('v3', 'GLshort')
+])
+
+GlApi('glVertexAttrib1d', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLdouble')
+])
+
+GlApi('glVertexAttrib2d', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLdouble'),
+	GlArg('v1', 'GLdouble')
+])
+
+GlApi('glVertexAttrib3d', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLdouble'),
+	GlArg('v1', 'GLdouble'),
+	GlArg('v2', 'GLdouble')
+])
+
+GlApi('glVertexAttrib4d', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLdouble'),
+	GlArg('v1', 'GLdouble'),
+	GlArg('v2', 'GLdouble'),
+	GlArg('v3', 'GLdouble')
 ])
 
 conn.commit()
