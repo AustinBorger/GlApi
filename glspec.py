@@ -2603,5 +2603,77 @@ GlApi('glUniform4ui', 'void', [
 	GlArg('v3', 'GLuint')
 ])
 
+GlApi('glUniform1fv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('value', 'const GLfloat *')
+])
+
+GlApi('glUniform2fv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('value', 'const GLfloat *')
+])
+
+GlApi('glUniform3fv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('value', 'const GLfloat *')
+])
+
+GlApi('glUniform4fv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('value', 'const GLfloat *')
+])
+
+GlApi('glUniform1iv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('value', 'const GLint *')
+])
+
+GlApi('glUniform2iv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('value', 'const GLint *')
+])
+
+GlApi('glUniform3iv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('value', 'const GLint *')
+])
+
+GlApi('glUniform4iv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('value', 'const GLint *')
+])
+
+GlApi('glUniform1uiv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('value', 'const GLuint *')
+])
+
+GlApi('glUniform2uiv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('value', 'const GLuint *')
+])
+
+GlApi('glUniform3uiv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('value', 'const GLuint *')
+])
+
+GlApi('glUniform4uiv', 'void', [
+	GlArg('location', 'GLint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('value', 'const GLuint *')
+])
+
 conn.commit()
 conn.close()
