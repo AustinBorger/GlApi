@@ -2898,5 +2898,31 @@ GlApi('glVertexAttribI4ui', 'void', [
 	GlArg('v3', 'GLuint')
 ])
 
+GlApi('glVertexAttribL1d', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLdouble')
+])
+
+GlApi('glVertexAttribL2d', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLdouble'),
+	GlArg('v1', 'GLdouble')
+])
+
+GlApi('glVertexAttribL3d', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLdouble'),
+	GlArg('v1', 'GLdouble'),
+	GlArg('v2', 'GLdouble')
+])
+
+GlApi('glVertexAttribL4d', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLdouble'),
+	GlArg('v1', 'GLdouble'),
+	GlArg('v2', 'GLdouble'),
+	GlArg('v3', 'GLdouble')
+])
+
 conn.commit()
 conn.close()
