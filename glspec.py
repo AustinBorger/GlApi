@@ -3240,5 +3240,42 @@ GlApi('glVertexAttribLPointer', 'void', [
 	GlArg('pointer', 'const GLvoid *')
 ])
 
+GlApi('glVertexBindingDivisor', 'void', [
+	GlArg('bindingindex', 'GLuint'),
+	GlArg('divisor', 'GLuint')
+])
+
+GlApi('glViewport', 'void', [
+	GlArg('x', 'GLint'),
+	GlArg('y', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei')
+])
+
+GlApi('glViewportArrayv', 'void', [
+	GlArg('first', 'GLuint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('v', 'const GLfloat *')
+])
+
+GlApi('glViewportIndexedf', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('x', 'GLfloat'),
+	GlArg('y', 'GLfloat'),
+	GlArg('w', 'GLfloat'),
+	GlArg('h', 'GLfloat')
+])
+
+GlApi('glViewportIndexedfv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLfloat *')
+])
+
+GlApi('glWaitSync', 'void', [
+	GlArg('sync', 'GLsync'),
+	GlArg('flags', 'GLbitfield'),
+	GlArg('timeout', 'GLuint64')
+])
+
 conn.commit()
 conn.close()
