@@ -2428,5 +2428,48 @@ GlApi('glTexParameterIuiv', 'void', [
 	GlArg('params', 'const GLuint *')
 ])
 
+GlApi('glTexStorage1D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('levels', 'GLsizei'),
+	GlArg('internalformat', 'GLenum'),
+	GlArg('width', 'GLsizei')
+])
+
+GlApi('glTexStorage2D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('levels', 'GLsizei'),
+	GlArg('internalformat', 'GLenum'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei')
+])
+
+GlApi('glTexStorage2DMultisample', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('samples', 'GLsizei'),
+	GlArg('internalformat', 'GLenum'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei'),
+	GlArg('fixedsamplelocations', 'GLboolean')
+])
+
+GlApi('glTexStorage3D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('levels', 'GLsizei'),
+	GlArg('internalformat', 'GLenum'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei'),
+	GlArg('depth', 'GLsizei')
+])
+
+GlApi('glTexStorage3DMultisample', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('samples', 'GLsizei'),
+	GlArg('internalformat', 'GLenum'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei'),
+	GlArg('depth', 'GLsizei'),
+	GlArg('fixedsamplelocations', 'GLboolean')
+])
+
 conn.commit()
 conn.close()
