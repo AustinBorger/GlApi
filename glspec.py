@@ -2768,5 +2768,31 @@ GlApi('glValidateProgramPipeline', 'void', [
 	GlArg('pipeline', 'GLuint')
 ])
 
+GlApi('glVertexAttrib1f', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLfloat')
+])
+
+GlApi('glVertexAttrib2f', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLfloat'),
+	GlArg('v1', 'GLfloat')
+])
+
+GlApi('glVertexAttrib3f', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLfloat'),
+	GlArg('v1', 'GLfloat'),
+	GlArg('v2', 'GLfloat')
+])
+
+GlApi('glVertexAttrib3f', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLfloat'),
+	GlArg('v1', 'GLfloat'),
+	GlArg('v2', 'GLfloat'),
+	GlArg('v3', 'GLfloat')
+])
+
 conn.commit()
 conn.close()
