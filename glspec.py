@@ -2932,5 +2932,25 @@ GlApi('glVertexAttrib4Nub', 'void', [
 	GlArg('v3', 'GLubyte')
 ])
 
+GlApi('glVertexAttrib1fv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLfloat *')
+])
+
+GlApi('glVertexAttrib2fv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLfloat *')
+])
+
+GlApi('glVertexAttrib3fv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLfloat *')
+])
+
+GlApi('glVertexAttrib4fv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLfloat *')
+])
+
 conn.commit()
 conn.close()
