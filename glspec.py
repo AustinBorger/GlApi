@@ -2267,5 +2267,32 @@ GlApi('glScissorIndexedv', 'void', [
 	GlArg('v', 'const GLint *')
 ])
 
+GlApi('glShaderBinary', 'void', [
+	GlArg('count', 'GLsizei'),
+	GlArg('shaders', 'const GLuint *'),
+	GlArg('binaryFormat', 'GLenum'),
+	GlArg('binary', 'const void *'),
+	GlArg('length', 'GLsizei')
+])
+
+GlApi('glShaderSource', 'void', [
+	GlArg('shader', 'GLuint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('string', 'const GLchar **'),
+	GlArg('length', 'const GLint *')
+])
+
+GlApi('glShaderStorageBlockBinding', 'void', [
+	GlArg('program', 'GLuint'),
+	GlArg('storageBlockIndex', 'GLuint'),
+	GlArg('storageBlockBinding', 'GLuint')
+])
+
+GlApi('glStencilFunc', 'void', [
+	GlArg('func', 'GLenum'),
+	GlArg('ref', 'GLint'),
+	GlArg('mask', 'GLuint')
+])
+
 conn.commit()
 conn.close()
