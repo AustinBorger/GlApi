@@ -2760,5 +2760,13 @@ GlApi('glUseProgramStages', 'void', [
 	GlArg('program', 'GLuint')
 ])
 
+GlApi('glValidateProgram', 'void', [
+	GlArg('program', 'GLuint')
+])
+
+GlApi('glValidateProgramPipeline', 'void', [
+	GlArg('pipeline', 'GLuint')
+])
+
 conn.commit()
 conn.close()
