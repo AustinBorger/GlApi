@@ -2392,5 +2392,41 @@ GlApi('glTexImage3DMultisample', 'void', [
 	GlArg('fixedsamplelocations', 'GLboolean')
 ])
 
+GlApi('glTexParameterf', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('param', 'GLfloat')
+])
+
+GlApi('glTexParameterf', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('param', 'GLint')
+])
+
+GlApi('glTexParameterfv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'const GLfloat *')
+])
+
+GlApi('glTexParameteriv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'const GLint *')
+])
+
+GlApi('glTexParameterIiv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'const GLint *')
+])
+
+GlApi('glTexParameterIuiv', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('pname', 'GLenum'),
+	GlArg('params', 'const GLuint *')
+])
+
 conn.commit()
 conn.close()
