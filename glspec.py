@@ -79,6 +79,12 @@ class GlApi:
 			VALUES ((SELECT count(*) FROM functions), '%s', '%s')
 		''' % (name, return_type))
 
+		c.execute('''
+			SELECT count(*) - 1 FROM functions
+		''')
+
+		self.func_id, = c.fetchone()
+
 		arg_order = 0
 
 		for arg in args:
@@ -96,35 +102,35 @@ class GlApi:
 
 			arg_order += 1
 
-GlVersion(1, 0)
-GlVersion(1, 1)
-GlVersion(1, 2)
-GlVersion(1, 3)
-GlVersion(1, 4)
-GlVersion(1, 5)
-GlVersion(2, 0)
-GlVersion(2, 1)
-GlVersion(3, 0)
-GlVersion(3, 1)
-GlVersion(3, 2)
-GlVersion(3, 3)
-GlVersion(4, 0)
-GlVersion(4, 1)
-GlVersion(4, 2)
-GlVersion(4, 3)
-GlVersion(4, 4)
-GlVersion(4, 5)
+glv_1_0 = GlVersion(1, 0)
+glv_1_1 = GlVersion(1, 1)
+glv_1_2 = GlVersion(1, 2)
+glv_1_3 = GlVersion(1, 3)
+glv_1_4 = GlVersion(1, 4)
+glv_1_5 = GlVersion(1, 5)
+glv_2_0 = GlVersion(2, 0)
+glv_2_1 = GlVersion(2, 1)
+glv_3_0 = GlVersion(3, 0)
+glv_3_1 = GlVersion(3, 1)
+glv_3_2 = GlVersion(3, 2)
+glv_3_3 = GlVersion(3, 3)
+glv_4_0 = GlVersion(4, 0)
+glv_4_1 = GlVersion(4, 1)
+glv_4_2 = GlVersion(4, 2)
+glv_4_3 = GlVersion(4, 3)
+glv_4_4 = GlVersion(4, 4)
+glv_4_5 = GlVersion(4, 5)
 
-GlApi('glActiveShaderProgram', 'void', [
+glActiveShaderProgram = GlApi('glActiveShaderProgram', 'void', [
 	GlArg('pipeline', 'GLuint'),
 	GlArg('program', 'GLuint')
 ])
 
-GlApi('glActiveTexture', 'void', [
+glActiveTexture = GlApi('glActiveTexture', 'void', [
 	GlArg('texture', 'GLenum')
 ])
 
-GlApi('glAttachShader', 'void', [
+glAttachShader = GlApi('glAttachShader', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('shader', 'GLuint')
 ])
