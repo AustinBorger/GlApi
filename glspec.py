@@ -55,7 +55,7 @@ class GlApi:
 		for arg in args:
 			c.execute('''
 				INSERT INTO arguments
-				VALUES 
+				VALUES
 				(
 					(SELECT count(*) FROM arguments),
 					(SELECT count(*) FROM functions) - 1,
@@ -1070,7 +1070,7 @@ GlApi('glGetFloati_v', 'void', [
 GlApi('glGetDoublei_v', 'void', [
 	GlArg('pname', 'GLenum'),
 	GlArg('index', 'GLuint'),
-	GlArg('data', 'GLdouble *')	
+	GlArg('data', 'GLdouble *')
 ])
 
 GlApi('glGetInteger64i_v', 'void', [
@@ -2320,7 +2320,7 @@ GlApi('glStencilOpSeparate', 'void', [
 	GlArg('face', 'GLenum'),
 	GlArg('sfail', 'GLenum'),
 	GlArg('dpfail', 'GLenum'),
-	GlArg('dppass', 'GLenum')	
+	GlArg('dppass', 'GLenum')
 ])
 
 GlApi('glTexBuffer', 'void', [
@@ -2990,6 +2990,26 @@ GlApi('glVertexAttrib3dv', 'void', [
 GlApi('glVertexAttrib4dv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLdouble *')
+])
+
+GlApi('glVertexAttribI1iv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLint *')
+])
+
+GlApi('glVertexAttribI2iv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLint *')
+])
+
+GlApi('glVertexAttribI3iv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLint *')
+])
+
+GlApi('glVertexAttribI4iv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLint *')
 ])
 
 conn.commit()
