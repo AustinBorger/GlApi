@@ -3183,5 +3183,37 @@ GlApi('glVertexAttribP4uiv', 'void', [
 	GlArg('value', 'GLuint *')
 ])
 
+GlApi('glVertexAttribBinding', 'void', [
+	GlArg('attribindex', 'GLuint'),
+	GlArg('bindingindex', 'GLuint')
+])
+
+GlApi('glVertexAttribDivisor', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('divisor', 'GLuint')
+])
+
+GlApi('glVertexAttribFormat', 'void', [
+	GlArg('attribindex', 'GLuint'),
+	GlArg('size', 'GLuint'),
+	GlArg('type', 'GLenum'),
+	GlArg('normalized', 'GLboolean'),
+	GlArg('relativeoffset', 'GLuint')
+])
+
+GlApi('glVertexAttribIFormat', 'void', [
+	GlArg('attribindex', 'GLuint'),
+	GlArg('size', 'GLuint'),
+	GlArg('type', 'GLenum'),
+	GlArg('relativeoffset', 'GLuint')
+])
+
+GlApi('glVertexAttribLFormat', 'void', [
+	GlArg('attribindex', 'GLuint'),
+	GlArg('size', 'GLuint'),
+	GlArg('type', 'GLenum'),
+	GlArg('relativeoffset', 'GLuint')
+])
+
 conn.commit()
 conn.close()
