@@ -2924,5 +2924,13 @@ GlApi('glVertexAttribL4d', 'void', [
 	GlArg('v3', 'GLdouble')
 ])
 
+GlApi('glVertexAttrib4Nub', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v0', 'GLubyte'),
+	GlArg('v1', 'GLubyte'),
+	GlArg('v2', 'GLubyte'),
+	GlArg('v3', 'GLubyte')
+])
+
 conn.commit()
 conn.close()
