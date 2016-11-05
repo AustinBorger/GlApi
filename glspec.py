@@ -34,7 +34,25 @@ c.execute('''
 	)
 ''')
 
+c.execute('''
+	CREATE TABLE versions
+	(
+		version_id INT PRIMARY KEY NOT NULL,
+		major_version INT NOT NULL,
+		minor_version INT NOT NULL
+	)
+''')
+
 conn.commit()
+
+class GlVersion:
+	def __init__(self, major, minor):
+		global c
+
+		c.execute('''
+			INSERT INTO versions
+			VALUES ((SELECT count(*) FROM versions), %d, %d)
+		''' % (major, minor))
 
 class GlArg:
 	def __init__(self, name, c_type):
@@ -66,6 +84,25 @@ class GlApi:
 			''' % (arg_order, arg.name, arg.c_type))
 
 			arg_order += 1
+
+GlVersion(1, 0)
+GlVersion(1, 1)
+GlVersion(1, 2)
+GlVersion(1, 3)
+GlVersion(1, 4)
+GlVersion(1, 5)
+GlVersion(2, 0)
+GlVersion(2, 1)
+GlVersion(3, 0)
+GlVersion(3, 1)
+GlVersion(3, 2)
+GlVersion(3, 3)
+GlVersion(4, 0)
+GlVersion(4, 1)
+GlVersion(4, 2)
+GlVersion(4, 3)
+GlVersion(4, 4)
+GlVersion(4, 5)
 
 GlApi('glActiveShaderProgram', 'void', [
 	GlArg('pipeline', 'GLuint'),
