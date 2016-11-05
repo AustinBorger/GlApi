@@ -3215,5 +3215,30 @@ GlApi('glVertexAttribLFormat', 'void', [
 	GlArg('relativeoffset', 'GLuint')
 ])
 
+GlApi('glVertexAttribPointer', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('size', 'GLint'),
+	GlArg('type', 'GLenum'),
+	GlArg('normalized', 'GLboolean'),
+	GlArg('stride', 'GLsizei'),
+	GlArg('pointer', 'const GLvoid *')
+])
+
+GlApi('glVertexAttribIPointer', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('size', 'GLint'),
+	GlArg('type', 'GLenum'),
+	GlArg('stride', 'GLsizei'),
+	GlArg('pointer', 'const GLvoid *')
+])
+
+GlApi('glVertexAttribLPointer', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('size', 'GLint'),
+	GlArg('type', 'GLenum'),
+	GlArg('stride', 'GLsizei'),
+	GlArg('pointer', 'const GLvoid *')
+])
+
 conn.commit()
 conn.close()
