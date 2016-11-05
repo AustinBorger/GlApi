@@ -2241,5 +2241,31 @@ GlApi('glSamplerParameterIuiv', 'void', [
 	GlArg('params', 'const GLuint *')
 ])
 
+GlApi('glScissor', 'void', [
+	GlArg('x', 'GLint'),
+	GlArg('y', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei')
+])
+
+GlApi('glScissorArrayv', 'void', [
+	GlArg('first', 'GLuint'),
+	GlArg('count', 'GLsizei'),
+	GlArg('v', 'const GLint *')
+])
+
+GlApi('glScissorIndexed', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('left', 'GLint'),
+	GlArg('bottom', 'GLint'),
+	GlArg('width', 'GLsizei'),
+	GlArg('height', 'GLsizei')
+])
+
+GlApi('glScissorIndexedv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLint *')
+])
+
 conn.commit()
 conn.close()
