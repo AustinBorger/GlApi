@@ -3052,5 +3052,80 @@ GlApi('glVertexAttribL4dv', 'void', [
 	GlArg('v', 'const GLdouble *')
 ])
 
+GlApi('glVertexAttrib4iv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLint *')
+])
+
+GlApi('glVertexAttrib4bv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLbyte *')
+])
+
+GlApi('glVertexAttrib4ubv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLubyte *')
+])
+
+GlApi('glVertexAttrib4usv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLushort *')
+])
+
+GlApi('glVertexAttrib4uiv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLuint *')
+])
+
+GlApi('glVertexAttrib4Nbv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLbyte *')
+])
+
+GlApi('glVertexAttrib4Nsv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLshort *')
+])
+
+GlApi('glVertexAttrib4Niv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLint *')
+])
+
+GlApi('glVertexAttrib4Nubv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLubyte *')
+])
+
+GlApi('glVertexAttrib4Nusv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLushort *')
+])
+
+GlApi('glVertexAttrib4Nuiv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLuiv *')
+])
+
+GlApi('glVertexAttribI4bv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLbyte *')
+])
+
+GlApi('glVertexAttribI4ubv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLubyte *')
+])
+
+GlApi('glVertexAttribI4sv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLshort *')
+])
+
+GlApi('glVertexAttribI4usv', 'void', [
+	GlArg('index', 'GLuint'),
+	GlArg('v', 'const GLushort *')
+])
+
 conn.commit()
 conn.close()
