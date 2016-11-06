@@ -331,6 +331,19 @@ glBindAttribLocation = GlApi('glBindAttribLocation', 'void', [
 	GlArg('name', 'const GLchar *')
 ])
 
+GlAvailability(glBindAttribLocation, glv_2_0)
+GlAvailability(glBindAttribLocation, glv_2_1)
+GlAvailability(glBindAttribLocation, glv_3_0)
+GlAvailability(glBindAttribLocation, glv_3_1)
+GlAvailability(glBindAttribLocation, glv_3_2)
+GlAvailability(glBindAttribLocation, glv_3_3)
+GlAvailability(glBindAttribLocation, glv_4_0)
+GlAvailability(glBindAttribLocation, glv_4_1)
+GlAvailability(glBindAttribLocation, glv_4_2)
+GlAvailability(glBindAttribLocation, glv_4_3)
+GlAvailability(glBindAttribLocation, glv_4_4)
+GlAvailability(glBindAttribLocation, glv_4_5)
+
 glBindBuffer = GlApi('glBindBuffer', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('buffer', 'GLuint')
