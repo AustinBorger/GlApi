@@ -349,6 +349,20 @@ glBindBuffer = GlApi('glBindBuffer', 'void', [
 	GlArg('buffer', 'GLuint')
 ])
 
+GlAvailability(glBindBuffer, glv_1_5)
+GlAvailability(glBindBuffer, glv_2_0)
+GlAvailability(glBindBuffer, glv_2_1)
+GlAvailability(glBindBuffer, glv_3_0)
+GlAvailability(glBindBuffer, glv_3_1)
+GlAvailability(glBindBuffer, glv_3_2)
+GlAvailability(glBindBuffer, glv_3_3)
+GlAvailability(glBindBuffer, glv_4_0)
+GlAvailability(glBindBuffer, glv_4_1)
+GlAvailability(glBindBuffer, glv_4_2)
+GlAvailability(glBindBuffer, glv_4_3)
+GlAvailability(glBindBuffer, glv_4_4)
+GlAvailability(glBindBuffer, glv_4_5)
+
 glBindBufferBase = GlApi('glBindBufferBase', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('index', 'GLuint'),
