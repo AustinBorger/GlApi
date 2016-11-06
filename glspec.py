@@ -263,79 +263,79 @@ glBindSamplers = GlApi('glBindSamplers', 'void', [
 	GlArg('samplers', 'const GLuint *')
 ])
 
-GlApi('glBindTexture', 'void', [
+glBindTexture = GlApi('glBindTexture', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('texture', 'GLuint')
 ])
 
-GlApi('glBindTextures', 'void', [
+glBindTextures = GlApi('glBindTextures', 'void', [
 	GlArg('first', 'GLuint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('textures', 'const GLuint *')
 ])
 
-GlApi('glBindTransformFeedback', 'void', [
+glBindTransformFeedback = GlApi('glBindTransformFeedback', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('id', 'GLuint')
 ])
 
-GlApi('glBindVertexArray', 'void', [
+glBindVertexArray = GlApi('glBindVertexArray', 'void', [
 	GlArg('array', 'GLuint')
 ])
 
-GlApi('glBindVertexBuffer', 'void', [
+glBindVertexBuffer = GlApi('glBindVertexBuffer', 'void', [
 	GlArg('bindingindex', 'GLuint'),
 	GlArg('buffer', 'GLuint'),
 	GlArg('offset', 'GLintptr'),
 	GlArg('stride', 'GLintptr')
 ])
 
-GlApi('glBlendColor', 'void', [
+glBlendColor = GlApi('glBlendColor', 'void', [
 	GlArg('red', 'GLfloat'),
 	GlArg('green', 'GLfloat'),
 	GlArg('blue', 'GLfloat'),
 	GlArg('alpha', 'GLfloat')
 ])
 
-GlApi('glBlendEquation', 'void', [
+glBlendEquation = GlApi('glBlendEquation', 'void', [
 	GlArg('mode', 'GLenum')
 ])
 
-GlApi('glBlendEquationi', 'void', [
+glBlendEquationi = GlApi('glBlendEquationi', 'void', [
 	GlArg('buf', 'GLuint'),
 	GlArg('mode', 'GLenum')
 ])
 
-GlApi('glBlendEquationSeparate', 'void', [
+glBlendEquationSeparate = GlApi('glBlendEquationSeparate', 'void', [
 	GlArg('modeRGB', 'GLenum'),
 	GlArg('modeAlpha', 'GLenum')
 ])
 
-GlApi('glBlendEquationSeparatei', 'void', [
+glBlendEquationSeparatei = GlApi('glBlendEquationSeparatei', 'void', [
 	GlArg('buf', 'GLuint'),
 	GlArg('modeRGB', 'GLenum'),
 	GlArg('modeAlpha', 'GLenum')
 ])
 
-GlApi('glBlendFunc', 'void', [
+glBlendFunc = GlApi('glBlendFunc', 'void', [
 	GlArg('sfactor', 'GLenum'),
 	GlArg('dfactor', 'GLenum')
 ])
 
-GlApi('glBlendFunci', 'void', [
+glBlendFunci = GlApi('glBlendFunci', 'void', [
 	GlArg('buf', 'GLuint'),
 	GlArg('sfactor', 'GLenum'),
 	GlArg('dfactor', 'GLenum')
 ])
 
-GlApi('glBlendFuncSeparate', 'void', [
+glBlendFuncSeparate = GlApi('glBlendFuncSeparate', 'void', [
 	GlArg('srcRGB', 'GLenum'),
 	GlArg('dstRGB', 'GLenum'),
 	GlArg('srcAlpha', 'GLenum'),
 	GlArg('dstAlpha', 'GLenum')
 ])
 
-GlApi('glBlendFuncSeparatei', 'void', [
+glBlendFuncSeparatei = GlApi('glBlendFuncSeparatei', 'void', [
 	GlArg('buf', 'GLuint'),
 	GlArg('srcRGB', 'GLenum'),
 	GlArg('dstRGB', 'GLenum'),
@@ -343,7 +343,7 @@ GlApi('glBlendFuncSeparatei', 'void', [
 	GlArg('dstAlpha', 'GLenum')
 ])
 
-GlApi('glBlitFramebuffer', 'void', [
+glBlitFramebuffer = GlApi('glBlitFramebuffer', 'void', [
 	GlArg('srcX0', 'GLint'),
 	GlArg('srcY0', 'GLint'),
 	GlArg('srcX1', 'GLint'),
@@ -356,66 +356,66 @@ GlApi('glBlitFramebuffer', 'void', [
 	GlArg('filter', 'GLenum')
 ])
 
-GlApi('glBufferData', 'void', [
+glBufferData = GlApi('glBufferData', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('ize', 'GLsizeiptr'),
 	GlArg('data', 'const GLvoid *'),
 	GlArg('usage', 'GLenum')
 ])
 
-GlApi('glBufferStorage', 'void', [
+glBufferStorage = GlApi('glBufferStorage', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('size', 'GLsizeiptr'),
 	GlArg('data', 'const GLvoid *'),
 	GlArg('flags', 'GLbitfield')
 ])
 
-GlApi('glBufferSubData', 'void', [
+glBufferSubData = GlApi('glBufferSubData', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('offset', 'GLintptr'),
 	GlArg('size', 'GLsizeiptr'),
 	GlArg('data', 'const GLvoid *')
 ])
 
-GlApi('glCheckFramebufferStatus', 'GLenum', [
+glCheckFramebufferStatus = GlApi('glCheckFramebufferStatus', 'GLenum', [
 	GlArg('target', 'GLenum')
 ])
 
-GlApi('glClampColor', 'void', [
+glClampColor = GlApi('glClampColor', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('clamp', 'GLenum')
 ])
 
-GlApi('glClear', 'void', [
+glClear = GlApi('glClear', 'void', [
 	GlArg('mask', 'GLbitfield')
 ])
 
-GlApi('glClearBufferiv', 'void', [
+glClearBufferiv = GlApi('glClearBufferiv', 'void', [
 	GlArg('buffer', 'GLenum'),
 	GlArg('drawBuffer', 'GLint'),
 	GlArg('value', 'const GLint *')
 ])
 
-GlApi('glClearBufferuiv', 'void', [
+glClearBufferuiv = GlApi('glClearBufferuiv', 'void', [
 	GlArg('buffer', 'GLenum'),
 	GlArg('drawBuffer', 'GLint'),
 	GlArg('value', 'const GLuint *')
 ])
 
-GlApi('glClearBufferfv', 'void', [
+glClearBufferfv = GlApi('glClearBufferfv', 'void', [
 	GlArg('buffer', 'GLenum'),
 	GlArg('drawBuffer', 'GLint'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glClearBufferfi', 'void', [
+glClearBufferfi = GlApi('glClearBufferfi', 'void', [
 	GlArg('buffer', 'GLenum'),
 	GlArg('drawBuffer', 'GLint'),
 	GlArg('depth', 'GLfloat'),
 	GlArg('stencil', 'GLint')
 ])
 
-GlApi('glClearBufferData', 'void', [
+glClearBufferData = GlApi('glClearBufferData', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('internalformat', 'GLenum'),
 	GlArg('format', 'GLenum'),
@@ -423,7 +423,7 @@ GlApi('glClearBufferData', 'void', [
 	GlArg('data', 'const void *')
 ])
 
-GlApi('glClearBufferSubData', 'void', [
+glClearBufferSubData = GlApi('glClearBufferSubData', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('internalformat', 'GLenum'),
 	GlArg('offset', 'GLintptr'),
@@ -433,26 +433,26 @@ GlApi('glClearBufferSubData', 'void', [
 	GlArg('data', 'const void *')
 ])
 
-GlApi('glClearColor', 'void', [
+glClearColor = GlApi('glClearColor', 'void', [
 	GlArg('red', 'GLfloat'),
 	GlArg('green', 'GLfloat'),
 	GlArg('blue', 'GLfloat'),
 	GlArg('alpha', 'GLfloat')
 ])
 
-GlApi('glClearDepth', 'void', [
+glClearDepth = GlApi('glClearDepth', 'void', [
 	GlArg('depth', 'GLdouble')
 ])
 
-GlApi('glClearDepthf', 'void', [
+glClearDepthf = GlApi('glClearDepthf', 'void', [
 	GlArg('depth', 'GLfloat')
 ])
 
-GlApi('glClearStencil', 'void', [
+glClearStencil = GlApi('glClearStencil', 'void', [
 	GlArg('s', 'GLint')
 ])
 
-GlApi('glClearTexImage', 'void', [
+glClearTexImage = GlApi('glClearTexImage', 'void', [
 	GlArg('texture', 'GLuint'),
 	GlArg('level', 'GLint'),
 	GlArg('format', 'GLenum'),
@@ -460,7 +460,7 @@ GlApi('glClearTexImage', 'void', [
 	GlArg('data', 'const void *')
 ])
 
-GlApi('glClearTexSubImage', 'void', [
+glClearTexSubImage = GlApi('glClearTexSubImage', 'void', [
 	GlArg('texture', 'GLuint'),
 	GlArg('level', 'GLint'),
 	GlArg('xoffset', 'GLint'),
@@ -474,20 +474,20 @@ GlApi('glClearTexSubImage', 'void', [
 	GlArg('data', 'const void *')
 ])
 
-GlApi('glClientWaitSync', 'GLenum', [
+glClientWaitSync = GlApi('glClientWaitSync', 'GLenum', [
 	GlArg('sync', 'GLsync'),
 	GlArg('flags', 'GLbitfield'),
 	GlArg('timeout', 'GLuint64')
 ])
 
-GlApi('glColorMask', 'void', [
+glColorMask = GlApi('glColorMask', 'void', [
 	GlArg('red', 'GLboolean'),
 	GlArg('green', 'GLboolean'),
 	GlArg('blue', 'GLboolean'),
 	GlArg('alpha', 'GLboolean')
 ])
 
-GlApi('glColorMaski', 'void', [
+glColorMaski = GlApi('glColorMaski', 'void', [
 	GlArg('buf', 'GLuint'),
 	GlArg('red', 'GLboolean'),
 	GlArg('green', 'GLboolean'),
@@ -495,7 +495,7 @@ GlApi('glColorMaski', 'void', [
 	GlArg('alpha', 'GLboolean')
 ])
 
-GlApi('glCompileShader', 'void', [
+glCompileShader = GlApi('glCompileShader', 'void', [
 	GlArg('shader', 'GLuint')
 ])
 
@@ -568,7 +568,7 @@ GlApi('glCompressedTexSubImage3D', 'void', [
 	GlArg('data', 'const GLvoid *')
 ])
 
-GlApi('glCopyBufferSubData', 'void', [
+glCopyBufferSubData = GlApi('glCopyBufferSubData', 'void', [
 	GlArg('readtarget', 'GLenum'),
 	GlArg('writetarget', 'GLenum'),
 	GlArg('readoffset', 'GLintptr'),
@@ -576,7 +576,7 @@ GlApi('glCopyBufferSubData', 'void', [
 	GlArg('size', 'GLsizeiptr')
 ])
 
-GlApi('glCopyImageSubData', 'void', [
+glCopyImageSubData = GlApi('glCopyImageSubData', 'void', [
 	GlArg('srcName', 'GLuint'),
 	GlArg('srcTarget', 'GLenum'),
 	GlArg('srcLevel', 'GLint'),
@@ -647,7 +647,7 @@ GlApi('glCopyTexSubImage3D', 'void', [
 	GlArg('height', 'GLsizei')
 ])
 
-GlApi('glBindVertexBuffers', 'void', [
+glBindVertexBuffers = GlApi('glBindVertexBuffers', 'void', [
 	GlArg('first', 'GLuint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('buffers', 'const GLuint *'),
@@ -655,28 +655,28 @@ GlApi('glBindVertexBuffers', 'void', [
 	GlArg('strides', 'const GLsizei *')
 ])
 
-GlApi('glCreateProgram', 'GLuint', [])
+glCreateProgram = GlApi('glCreateProgram', 'GLuint', [])
 
-GlApi('glCreateShaders', 'GLuint', [
+glCreateShaders = GlApi('glCreateShaders', 'GLuint', [
 	GlArg('shaderType', 'GLenum')
 ])
 
-GlApi('glCreateShaderProgramv', 'GLuint', [
+glCreateShaderProgramv = GlApi('glCreateShaderProgramv', 'GLuint', [
 	GlArg('type', 'GLenum'),
 	GlArg('count', 'GLsizei'),
 	GlArg('strings', 'const char **')
 ])
 
-GlApi('glCullFace', 'void', [
+glCullFace = GlApi('glCullFace', 'void', [
 	GlArg('mode', 'GLenum')
 ])
 
-GlApi('glDebugMessageCallback', 'void', [
+glDebugMessageCallback = GlApi('glDebugMessageCallback', 'void', [
 	GlArg('callback', 'DEBUGPROC'),
 	GlArg('userParam', 'void *')
 ])
 
-GlApi('glDebugMessageControl', 'void', [
+glDebugMessageControl = GlApi('glDebugMessageControl', 'void', [
 	GlArg('source', 'GLenum'),
 	GlArg('type', 'GLenum'),
 	GlArg('severity', 'GLenum'),
@@ -685,7 +685,7 @@ GlApi('glDebugMessageControl', 'void', [
 	GlArg('enabled', 'GLboolean')
 ])
 
-GlApi('glDebugMessageInsert', 'void', [
+glDebugMessageInsert = GlApi('glDebugMessageInsert', 'void', [
 	GlArg('source', 'GLenum'),
 	GlArg('type', 'GLenum'),
 	GlArg('id', 'GLuint'),
@@ -694,153 +694,153 @@ GlApi('glDebugMessageInsert', 'void', [
 	GlArg('message', 'const char *')
 ])
 
-GlApi('glDeleteBuffers', 'void', [
+glDeleteBuffers = GlApi('glDeleteBuffers', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('buffers', 'const GLuint *')
 ])
 
-GlApi('glDeleteFramebuffers', 'void', [
+glDeleteFramebuffers = GlApi('glDeleteFramebuffers', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('framebuffers', 'GLuint *')
 ])
 
-GlApi('glDeleteProgram', 'void', [
+glDeleteProgram = GlApi('glDeleteProgram', 'void', [
 	GlArg('program', 'GLuint')
 ])
 
-GlApi('glDeleteProgramPipelines', 'void', [
+glDeleteProgramPipelines = GlApi('glDeleteProgramPipelines', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('pipelines', 'const GLuint *')
 ])
 
-GlApi('glDeleteQueries', 'void', [
+glDeleteQueries = GlApi('glDeleteQueries', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('ids', 'const GLuint *')
 ])
 
-GlApi('glDeleteRenderbuffers', 'void', [
+glDeleteRenderbuffers = GlApi('glDeleteRenderbuffers', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('renderbuffers', 'GLuint *')
 ])
 
-GlApi('glDeleteSamplers', 'void', [
+glDeleteSamplers = GlApi('glDeleteSamplers', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('samplers', 'const GLuint *')
 ])
 
-GlApi('glDeleteShader', 'void', [
+glDeleteShader = GlApi('glDeleteShader', 'void', [
 	GlArg('shader', 'GLuint')
 ])
 
-GlApi('glDeleteSync', 'void', [
+glDeleteSync = GlApi('glDeleteSync', 'void', [
 	GlArg('sync', 'GLsync')
 ])
 
-GlApi('glDeleteTextures', 'void', [
+glDeleteTextures = GlApi('glDeleteTextures', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('textures', 'const GLuint *')
 ])
 
-GlApi('glDeleteTransformFeedbacks', 'void', [
+glDeleteTransformFeedbacks = GlApi('glDeleteTransformFeedbacks', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('ids', 'const GLuint *')
 ])
 
-GlApi('glDeleteVertexArrays', 'void', [
+glDeleteVertexArrays = GlApi('glDeleteVertexArrays', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('arrays', 'const GLuint *')
 ])
 
-GlApi('glDepthFunc', 'void', [
+glDepthFunc = GlApi('glDepthFunc', 'void', [
 	GlArg('func', 'GLenum')
 ])
 
-GlApi('glDepthMask', 'void', [
+glDepthMask = GlApi('glDepthMask', 'void', [
 	GlArg('flag', 'GLboolean')
 ])
 
-GlApi('glDepthRange', 'void', [
+glDepthRange = GlApi('glDepthRange', 'void', [
 	GlArg('nearVal', 'GLdouble'),
 	GlArg('farVal', 'GLdouble')
 ])
 
-GlApi('glDepthRangef', 'void', [
+glDepthRangef = GlApi('glDepthRangef', 'void', [
 	GlArg('nearVal', 'GLfloat'),
 	GlArg('farVal', 'GLfloat')
 ])
 
-GlApi('glDepthRangeArrayv', 'void', [
+glDepthRangeArrayv = GlApi('glDepthRangeArrayv', 'void', [
 	GlArg('first', 'GLuint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('v', 'const GLdouble *')
 ])
 
-GlApi('glDepthRangeIndexed', 'void', [
+glDepthRangeIndexed = GlApi('glDepthRangeIndexed', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('nearVal', 'GLdouble'),
 	GlArg('farVal', 'GLdouble')
 ])
 
-GlApi('glDetatchShader', 'void', [
+glDetatchShader = GlApi('glDetatchShader', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('shader', 'GLuint')
 ])
 
-GlApi('glEnable', 'void', [
+glEnable = GlApi('glEnable', 'void', [
 	GlArg('cap', 'GLenum')
 ])
 
-GlApi('glDisable', 'void', [
+glDisable = GlApi('glDisable', 'void', [
 	GlArg('cap', 'GLenum')
 ])
 
-GlApi('glEnablei', 'void', [
+glEnablei = GlApi('glEnablei', 'void', [
 	GlArg('cap', 'GLenum'),
 	GlArg('index', 'GLuint')
 ])
 
-GlApi('glDisablei', 'void', [
+glDisablei = GlApi('glDisablei', 'void', [
 	GlArg('cap', 'GLenum'),
 	GlArg('index', 'GLuint')
 ])
 
-GlApi('glEnableVertexAttribArray', 'void', [
+glEnableVertexAttribArray = GlApi('glEnableVertexAttribArray', 'void', [
 	GlArg('index', 'GLuint')
 ])
 
-GlApi('glDisableVertexAttribArray', 'void', [
+glDisableVertexAttribArray = GlApi('glDisableVertexAttribArray', 'void', [
 	GlArg('index', 'GLuint')
 ])
 
-GlApi('glDispatchCompute', 'void', [
+glDispatchCompute = GlApi('glDispatchCompute', 'void', [
 	GlArg('num_groups_x', 'GLuint'),
 	GlArg('num_groups_y', 'GLuint'),
 	GlArg('num_groups_z', 'GLuint')
 ])
 
-GlApi('glDispatchComputeIndirect', 'void', [
+glDispatchComputeIndirect = GlApi('glDispatchComputeIndirect', 'void', [
 	GlArg('indirect', 'GLintptr')
 ])
 
-GlApi('glDrawArrays', 'void', [
+glDrawArrays = GlApi('glDrawArrays', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('first', 'GLint'),
 	GlArg('count', 'GLsizei')
 ])
 
-GlApi('glDrawArraysIndirect', 'void', [
+glDrawArraysIndirect = GlApi('glDrawArraysIndirect', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('indirect', 'const void *')
 ])
 
-GlApi('glDrawArraysInstanced', 'void', [
+glDrawArraysInstanced = GlApi('glDrawArraysInstanced', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('first', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('primcount', 'GLsizei')
 ])
 
-GlApi('glDrawArraysInstancedBaseInstance', 'void', [
+glDrawArraysInstancedBaseInstance = GlApi('glDrawArraysInstancedBaseInstance', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('first', 'GLint'),
 	GlArg('count', 'GLsizei'),
@@ -848,23 +848,23 @@ GlApi('glDrawArraysInstancedBaseInstance', 'void', [
 	GlArg('baseinstance', 'GLuint')
 ])
 
-GlApi('glDrawBuffer', 'void', [
+glDrawBuffer = GlApi('glDrawBuffer', 'void', [
 	GlArg('mode', 'GLenum')
 ])
 
-GlApi('glDrawBuffers', 'void', [
+glDrawBuffers = GlApi('glDrawBuffers', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('bufs', 'const GLenum *')
 ])
 
-GlApi('glDrawElements', 'void', [
+glDrawElements = GlApi('glDrawElements', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('count', 'GLsizei'),
 	GlArg('type', 'GLenum'),
 	GlArg('indices', 'const GLvoid *')
 ])
 
-GlApi('glDrawElementsBaseVertex', 'void', [
+glDrawElementsBaseVertex = GlApi('glDrawElementsBaseVertex', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('count', 'GLsizei'),
 	GlArg('type', 'GLenum'),
@@ -872,13 +872,13 @@ GlApi('glDrawElementsBaseVertex', 'void', [
 	GlArg('basevertex', 'GLint')
 ])
 
-GlApi('glDrawElementsIndirect', 'void', [
+glDrawElementsIndirect = GlApi('glDrawElementsIndirect', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('type', 'GLenum'),
 	GlArg('indirect', 'const void *')
 ])
 
-GlApi('glDrawElementsInstanced', 'void', [
+glDrawElementsInstanced = GlApi('glDrawElementsInstanced', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('count', 'GLsizei'),
 	GlArg('type', 'GLenum'),
@@ -886,7 +886,7 @@ GlApi('glDrawElementsInstanced', 'void', [
 	GlArg('primcount', 'GLsizei')
 ])
 
-GlApi('glDrawElementsInstancedBaseInstance', 'void', [
+glDrawElementsInstancedBaseInstance = GlApi('glDrawElementsInstancedBaseInstance', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('count', 'GLsizei'),
 	GlArg('type', 'GLenum'),
@@ -895,7 +895,7 @@ GlApi('glDrawElementsInstancedBaseInstance', 'void', [
 	GlArg('baseinstance', 'GLuint')
 ])
 
-GlApi('glDrawElementsInstancedBaseVertex', 'void', [
+glDrawElementsInstancedBaseVertex = GlApi('glDrawElementsInstancedBaseVertex', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('count', 'GLsizei'),
 	GlArg('type', 'GLenum'),
@@ -904,7 +904,7 @@ GlApi('glDrawElementsInstancedBaseVertex', 'void', [
 	GlArg('basevertex', 'GLint')
 ])
 
-GlApi('glDrawElementsInstanceBaseVertexBaseInstance', 'void', [
+glDrawElementsInstanceBaseVertexBaseInstance = GlApi('glDrawElementsInstanceBaseVertexBaseInstance', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('count', 'GLsizei'),
 	GlArg('type', 'GLenum'),
@@ -914,7 +914,7 @@ GlApi('glDrawElementsInstanceBaseVertexBaseInstance', 'void', [
 	GlArg('baseinstance', 'GLuint')
 ])
 
-GlApi('glDrawRangeElements', 'void', [
+glDrawRangeElements = GlApi('glDrawRangeElements', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('start', 'GLuint'),
 	GlArg('end', 'GLuint'),
@@ -923,7 +923,7 @@ GlApi('glDrawRangeElements', 'void', [
 	GlArg('indices', 'const GLvoid *')
 ])
 
-GlApi('glDrawRangeElementsBaseVertex', 'void', [
+glDrawRangeElementsBaseVertex = GlApi('glDrawRangeElementsBaseVertex', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('start', 'GLuint'),
 	GlArg('end', 'GLuint'),
@@ -933,74 +933,66 @@ GlApi('glDrawRangeElementsBaseVertex', 'void', [
 	GlArg('basevertex', 'GLint')
 ])
 
-GlApi('glDrawTransformFeedback', 'void', [
+glDrawTransformFeedback = GlApi('glDrawTransformFeedback', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('id', 'GLuint')
 ])
 
-GlApi('glDrawTransformFeedbackInstanced', 'void', [
+glDrawTransformFeedbackInstanced = GlApi('glDrawTransformFeedbackInstanced', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('id', 'GLuint'),
 	GlArg('instancecount', 'GLsizei')
 ])
 
-GlApi('glDrawTransformFeedbackStream', 'void', [
+glDrawTransformFeedbackStream = GlApi('glDrawTransformFeedbackStream', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('id', 'GLuint'),
 	GlArg('stream', 'GLuint')
 ])
 
-GlApi('glDrawTransformFeedbackStreamInstanced', 'void', [
+glDrawTransformFeedbackStreamInstanced = GlApi('glDrawTransformFeedbackStreamInstanced', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('id', 'GLuint'),
 	GlArg('stream', 'GLuint'),
 	GlArg('instancecount', 'GLsizei')
 ])
 
-GlApi('glFenceSync', 'GLsync', [
+glFenceSync = GlApi('glFenceSync', 'GLsync', [
 	GlArg('condition', 'GLenum'),
 	GlArg('flags', 'GLbitfield')
 ])
 
-GlApi('glFinish', 'void', [])
+glFinish = GlApi('glFinish', 'void', [])
 
-GlApi('glFlush', 'void', [])
+glFlush = GlApi('glFlush', 'void', [])
 
-GlApi('glFlushMappedBufferRange', 'void', [
+glFlushMappedBufferRange = GlApi('glFlushMappedBufferRange', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('offset', 'GLintptr'),
 	GlArg('length', 'GLsizeiptr')
 ])
 
-GlApi('glFramebufferParameteri', 'void', [
+glFramebufferParameteri = GlApi('glFramebufferParameteri', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('param', 'GLint')
 ])
 
-GlApi('glFramebufferRenderbuffer', 'void', [
+glFramebufferRenderbuffer = GlApi('glFramebufferRenderbuffer', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('attachment', 'GLenum'),
 	GlArg('renderbuffertarget', 'GLenum'),
 	GlArg('renderbuffer', 'GLuint')
 ])
 
-GlApi('glFramebufferTexture', 'void', [
+glFramebufferTexture = GlApi('glFramebufferTexture', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('attachment', 'GLenum'),
 	GlArg('texture', 'GLuint'),
 	GlArg('level', 'GLint')
 ])
 
-GlApi('glFramebufferTexture1D', 'void', [
-	GlArg('target', 'GLenum'),
-	GlArg('attachment', 'GLenum'),
-	GlArg('textarget', 'GLenum'),
-	GlArg('texture', 'GLuint'),
-	GlArg('level', 'GLint')
-])
-
-GlApi('glFramebufferTexture2D', 'void', [
+glFramebufferTexture1D = GlApi('glFramebufferTexture1D', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('attachment', 'GLenum'),
 	GlArg('textarget', 'GLenum'),
@@ -1008,7 +1000,15 @@ GlApi('glFramebufferTexture2D', 'void', [
 	GlArg('level', 'GLint')
 ])
 
-GlApi('glFramebufferTexture3D', 'void', [
+glFramebufferTexture2D = GlApi('glFramebufferTexture2D', 'void', [
+	GlArg('target', 'GLenum'),
+	GlArg('attachment', 'GLenum'),
+	GlArg('textarget', 'GLenum'),
+	GlArg('texture', 'GLuint'),
+	GlArg('level', 'GLint')
+])
+
+glFramebufferTexture3D = GlApi('glFramebufferTexture3D', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('attachment', 'GLenum'),
 	GlArg('textarget', 'GLenum'),
@@ -1017,7 +1017,7 @@ GlApi('glFramebufferTexture3D', 'void', [
 	GlArg('layer', 'GLint')
 ])
 
-GlApi('glFramebufferTextureLayer', 'void', [
+glFramebufferTextureLayer = GlApi('glFramebufferTextureLayer', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('attachment', 'GLenum'),
 	GlArg('texture', 'GLuint'),
@@ -1025,80 +1025,80 @@ GlApi('glFramebufferTextureLayer', 'void', [
 	GlArg('layer', 'GLint')
 ])
 
-GlApi('glFrontFace', 'void', [
+glFrontFace = GlApi('glFrontFace', 'void', [
 	GlArg('mode', 'GLenum')
 ])
 
-GlApi('glGenBuffers', 'void', [
+glGenBuffers = GlApi('glGenBuffers', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('buffers', 'GLuint *')
 ])
 
-GlApi('glGenerateMipmap', 'void', [
+glGenerateMipmap = GlApi('glGenerateMipmap', 'void', [
 	GlArg('target', 'GLenum')
 ])
 
-GlApi('glGenFramebuffers', 'void', [
+glGenFramebuffers = GlApi('glGenFramebuffers', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('id', 'GLuint *')
 ])
 
-GlApi('glGenProgramPipelines', 'void', [
+glGenProgramPipelines = GlApi('glGenProgramPipelines', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('pipelines', 'GLuint')
 ])
 
-GlApi('glGenQueries', 'void', [
+glGenQueries = GlApi('glGenQueries', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('ids', 'GLuint *')
 ])
 
-GlApi('glGenRenderbuffers', 'void', [
+glGenRenderbuffers = GlApi('glGenRenderbuffers', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('renderbuffers', 'GLuint *')
 ])
 
-GlApi('glGenSamplers', 'void', [
+glGenSamplers = GlApi('glGenSamplers', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('samplers', 'GLuint *')
 ])
 
-GlApi('glGenTextures', 'void', [
+glGenTextures = GlApi('glGenTextures', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('textures', 'GLuint *')
 ])
 
-GlApi('glGenTransformFeedbacks', 'void', [
+glGenTransformFeedbacks = GlApi('glGenTransformFeedbacks', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('ids', 'GLuint *')
 ])
 
-GlApi('glGenVertexArrays', 'void', [
+glGenVertexArrays = GlApi('glGenVertexArrays', 'void', [
 	GlArg('n', 'GLsizei'),
 	GlArg('arrays', 'GLuint *')
 ])
 
-GlApi('glGetBooleanv', 'void', [
+glGetBooleanv = GlApi('glGetBooleanv', 'void', [
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLboolean *')
 ])
 
-GlApi('glGetDoublev', 'void', [
+glGetDoublev = GlApi('glGetDoublev', 'void', [
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLdouble *')
 ])
 
-GlApi('glFloatv', 'void', [
+glFloatv = GlApi('glFloatv', 'void', [
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLfloat *')
 ])
 
-GlApi('glGetIntegerv', 'void', [
+glGetIntegerv = GlApi('glGetIntegerv', 'void', [
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetInteger64v', 'void', [
+glGetInteger64v = GlApi('glGetInteger64v', 'void', [
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint64 *')
 ])
@@ -1133,14 +1133,14 @@ GlApi('glGetInteger64i_v', 'void', [
 	GlArg('data', 'GLint64 *')
 ])
 
-GlApi('glGetActiveAtomicCounterBufferiv', 'void', [
+glGetActiveAtomicCounterBufferiv = GlApi('glGetActiveAtomicCounterBufferiv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('bufferIndex', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetActiveAttrib', 'void', [
+glGetActiveAttrib = GlApi('glGetActiveAttrib', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('index', 'GLuint'),
 	GlArg('bufSize', 'GLsizei'),
@@ -1150,7 +1150,7 @@ GlApi('glGetActiveAttrib', 'void', [
 	GlArg('name', 'GLchar *')
 ])
 
-GlApi('glGetActiveSubroutineName', 'void', [
+glGetActiveSubroutineName = GlApi('glGetActiveSubroutineName', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('shadertype', 'GLenum'),
 	GlArg('index', 'GLuint'),
@@ -1159,7 +1159,7 @@ GlApi('glGetActiveSubroutineName', 'void', [
 	GlArg('name', 'GLchar *')
 ])
 
-GlApi('glGetActiveSubroutineUniformiv', 'void', [
+glGetActiveSubroutineUniformiv = GlApi('glGetActiveSubroutineUniformiv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('shadertype', 'GLenum'),
 	GlArg('index', 'GLuint'),
@@ -1167,7 +1167,7 @@ GlApi('glGetActiveSubroutineUniformiv', 'void', [
 	GlArg('values', 'GLint *')
 ])
 
-GlApi('glGetActiveSubroutineUniformName', 'void', [
+glGetActiveSubroutineUniformName = GlApi('glGetActiveSubroutineUniformName', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('shadertype', 'GLenum'),
 	GlArg('index', 'GLuint'),
@@ -1176,7 +1176,7 @@ GlApi('glGetActiveSubroutineUniformName', 'void', [
 	GlArg('name', 'GLchar *')
 ])
 
-GlApi('glGetActiveUniform', 'void', [
+glGetActiveUniform = GlApi('glGetActiveUniform', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('index', 'GLuint'),
 	GlArg('bufSize', 'GLsizei'),
@@ -1186,14 +1186,14 @@ GlApi('glGetActiveUniform', 'void', [
 	GlArg('name', 'GLchar *')
 ])
 
-GlApi('glGetActiveUniformBlockiv', 'void', [
+glGetActiveUniformBlockiv = GlApi('glGetActiveUniformBlockiv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('uniformBlockIndex', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetActiveUniformBlockName', 'void', [
+glGetActiveUniformBlockName = GlApi('glGetActiveUniformBlockName', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('uniformBlockIndex', 'GLuint'),
 	GlArg('bufSize', 'GLsizei'),
@@ -1201,7 +1201,7 @@ GlApi('glGetActiveUniformBlockName', 'void', [
 	GlArg('uniformBlockName', 'GLchar *')
 ])
 
-GlApi('glGetActiveUniformName', 'void', [
+glGetActiveUniformName = GlApi('glGetActiveUniformName', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('uniformIndex', 'GLuint'),
 	GlArg('bufSize', 'GLsizei'),
@@ -1209,7 +1209,7 @@ GlApi('glGetActiveUniformName', 'void', [
 	GlArg('uniformName', 'GLchar *')
 ])
 
-GlApi('glGetActiveUniformsiv', 'void', [
+glGetActiveUniformsiv = GlApi('glGetActiveUniformsiv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('uniformCount', 'GLsizei'),
 	GlArg('uniformIndices', 'const GLuint *'),
@@ -1217,50 +1217,50 @@ GlApi('glGetActiveUniformsiv', 'void', [
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetAttachedShaders', 'void', [
+glGetAttachedShaders = GlApi('glGetAttachedShaders', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('maxCount', 'GLsizei'),
 	GlArg('count', 'GLsizei *'),
 	GlArg('shaders', 'GLuint *')
 ])
 
-GlApi('glGetAttribLocation', 'GLint', [
+glGetAttribLocation = GlApi('glGetAttribLocation', 'GLint', [
 	GlArg('program', 'GLuint'),
 	GlArg('name', 'const GLchar *')
 ])
 
-GlApi('glGetBufferParameteriv', 'void', [
+glGetBufferParameteriv = GlApi('glGetBufferParameteriv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('value', 'GLenum'),
 	GlArg('data', 'GLint *')
 ])
 
-GlApi('glGetBufferParameteri64v', 'void', [
+glGetBufferParameteri64v = GlApi('glGetBufferParameteri64v', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('value', 'GLenum'),
 	GlArg('data', 'GLint64 *')
 ])
 
-GlApi('glGetBufferPointerv', 'void', [
+glGetBufferPointerv = GlApi('glGetBufferPointerv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLvoid **')
 ])
 
-GlApi('glGetBufferSubData', 'void', [
+glGetBufferSubData = GlApi('glGetBufferSubData', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('offset', 'GLintptr'),
 	GlArg('size', 'GLsizeiptr'),
 	GlArg('data', 'GLvoid *')
 ])
 
-GlApi('glGetCompressedTexImage', 'void', [
+glGetCompressedTexImage = GlApi('glGetCompressedTexImage', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('lod', 'GLint'),
 	GlArg('img', 'GLvoid *')
 ])
 
-GlApi('glGetDebugMessageLog', 'GLuint', [
+glGetDebugMessageLog = GlApi('glGetDebugMessageLog', 'GLuint', [
 	GlArg('count', 'GLuint'),
 	GlArg('bufSize', 'GLsizei'),
 	GlArg('sources', 'GLenum *'),
@@ -1271,32 +1271,32 @@ GlApi('glGetDebugMessageLog', 'GLuint', [
 	GlArg('messageLog', 'GLchar *')
 ])
 
-GlApi('glGetError', 'GLenum', [])
+glGetError = GlApi('glGetError', 'GLenum', [])
 
-GlApi('glGetFragDataIndex', 'GLint', [
+glGetFragDataIndex = GlApi('glGetFragDataIndex', 'GLint', [
 	GlArg('program', 'GLuint'),
 	GlArg('name', 'const char *')
 ])
 
-GlApi('glGetFragDataLocation', 'GLint', [
+glGetFragDataLocation = GlApi('glGetFragDataLocation', 'GLint', [
 	GlArg('program', 'GLuint'),
 	GlArg('name', 'const char *')
 ])
 
-GlApi('glGetFramebufferAttachmentParameteriv', 'void', [
+glGetFramebufferAttachmentParameteriv = GlApi('glGetFramebufferAttachmentParameteriv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('attachment', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetFramebufferParameteriv', 'void', [
+glGetFramebufferParameteriv = GlApi('glGetFramebufferParameteriv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetInternalformativ', 'void', [
+glGetInternalformativ = GlApi('glGetInternalformativ', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('internalformat', 'GLenum'),
 	GlArg('pname', 'GLenum'),
@@ -1304,7 +1304,7 @@ GlApi('glGetInternalformativ', 'void', [
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetInternalformati64v', 'void', [
+glGetInternalformati64v = GlApi('glGetInternalformati64v', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('internalformat', 'GLenum'),
 	GlArg('pname', 'GLenum'),
@@ -1312,13 +1312,13 @@ GlApi('glGetInternalformati64v', 'void', [
 	GlArg('params', 'GLint64 *')
 ])
 
-GlApi('glGetMultisamplefv', 'void', [
+glGetMultisamplefv = GlApi('glGetMultisamplefv', 'void', [
 	GlArg('pname', 'GLenum'),
 	GlArg('index', 'GLuint'),
 	GlArg('val', 'GLfloat *')
 ])
 
-GlApi('glGetObjectLabel', 'void', [
+glGetObjectLabel = GlApi('glGetObjectLabel', 'void', [
 	GlArg('identifier', 'GLenum'),
 	GlArg('name', 'GLuint'),
 	GlArg('bufSize', 'GLsizei'),
@@ -1326,20 +1326,20 @@ GlApi('glGetObjectLabel', 'void', [
 	GlArg('label', 'char *')
 ])
 
-GlApi('glGetObjectPtrLabel', 'void', [
+glGetObjectPtrLabel = GlApi('glGetObjectPtrLabel', 'void', [
 	GlArg('ptr', 'void *'),
 	GlArg('bufSize', 'GLsizei'),
 	GlArg('length', 'GLsizei *'),
 	GlArg('label', 'char *')
 ])
 
-GlApi('glGetProgramiv', 'void', [
+glGetProgramiv = GlApi('glGetProgramiv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetProgramBinary', 'void', [
+glGetProgramBinary = GlApi('glGetProgramBinary', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('bufSize', 'GLsizei'),
 	GlArg('length', 'GLsizei *'),
@@ -1347,34 +1347,34 @@ GlApi('glGetProgramBinary', 'void', [
 	GlArg('binary', 'void *')
 ])
 
-GlApi('glGetProgramInfoLog', 'void', [
+glGetProgramInfoLog = GlApi('glGetProgramInfoLog', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('maxLength', 'GLsizei'),
 	GlArg('length', 'GLsizei *'),
 	GlArg('infoLog', 'GLchar *')
 ])
 
-GlApi('glGetProgramInterfaceiv', 'void', [
+glGetProgramInterfaceiv = GlApi('glGetProgramInterfaceiv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('programInterface', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetProgramPipelineiv', 'void', [
+glGetProgramPipelineiv = GlApi('glGetProgramPipelineiv', 'void', [
 	GlArg('pipeline', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetProgramPipelineInfoLog', 'void', [
+glGetProgramPipelineInfoLog = GlApi('glGetProgramPipelineInfoLog', 'void', [
 	GlArg('pipeline', 'GLuint'),
 	GlArg('bufSize', 'GLsizei'),
 	GlArg('length', 'GLsizei *'),
 	GlArg('infoLog', 'GLchar *')
 ])
 
-GlApi('glGetProgramResourceiv', 'void', [
+glGetProgramResourceiv = GlApi('glGetProgramResourceiv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('programInterface', 'GLenum'),
 	GlArg('index', 'GLuint'),
@@ -1385,25 +1385,25 @@ GlApi('glGetProgramResourceiv', 'void', [
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetProgramResourceLocation', 'GLint', [
+glGetProgramResourceLocation = GlApi('glGetProgramResourceLocation', 'GLint', [
 	GlArg('program', 'GLuint'),
 	GlArg('programInterface', 'GLenum'),
 	GlArg('name', 'const char *')
 ])
 
-GlApi('glGetProgramResourceLocationIndex', 'GLint', [
+glGetProgramResourceLocationIndex = GlApi('glGetProgramResourceLocationIndex', 'GLint', [
 	GlArg('program', 'GLuint'),
 	GlArg('programInterface', 'GLenum'),
 	GlArg('name', 'const char *')
 ])
 
-GlApi('glGetProgramResourceIndex', 'GLuint', [
+glGetProgramResourceIndex = GlApi('glGetProgramResourceIndex', 'GLuint', [
 	GlArg('program', 'GLuint'),
 	GlArg('programInterface', 'GLenum'),
 	GlArg('name', 'const char *')
 ])
 
-GlApi('glGetProgramResourceName', 'void', [
+glGetProgramResourceName = GlApi('glGetProgramResourceName', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('programInterface', 'GLenum'),
 	GlArg('index', 'GLuint'),
@@ -1412,129 +1412,129 @@ GlApi('glGetProgramResourceName', 'void', [
 	GlArg('name', 'char *')
 ])
 
-GlApi('glGetProgramStageiv', 'void', [
+glGetProgramStageiv = GlApi('glGetProgramStageiv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('shadertype', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('values', 'GLint *')
 ])
 
-GlApi('glGetQueryiv', 'void', [
+glGetQueryiv = GlApi('glGetQueryiv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetQueryIndexediv', 'void', [
+glGetQueryIndexediv = GlApi('glGetQueryIndexediv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('index', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetQueryObjectiv', 'void', [
+glGetQueryObjectiv = GlApi('glGetQueryObjectiv', 'void', [
 	GlArg('id', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetQueryObjectuiv', 'void', [
+glGetQueryObjectuiv = GlApi('glGetQueryObjectuiv', 'void', [
 	GlArg('id', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLuint *')
 ])
 
-GlApi('glGetQueryObjecti64v', 'void', [
+glGetQueryObjecti64v = GlApi('glGetQueryObjecti64v', 'void', [
 	GlArg('id', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint64 *')
 ])
 
-GlApi('glGetQueryObjectui64v', 'void', [
+glGetQueryObjectui64v = GlApi('glGetQueryObjectui64v', 'void', [
 	GlArg('id', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLuint64 *')
 ])
 
-GlApi('glGetRenderbufferParameteriv', 'void', [
+glGetRenderbufferParameteriv = GlApi('glGetRenderbufferParameteriv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetSamplerParameterfv', 'void', [
+glGetSamplerParameterfv = GlApi('glGetSamplerParameterfv', 'void', [
 	GlArg('sampler', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLfloat *')
 ])
 
-GlApi('glGetSamplerParameteriv', 'void', [
+glGetSamplerParameteriv = GlApi('glGetSamplerParameteriv', 'void', [
 	GlArg('sampler', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetSamplerParameterIiv', 'void', [
+glGetSamplerParameterIiv = GlApi('glGetSamplerParameterIiv', 'void', [
 	GlArg('sampler', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetSamplerParameterIuiv', 'void', [
+glGetSamplerParameterIuiv = GlApi('glGetSamplerParameterIuiv', 'void', [
 	GlArg('sampler', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLuint *')
 ])
 
-GlApi('glGetShaderiv', 'void', [
+glGetShaderiv = GlApi('glGetShaderiv', 'void', [
 	GlArg('shader', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetShaderInfoLog', 'void', [
+glGetShaderInfoLog = GlApi('glGetShaderInfoLog', 'void', [
 	GlArg('shader', 'GLuint'),
 	GlArg('maxLength', 'GLsizei'),
 	GlArg('length', 'GLsizei *'),
 	GlArg('infoLog', 'GLchar *')
 ])
 
-GlApi('glGetShaderPrecisionFormat', 'void', [
+glGetShaderPrecisionFormat = GlApi('glGetShaderPrecisionFormat', 'void', [
 	GlArg('shaderType', 'GLenum'),
 	GlArg('precisionType', 'GLenum'),
 	GlArg('range', 'GLint *'),
 	GlArg('precision', 'GLint *')
 ])
 
-GlApi('glGetShaderSource', 'void', [
+glGetShaderSource = GlApi('glGetShaderSource', 'void', [
 	GlArg('shader', 'GLuint'),
 	GlArg('bufSize', 'GLsizei'),
 	GlArg('length', 'GLsizei *'),
 	GlArg('source', 'GLchar *')
 ])
 
-GlApi('glGetString', 'const GLubyte *', [
+glGetString = GlApi('glGetString', 'const GLubyte *', [
 	GlArg('name', 'GLenum')
 ])
 
-GlApi('glGetStringi', 'const GLubyte *', [
+glGetStringi = GlApi('glGetStringi', 'const GLubyte *', [
 	GlArg('name', 'GLenum'),
 	GlArg('index', 'GLuint')
 ])
 
-GlApi('glGetSubroutineIndex', 'GLuint', [
+glGetSubroutineIndex = GlApi('glGetSubroutineIndex', 'GLuint', [
 	GlArg('program', 'GLuint'),
 	GlArg('shadertype', 'GLenum'),
 	GlArg('name', 'const GLchar *')
 ])
 
-GlApi('glGetSubroutineUniformLocation', 'GLint', [
+glGetSubroutineUniformLocation = GlApi('glGetSubroutineUniformLocation', 'GLint', [
 	GlArg('program', 'GLuint'),
 	GlArg('shadertype', 'GLenum'),
 	GlArg('name', 'const GLchar *')
 ])
 
-GlApi('glGetSynciv', 'void', [
+glGetSynciv = GlApi('glGetSynciv', 'void', [
 	GlArg('sync', 'GLsync'),
 	GlArg('pname', 'GLenum'),
 	GlArg('bufSize', 'GLsizei'),
@@ -1542,7 +1542,7 @@ GlApi('glGetSynciv', 'void', [
 	GlArg('values', 'GLint *')
 ])
 
-GlApi('glGetTexImage', 'void', [
+glGetTexImage = GlApi('glGetTexImage', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('level', 'GLint'),
 	GlArg('format', 'GLenum'),
@@ -1550,45 +1550,45 @@ GlApi('glGetTexImage', 'void', [
 	GlArg('img', 'GLvoid *')
 ])
 
-GlApi('glGetTexLevelParameterfv', 'void', [
+glGetTexLevelParameterfv = GlApi('glGetTexLevelParameterfv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('level', 'GLint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLfloat *')
 ])
 
-GlApi('glGetTexLevelParameteriv', 'void', [
+glGetTexLevelParameteriv = GlApi('glGetTexLevelParameteriv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('level', 'GLint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetTexParameterfv', 'void', [
+glGetTexParameterfv = GlApi('glGetTexParameterfv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLfloat *')
 ])
 
-GlApi('glGetTexParameteriv', 'void', [
+glGetTexParameteriv = GlApi('glGetTexParameteriv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetTexParameterIiv', 'void', [
+glGetTexParameterIiv = GlApi('glGetTexParameterIiv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetTexParameterIuiv', 'void', [
+glGetTexParameterIuiv = GlApi('glGetTexParameterIuiv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLuint *')
 ])
 
-GlApi('glGetTransformFeedbackVarying', 'void', [
+glGetTransformFeedbackVarying = GlApi('glGetTransformFeedbackVarying', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('index', 'GLuint'),
 	GlArg('bufSize', 'GLsizei'),
@@ -1598,117 +1598,117 @@ GlApi('glGetTransformFeedbackVarying', 'void', [
 	GlArg('name', 'char *')
 ])
 
-GlApi('glGetUniformfv', 'void', [
+glGetUniformfv = GlApi('glGetUniformfv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('params', 'GLfloat *')
 ])
 
-GlApi('glGetUniformiv', 'void', [
+glGetUniformiv = GlApi('glGetUniformiv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetUniformuiv', 'void', [
+glGetUniformuiv = GlApi('glGetUniformuiv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('params', 'GLuint *')
 ])
 
-GlApi('glGetUniformdv', 'void', [
+glGetUniformdv = GlApi('glGetUniformdv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('params', 'GLdouble *')
 ])
 
-GlApi('glGetUniformBlockIndex', 'GLuint', [
+glGetUniformBlockIndex = GlApi('glGetUniformBlockIndex', 'GLuint', [
 	GlArg('program', 'GLuint'),
 	GlArg('uniformBlockName', 'const GLchar *')
 ])
 
-GlApi('glGetUniformIndices', 'void', [
+glGetUniformIndices = GlApi('glGetUniformIndices', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('uniformCount', 'GLsizei'),
 	GlArg('uniformNames', 'const GLchar **'),
 	GlArg('uniformIndices', 'GLuint *')
 ])
 
-GlApi('glGetUniformLocation', 'GLint', [
+glGetUniformLocation = GlApi('glGetUniformLocation', 'GLint', [
 	GlArg('program', 'GLuint'),
 	GlArg('name', 'const GLchar *')
 ])
 
-GlApi('glGetUniformSubroutineuiv', 'void', [
+glGetUniformSubroutineuiv = GlApi('glGetUniformSubroutineuiv', 'void', [
 	GlArg('shadertype', 'GLenum'),
 	GlArg('location', 'GLint'),
 	GlArg('values', 'GLuint *')
 ])
 
-GlApi('glGetVertexAttribdv', 'void', [
+glGetVertexAttribdv = GlApi('glGetVertexAttribdv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLdouble *')
 ])
 
-GlApi('glGetVertexAttribfv', 'void', [
+glGetVertexAttribfv = GlApi('glGetVertexAttribfv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLfloat *')
 ])
 
-GlApi('glGetVertexAttribiv', 'void', [
+glGetVertexAttribiv = GlApi('glGetVertexAttribiv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetVertexAttribIiv', 'void', [
+glGetVertexAttribIiv = GlApi('glGetVertexAttribIiv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLint *')
 ])
 
-GlApi('glGetVertexAttribIuiv', 'void', [
+glGetVertexAttribIuiv = GlApi('glGetVertexAttribIuiv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLuint *')
 ])
 
-GlApi('glGetVertexAttribLdv', 'void', [
+glGetVertexAttribLdv = GlApi('glGetVertexAttribLdv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'GLdouble *')
 ])
 
-GlApi('glGetVertexAttribPointerv', 'void', [
+glGetVertexAttribPointerv = GlApi('glGetVertexAttribPointerv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('pointer', 'GLvoid **')
 ])
 
-GlApi('glHint', 'void', [
+glHint = GlApi('glHint', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('mode', 'GLenum')
 ])
 
-GlApi('glInvalidateBufferData', 'void', [
+glInvalidateBufferData = GlApi('glInvalidateBufferData', 'void', [
 	GlArg('buffer', 'GLuint')
 ])
 
-GlApi('glInvalidateBufferSubData', 'void', [
+glInvalidateBufferSubData = GlApi('glInvalidateBufferSubData', 'void', [
 	GlArg('buffer', 'GLuint'),
 	GlArg('offset', 'GLintptr'),
 	GlArg('length', 'GLsizeiptr')
 ])
 
-GlApi('glInvalidateFramebuffer', 'void', [
+glInvalidateFramebuffer = GlApi('glInvalidateFramebuffer', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('numAttachments', 'GLsizei'),
 	GlArg('attachments', 'const GLenum *')
 ])
 
-GlApi('glInvalidateSubFramebuffer', 'void', [
+glInvalidateSubFramebuffer = GlApi('glInvalidateSubFramebuffer', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('numAttachments', 'GLsizei'),
 	GlArg('attachments', 'const GLenum *'),
@@ -1718,12 +1718,12 @@ GlApi('glInvalidateSubFramebuffer', 'void', [
 	GlArg('height', 'GLint')
 ])
 
-GlApi('glInvalidateTexImage', 'void', [
+glInvalidateTexImage = GlApi('glInvalidateTexImage', 'void', [
 	GlArg('texture', 'GLuint'),
 	GlArg('level', 'GLint')
 ])
 
-GlApi('glInvalidateTexSubImage', 'void', [
+glInvalidateTexSubImage = GlApi('glInvalidateTexSubImage', 'void', [
 	GlArg('texture', 'GLuint'),
 	GlArg('level', 'GLint'),
 	GlArg('xoffset', 'GLint'),
@@ -1734,114 +1734,114 @@ GlApi('glInvalidateTexSubImage', 'void', [
 	GlArg('depth', 'GLsizei')
 ])
 
-GlApi('glIsBuffer', 'GLboolean', [
+glIsBuffer = GlApi('glIsBuffer', 'GLboolean', [
 	GlArg('buffer', 'GLuint')
 ])
 
-GlApi('glIsEnabled', 'GLboolean', [
+glIsEnabled = GlApi('glIsEnabled', 'GLboolean', [
 	GlArg('cap', 'GLenum')
 ])
 
-GlApi('glIsEnabledi', 'GLboolean', [
+glIsEnabledi = GlApi('glIsEnabledi', 'GLboolean', [
 	GlArg('cap', 'GLenum'),
 	GlArg('index', 'GLuint')
 ])
 
-GlApi('glIsFramebuffer', 'GLboolean', [
+glIsFramebuffer = GlApi('glIsFramebuffer', 'GLboolean', [
 	GlArg('framebuffer', 'GLuint')
 ])
 
-GlApi('glIsProgram', 'GLboolean', [
+glIsProgram = GlApi('glIsProgram', 'GLboolean', [
 	GlArg('program', 'GLuint')
 ])
 
-GlApi('glIsProgramPipeline', 'GLboolean', [
+glIsProgramPipeline = GlApi('glIsProgramPipeline', 'GLboolean', [
 	GlArg('pipeline', 'GLuint')
 ])
 
-GlApi('glIsQuery', 'GLboolean', [
+glIsQuery = GlApi('glIsQuery', 'GLboolean', [
 	GlArg('id', 'GLuint')
 ])
 
-GlApi('glIsRenderbuffer', 'GLboolean', [
+glIsRenderbuffer = GlApi('glIsRenderbuffer', 'GLboolean', [
 	GlArg('renderbuffer', 'GLuint')
 ])
 
-GlApi('glIsSampler', 'GLboolean', [
+glIsSampler = GlApi('glIsSampler', 'GLboolean', [
 	GlArg('id', 'GLuint')
 ])
 
-GlApi('glIsShader', 'GLboolean', [
+glIsShader = GlApi('glIsShader', 'GLboolean', [
 	GlArg('shader', 'GLuint')
 ])
 
-GlApi('glIsSync', 'GLboolean', [
+glIsSync = GlApi('glIsSync', 'GLboolean', [
 	GlArg('sync', 'GLsync')
 ])
 
-GlApi('glIsTexture', 'GLboolean', [
+glIsTexture = GlApi('glIsTexture', 'GLboolean', [
 	GlArg('texture', 'GLuint')
 ])
 
-GlApi('glIsTransformFeedback', 'GLboolean', [
+glIsTransformFeedback = GlApi('glIsTransformFeedback', 'GLboolean', [
 	GlArg('id', 'GLuint')
 ])
 
-GlApi('glIsVertexArray', 'GLboolean', [
+glIsVertexArray = GlApi('glIsVertexArray', 'GLboolean', [
 	GlArg('array', 'GLuint')
 ])
 
-GlApi('glLineWidth', 'void', [
+glLineWidth = GlApi('glLineWidth', 'void', [
 	GlArg('width', 'GLfloat')
 ])
 
-GlApi('glLinkProgram', 'void', [
+glLinkProgram = GlApi('glLinkProgram', 'void', [
 	GlArg('program', 'GLuint')
 ])
 
-GlApi('glLogicOp', 'void', [
+glLogicOp = GlApi('glLogicOp', 'void', [
 	GlArg('opcode', 'GLenum')
 ])
 
-GlApi('glMapBuffer', 'void *', [
+glMapBuffer = GlApi('glMapBuffer', 'void *', [
 	GlArg('target', 'GLenum'),
 	GlArg('access', 'GLenum')
 ])
 
-GlApi('glUnmapBuffer', 'GLboolean', [
+glUnmapBuffer = GlApi('glUnmapBuffer', 'GLboolean', [
 	GlArg('target', 'GLenum')
 ])
 
-GlApi('glMapBufferRange', 'void *', [
+glMapBufferRange = GlApi('glMapBufferRange', 'void *', [
 	GlArg('target', 'GLenum'),
 	GlArg('offset', 'GLintptr'),
 	GlArg('length', 'GLsizeiptr'),
 	GlArg('access', 'GLbitfield')
 ])
 
-GlApi('glMemoryBarrier', 'void', [
+glMemoryBarrier = GlApi('glMemoryBarrier', 'void', [
 	GlArg('barriers', 'GLbitfield')
 ])
 
-GlApi('glMinSampleShading', 'void', [
+glMinSampleShading = GlApi('glMinSampleShading', 'void', [
 	GlArg('value', 'GLfloat')
 ])
 
-GlApi('glMultiDrawArrays', 'void', [
+glMultiDrawArrays = GlApi('glMultiDrawArrays', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('first', 'const GLint *'),
 	GlArg('count', 'const GLsizei *'),
 	GlArg('drawcount', 'GLsizei')
 ])
 
-GlApi('glMultiDrawArraysIndirect', 'void', [
+glMultiDrawArraysIndirect = GlApi('glMultiDrawArraysIndirect', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('indirect', 'const void *'),
 	GlArg('drawcount', 'GLsizei'),
 	GlArg('stride', 'GLsizei')
 ])
 
-GlApi('glMultiDrawElements', 'void', [
+glMultiDrawElements = GlApi('glMultiDrawElements', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('count', 'const GLsizei *'),
 	GlArg('type', 'GLenum'),
@@ -1849,7 +1849,7 @@ GlApi('glMultiDrawElements', 'void', [
 	GlArg('drawcount', 'GLsizei')
 ])
 
-GlApi('glMultiDrawElementsBaseVertex', 'void', [
+glMultiDrawElementsBaseVertex = GlApi('glMultiDrawElementsBaseVertex', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('count', 'const GLsizei *'),
 	GlArg('type', 'GLenum'),
@@ -1858,7 +1858,7 @@ GlApi('glMultiDrawElementsBaseVertex', 'void', [
 	GlArg('basevertex', 'const GLint *')
 ])
 
-GlApi('glMultiDrawElementsIndirect', 'void', [
+glMultiDrawElementsIndirect = GlApi('glMultiDrawElementsIndirect', 'void', [
 	GlArg('mode', 'GLenum'),
 	GlArg('type', 'GLenum'),
 	GlArg('indirect', 'const void *'),
@@ -1866,108 +1866,108 @@ GlApi('glMultiDrawElementsIndirect', 'void', [
 	GlArg('stride', 'GLsizei')
 ])
 
-GlApi('glObjectLabel', 'void', [
+glObjectLabel = GlApi('glObjectLabel', 'void', [
 	GlArg('identifier', 'GLenum'),
 	GlArg('name', 'GLuint'),
 	GlArg('length', 'GLsizei'),
 	GlArg('label', 'const char *')
 ])
 
-GlApi('glObjectPtrLabel', 'void', [
+glObjectPtrLabel = GlApi('glObjectPtrLabel', 'void', [
 	GlArg('ptr', 'void *'),
 	GlArg('length', 'GLsizei'),
 	GlArg('label', 'const char *')
 ])
 
-GlApi('glPatchParameteri', 'void', [
+glPatchParameteri = GlApi('glPatchParameteri', 'void', [
 	GlArg('pname', 'GLenum'),
 	GlArg('value', 'GLint')
 ])
 
-GlApi('glPatchParameterfv', 'void', [
+glPatchParameterfv = GlApi('glPatchParameterfv', 'void', [
 	GlArg('pname', 'GLenum'),
 	GlArg('values', 'const GLfloat *')
 ])
 
-GlApi('glPauseTransformFeedback', 'void', [])
+glPauseTransformFeedback = GlApi('glPauseTransformFeedback', 'void', [])
 
-GlApi('glPixelStoref', 'void', [
+glPixelStoref = GlApi('glPixelStoref', 'void', [
 	GlArg('pname', 'GLenum'),
 	GlArg('param', 'GLfloat')
 ])
 
-GlApi('glPixelStorei', 'void', [
+glPixelStorei = GlApi('glPixelStorei', 'void', [
 	GlArg('pname', 'GLenum'),
 	GlArg('param', 'GLint')
 ])
 
-GlApi('glPointParameterf', 'void', [
+glPointParameterf = GlApi('glPointParameterf', 'void', [
 	GlArg('pname', 'GLenum'),
 	GlArg('param', 'GLfloat')
 ])
 
-GlApi('glPointParameteri', 'void', [
+glPointParameteri = GlApi('glPointParameteri', 'void', [
 	GlArg('pname', 'GLenum'),
 	GlArg('param', 'GLint')
 ])
 
-GlApi('glPointParameterfv', 'void', [
+glPointParameterfv = GlApi('glPointParameterfv', 'void', [
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'const GLfloat *')
 ])
 
-GlApi('glPointParameteriv', 'void', [
+glPointParameteriv = GlApi('glPointParameteriv', 'void', [
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'const GLint *')
 ])
 
-GlApi('glPointSize', 'void', [
+glPointSize = GlApi('glPointSize', 'void', [
 	GlArg('size', 'GLfloat')
 ])
 
-GlApi('glPolygonMode', 'void', [
+glPolygonMode = GlApi('glPolygonMode', 'void', [
 	GlArg('face', 'GLenum'),
 	GlArg('mode', 'GLenum')
 ])
 
-GlApi('glPolygonOffset', 'void', [
+glPolygonOffset = GlApi('glPolygonOffset', 'void', [
 	GlArg('factor', 'GLfloat'),
 	GlArg('units', 'GLfloat')
 ])
 
-GlApi('glPopDebugGroup', 'void', [])
+glPopDebugGroup = GlApi('glPopDebugGroup', 'void', [])
 
-GlApi('glPrimitiveRestartIndex', 'void', [
+glPrimitiveRestartIndex = GlApi('glPrimitiveRestartIndex', 'void', [
 	GlArg('index', 'GLuint')
 ])
 
-GlApi('glProgramBinary', 'void', [
+glProgramBinary = GlApi('glProgramBinary', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('binaryFormat', 'GLenum'),
 	GlArg('binary', 'const void *'),
 	GlArg('length', 'GLsizei')
 ])
 
-GlApi('glProgramParameteri', 'void', [
+glProgramParameteri = GlApi('glProgramParameteri', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('value', 'GLint')
 ])
 
-GlApi('glProgramUniform1f', 'void', [
+glProgramUniform1f = GlApi('glProgramUniform1f', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLfloat')
 ])
 
-GlApi('glProgramUniform2f', 'void', [
+glProgramUniform2f = GlApi('glProgramUniform2f', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLfloat'),
 	GlArg('v1', 'GLfloat')
 ])
 
-GlApi('glProgramUniform3f', 'void', [
+glProgramUniform3f = GlApi('glProgramUniform3f', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLfloat'),
@@ -1975,7 +1975,7 @@ GlApi('glProgramUniform3f', 'void', [
 	GlArg('v2', 'GLfloat')
 ])
 
-GlApi('glProgramUniform4f', 'void', [
+glProgramUniform4f = GlApi('glProgramUniform4f', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLfloat'),
@@ -1984,20 +1984,20 @@ GlApi('glProgramUniform4f', 'void', [
 	GlArg('v3', 'GLfloat')
 ])
 
-GlApi('glProgramUniform1i', 'void', [
+glProgramUniform1i = GlApi('glProgramUniform1i', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLint')
 ])
 
-GlApi('glProgramUniform2i', 'void', [
+glProgramUniform2i = GlApi('glProgramUniform2i', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLint'),
 	GlArg('v1', 'GLint')
 ])
 
-GlApi('glProgramUniform3i', 'void', [
+glProgramUniform3i = GlApi('glProgramUniform3i', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLint'),
@@ -2005,7 +2005,7 @@ GlApi('glProgramUniform3i', 'void', [
 	GlArg('v2', 'GLint')
 ])
 
-GlApi('glProgramUniform4i', 'void', [
+glProgramUniform4i = GlApi('glProgramUniform4i', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLint'),
@@ -2014,20 +2014,20 @@ GlApi('glProgramUniform4i', 'void', [
 	GlArg('v3', 'GLint')
 ])
 
-GlApi('glProgramUniform1ui', 'void', [
+glProgramUniform1ui = GlApi('glProgramUniform1ui', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLuint')
 ])
 
-GlApi('glProgramUniform2ui', 'void', [
+glProgramUniform2ui = GlApi('glProgramUniform2ui', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLuint'),
 	GlArg('v1', 'GLuint')
 ])
 
-GlApi('glProgramUniform3ui', 'void', [
+glProgramUniform3ui = GlApi('glProgramUniform3ui', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLuint'),
@@ -2035,7 +2035,7 @@ GlApi('glProgramUniform3ui', 'void', [
 	GlArg('v2', 'GLuint')
 ])
 
-GlApi('glProgramUniform4ui', 'void', [
+glProgramUniform4ui = GlApi('glProgramUniform4ui', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLuint'),
@@ -2044,91 +2044,91 @@ GlApi('glProgramUniform4ui', 'void', [
 	GlArg('v3', 'GLuint')
 ])
 
-GlApi('glProgramUniform1fv', 'void', [
+glProgramUniform1fv = GlApi('glProgramUniform1fv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glProgramUniform2fv', 'void', [
+glProgramUniform2fv = GlApi('glProgramUniform2fv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glProgramUniform3fv', 'void', [
+glProgramUniform3fv = GlApi('glProgramUniform3fv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glProgramUniform4fv', 'void', [
+glProgramUniform4fv = GlApi('glProgramUniform4fv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glProgramUniform1iv', 'void', [
+glProgramUniform1iv = GlApi('glProgramUniform1iv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLint *')
 ])
 
-GlApi('glProgramUniform2iv', 'void', [
+glProgramUniform2iv = GlApi('glProgramUniform2iv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLint *')
 ])
 
-GlApi('glProgramUniform3iv', 'void', [
+glProgramUniform3iv = GlApi('glProgramUniform3iv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLint *')
 ])
 
-GlApi('glProgramUniform4iv', 'void', [
+glProgramUniform4iv = GlApi('glProgramUniform4iv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLint *')
 ])
 
-GlApi('glProgramUniform1uiv', 'void', [
+glProgramUniform1uiv = GlApi('glProgramUniform1uiv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLuint *')
 ])
 
-GlApi('glProgramUniform2uiv', 'void', [
+glProgramUniform2uiv = GlApi('glProgramUniform2uiv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLuint *')
 ])
 
-GlApi('glProgramUniform3uiv', 'void', [
+glProgramUniform3uiv = GlApi('glProgramUniform3uiv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLuint *')
 ])
 
-GlApi('glProgramUniform4uiv', 'void', [
+glProgramUniform4uiv = GlApi('glProgramUniform4uiv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLuint *')
 ])
 
-GlApi('glProgramUniformMatrix2fv', 'void', [
+glProgramUniformMatrix2fv = GlApi('glProgramUniformMatrix2fv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
@@ -2136,7 +2136,7 @@ GlApi('glProgramUniformMatrix2fv', 'void', [
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glProgramUniformMatrix3fv', 'void', [
+glProgramUniformMatrix3fv = GlApi('glProgramUniformMatrix3fv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
@@ -2144,7 +2144,7 @@ GlApi('glProgramUniformMatrix3fv', 'void', [
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glProgramUniformMatrix4fv', 'void', [
+glProgramUniformMatrix4fv = GlApi('glProgramUniformMatrix4fv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
@@ -2152,7 +2152,7 @@ GlApi('glProgramUniformMatrix4fv', 'void', [
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glProgramUniformMatrix2x3fv', 'void', [
+glProgramUniformMatrix2x3fv = GlApi('glProgramUniformMatrix2x3fv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
@@ -2160,7 +2160,7 @@ GlApi('glProgramUniformMatrix2x3fv', 'void', [
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glProgramUniformMatrix3x2fv', 'void', [
+glProgramUniformMatrix3x2fv = GlApi('glProgramUniformMatrix3x2fv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
@@ -2168,7 +2168,7 @@ GlApi('glProgramUniformMatrix3x2fv', 'void', [
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glProgramUniformMatrix2x4fv', 'void', [
+glProgramUniformMatrix2x4fv = GlApi('glProgramUniformMatrix2x4fv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
@@ -2176,7 +2176,7 @@ GlApi('glProgramUniformMatrix2x4fv', 'void', [
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glProgramUniformMatrix4x2fv', 'void', [
+glProgramUniformMatrix4x2fv = GlApi('glProgramUniformMatrix4x2fv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
@@ -2184,7 +2184,7 @@ GlApi('glProgramUniformMatrix4x2fv', 'void', [
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glProgramUniformMatrix3x4fv', 'void', [
+glProgramUniformMatrix3x4fv = GlApi('glProgramUniformMatrix3x4fv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
@@ -2192,7 +2192,7 @@ GlApi('glProgramUniformMatrix3x4fv', 'void', [
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glProgramUniformMatrix4x3fv', 'void', [
+glProgramUniformMatrix4x3fv = GlApi('glProgramUniformMatrix4x3fv', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
@@ -2200,27 +2200,27 @@ GlApi('glProgramUniformMatrix4x3fv', 'void', [
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glProvokingVertex', 'void', [
+glProvokingVertex = GlApi('glProvokingVertex', 'void', [
 	GlArg('provokeMode', 'GLenum')
 ])
 
-GlApi('glPushDebugGroup', 'void', [
+glPushDebugGroup = GlApi('glPushDebugGroup', 'void', [
 	GlArg('source', 'GLenum'),
 	GlArg('id', 'GLuint'),
 	GlArg('length', 'GLsizei'),
 	GlArg('message', 'const char *')
 ])
 
-GlApi('glQueryCounter', 'void', [
+glQueryCounter = GlApi('glQueryCounter', 'void', [
 	GlArg('id', 'GLuint'),
 	GlArg('target', 'GLenum')
 ])
 
-GlApi('glReadBuffer', 'void', [
+glReadBuffer = GlApi('glReadBuffer', 'void', [
 	GlArg('mode', 'GLenum')
 ])
 
-GlApi('glReadPixels', 'void', [
+glReadPixels = GlApi('glReadPixels', 'void', [
 	GlArg('x', 'GLint'),
 	GlArg('y', 'GLint'),
 	GlArg('width', 'GLsizei'),
@@ -2230,16 +2230,16 @@ GlApi('glReadPixels', 'void', [
 	GlArg('data', 'GLvoid *')
 ])
 
-GlApi('glReleaseShaderCompiler', 'void', [])
+glReleaseShaderCompiler = GlApi('glReleaseShaderCompiler', 'void', [])
 
-GlApi('glRenderbufferStorage', 'void', [
+glRenderbufferStorage = GlApi('glRenderbufferStorage', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('internalformat', 'GLenum'),
 	GlArg('width', 'GLsizei'),
 	GlArg('height', 'GLsizei')
 ])
 
-GlApi('glRenderbufferStorageMultisample', 'void', [
+glRenderbufferStorageMultisample = GlApi('glRenderbufferStorageMultisample', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('samples', 'GLsizei'),
 	GlArg('internalformat', 'GLenum'),
@@ -2247,68 +2247,68 @@ GlApi('glRenderbufferStorageMultisample', 'void', [
 	GlArg('height', 'GLsizei')
 ])
 
-GlApi('glResumeTransformFeedback', 'void', [])
+glResumeTransformFeedback = GlApi('glResumeTransformFeedback', 'void', [])
 
-GlApi('glSampleCoverage', 'void', [
+glSampleCoverage = GlApi('glSampleCoverage', 'void', [
 	GlArg('value', 'GLfloat'),
 	GlArg('invert', 'GLboolean')
 ])
 
-GlApi('glSampleMaski', 'void', [
+glSampleMaski = GlApi('glSampleMaski', 'void', [
 	GlArg('maskNumber', 'GLuint'),
 	GlArg('mask', 'GLbitfield')
 ])
 
-GlApi('glSamplerParameterf', 'void', [
+glSamplerParameterf = GlApi('glSamplerParameterf', 'void', [
 	GlArg('sampler', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('param', 'GLfloat')
 ])
 
-GlApi('glSamplerParameteri', 'void', [
+glSamplerParameteri = GlApi('glSamplerParameteri', 'void', [
 	GlArg('sampler', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('param', 'GLint')
 ])
 
-GlApi('glSamplerParameterfv', 'void', [
+glSamplerParameterfv = GlApi('glSamplerParameterfv', 'void', [
 	GlArg('sampler', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'const GLfloat *')
 ])
 
-GlApi('glSamplerParameteriv', 'void', [
+glSamplerParameteriv = GlApi('glSamplerParameteriv', 'void', [
 	GlArg('sampler', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'const GLint *')
 ])
 
-GlApi('glSamplerParameterIiv', 'void', [
+glSamplerParameterIiv = GlApi('glSamplerParameterIiv', 'void', [
 	GlArg('sampler', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'const GLint *')
 ])
 
-GlApi('glSamplerParameterIuiv', 'void', [
+glSamplerParameterIuiv = GlApi('glSamplerParameterIuiv', 'void', [
 	GlArg('sampler', 'GLuint'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'const GLuint *')
 ])
 
-GlApi('glScissor', 'void', [
+glScissor = GlApi('glScissor', 'void', [
 	GlArg('x', 'GLint'),
 	GlArg('y', 'GLint'),
 	GlArg('width', 'GLsizei'),
 	GlArg('height', 'GLsizei')
 ])
 
-GlApi('glScissorArrayv', 'void', [
+glScissorArrayv = GlApi('glScissorArrayv', 'void', [
 	GlArg('first', 'GLuint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('v', 'const GLint *')
 ])
 
-GlApi('glScissorIndexed', 'void', [
+glScissorIndexed = GlApi('glScissorIndexed', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('left', 'GLint'),
 	GlArg('bottom', 'GLint'),
@@ -2316,12 +2316,12 @@ GlApi('glScissorIndexed', 'void', [
 	GlArg('height', 'GLsizei')
 ])
 
-GlApi('glScissorIndexedv', 'void', [
+glScissorIndexedv = GlApi('glScissorIndexedv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLint *')
 ])
 
-GlApi('glShaderBinary', 'void', [
+glShaderBinary = GlApi('glShaderBinary', 'void', [
 	GlArg('count', 'GLsizei'),
 	GlArg('shaders', 'const GLuint *'),
 	GlArg('binaryFormat', 'GLenum'),
@@ -2329,61 +2329,61 @@ GlApi('glShaderBinary', 'void', [
 	GlArg('length', 'GLsizei')
 ])
 
-GlApi('glShaderSource', 'void', [
+glShaderSource = GlApi('glShaderSource', 'void', [
 	GlArg('shader', 'GLuint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('string', 'const GLchar **'),
 	GlArg('length', 'const GLint *')
 ])
 
-GlApi('glShaderStorageBlockBinding', 'void', [
+glShaderStorageBlockBinding = GlApi('glShaderStorageBlockBinding', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('storageBlockIndex', 'GLuint'),
 	GlArg('storageBlockBinding', 'GLuint')
 ])
 
-GlApi('glStencilFunc', 'void', [
+glStencilFunc = GlApi('glStencilFunc', 'void', [
 	GlArg('func', 'GLenum'),
 	GlArg('ref', 'GLint'),
 	GlArg('mask', 'GLuint')
 ])
 
-GlApi('glStencilFuncSeparate', 'void', [
+glStencilFuncSeparate = GlApi('glStencilFuncSeparate', 'void', [
 	GlArg('face', 'GLenum'),
 	GlArg('func', 'GLenum'),
 	GlArg('ref', 'GLint'),
 	GlArg('mask', 'GLuint')
 ])
 
-GlApi('glStencilMask', 'void', [
+glStencilMask = GlApi('glStencilMask', 'void', [
 	GlArg('mask', 'GLuint')
 ])
 
-GlApi('glStencilMaskSeparate', 'void', [
+glStencilMaskSeparate = GlApi('glStencilMaskSeparate', 'void', [
 	GlArg('face', 'GLenum'),
 	GlArg('mask', 'GLuint')
 ])
 
-GlApi('glStencilOp', 'void', [
+glStencilOp = GlApi('glStencilOp', 'void', [
 	GlArg('sfail', 'GLenum'),
 	GlArg('dpfail', 'GLenum'),
 	GlArg('dppass', 'GLenum')
 ])
 
-GlApi('glStencilOpSeparate', 'void', [
+glStencilOpSeparate = GlApi('glStencilOpSeparate', 'void', [
 	GlArg('face', 'GLenum'),
 	GlArg('sfail', 'GLenum'),
 	GlArg('dpfail', 'GLenum'),
 	GlArg('dppass', 'GLenum')
 ])
 
-GlApi('glTexBuffer', 'void', [
+glTexBuffer = GlApi('glTexBuffer', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('internalFormat', 'GLenum'),
 	GlArg('buffer', 'GLuint')
 ])
 
-GlApi('glTexBufferRange', 'void', [
+glTexBufferRange = GlApi('glTexBufferRange', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('internalFormat', 'GLenum'),
 	GlArg('buffer', 'GLuint'),
@@ -2391,7 +2391,7 @@ GlApi('glTexBufferRange', 'void', [
 	GlArg('size', 'GLsizeiptr')
 ])
 
-GlApi('glTexImage1D', 'void', [
+glTexImage1D = GlApi('glTexImage1D', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('level', 'GLint'),
 	GlArg('internalFormat', 'GLint'),
@@ -2402,7 +2402,7 @@ GlApi('glTexImage1D', 'void', [
 	GlArg('data', 'const GLvoid *')
 ])
 
-GlApi('glTexImage2D', 'void', [
+glTexImage2D = GlApi('glTexImage2D', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('level', 'GLint'),
 	GlArg('internalFormat', 'GLint'),
@@ -2414,7 +2414,7 @@ GlApi('glTexImage2D', 'void', [
 	GlArg('data', 'const GLvoid *')
 ])
 
-GlApi('glTexImage2DMultisample', 'void', [
+glTexImage2DMultisample = GlApi('glTexImage2DMultisample', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('level', 'GLint'),
 	GlArg('internalFormat', 'GLint'),
@@ -2423,7 +2423,7 @@ GlApi('glTexImage2DMultisample', 'void', [
 	GlArg('fixedsamplelocations', 'GLboolean')
 ])
 
-GlApi('glTexImage3D', 'void', [
+glTexImage3D = GlApi('glTexImage3D', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('level', 'GLint'),
 	GlArg('internalFormat', 'GLint'),
@@ -2436,7 +2436,7 @@ GlApi('glTexImage3D', 'void', [
 	GlArg('data', 'const GLvoid *')
 ])
 
-GlApi('glTexImage3DMultisample', 'void', [
+glTexImage3DMultisample = GlApi('glTexImage3DMultisample', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('level', 'GLint'),
 	GlArg('internalFormat', 'GLint'),
@@ -2446,50 +2446,50 @@ GlApi('glTexImage3DMultisample', 'void', [
 	GlArg('fixedsamplelocations', 'GLboolean')
 ])
 
-GlApi('glTexParameterf', 'void', [
+glTexParameterf = GlApi('glTexParameterf', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('param', 'GLfloat')
 ])
 
-GlApi('glTexParameterf', 'void', [
+glTexParameterf = GlApi('glTexParameterf', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('param', 'GLint')
 ])
 
-GlApi('glTexParameterfv', 'void', [
+glTexParameterfv = GlApi('glTexParameterfv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'const GLfloat *')
 ])
 
-GlApi('glTexParameteriv', 'void', [
+glTexParameteriv = GlApi('glTexParameteriv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'const GLint *')
 ])
 
-GlApi('glTexParameterIiv', 'void', [
+glTexParameterIiv = GlApi('glTexParameterIiv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'const GLint *')
 ])
 
-GlApi('glTexParameterIuiv', 'void', [
+glTexParameterIuiv = GlApi('glTexParameterIuiv', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('pname', 'GLenum'),
 	GlArg('params', 'const GLuint *')
 ])
 
-GlApi('glTexStorage1D', 'void', [
+glTexStorage1D = GlApi('glTexStorage1D', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('levels', 'GLsizei'),
 	GlArg('internalformat', 'GLenum'),
 	GlArg('width', 'GLsizei')
 ])
 
-GlApi('glTexStorage2D', 'void', [
+glTexStorage2D = GlApi('glTexStorage2D', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('levels', 'GLsizei'),
 	GlArg('internalformat', 'GLenum'),
@@ -2497,7 +2497,7 @@ GlApi('glTexStorage2D', 'void', [
 	GlArg('height', 'GLsizei')
 ])
 
-GlApi('glTexStorage2DMultisample', 'void', [
+glTexStorage2DMultisample = GlApi('glTexStorage2DMultisample', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('samples', 'GLsizei'),
 	GlArg('internalformat', 'GLenum'),
@@ -2506,7 +2506,7 @@ GlApi('glTexStorage2DMultisample', 'void', [
 	GlArg('fixedsamplelocations', 'GLboolean')
 ])
 
-GlApi('glTexStorage3D', 'void', [
+glTexStorage3D = GlApi('glTexStorage3D', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('levels', 'GLsizei'),
 	GlArg('internalformat', 'GLenum'),
@@ -2515,7 +2515,7 @@ GlApi('glTexStorage3D', 'void', [
 	GlArg('depth', 'GLsizei')
 ])
 
-GlApi('glTexStorage3DMultisample', 'void', [
+glTexStorage3DMultisample = GlApi('glTexStorage3DMultisample', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('samples', 'GLsizei'),
 	GlArg('internalformat', 'GLenum'),
@@ -2525,7 +2525,7 @@ GlApi('glTexStorage3DMultisample', 'void', [
 	GlArg('fixedsamplelocations', 'GLboolean')
 ])
 
-GlApi('glTexSubImage1D', 'void', [
+glTexSubImage1D = GlApi('glTexSubImage1D', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('level', 'GLint'),
 	GlArg('xoffset', 'GLint'),
@@ -2535,7 +2535,7 @@ GlApi('glTexSubImage1D', 'void', [
 	GlArg('data', 'const GLvoid *')
 ])
 
-GlApi('glTexSubImage2D', 'void', [
+glTexSubImage2D = GlApi('glTexSubImage2D', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('level', 'GLint'),
 	GlArg('xoffset', 'GLint'),
@@ -2547,7 +2547,7 @@ GlApi('glTexSubImage2D', 'void', [
 	GlArg('data', 'const GLvoid *')
 ])
 
-GlApi('glTexSubImage3D', 'void', [
+glTexSubImage3D = GlApi('glTexSubImage3D', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('level', 'GLint'),
 	GlArg('xoffset', 'GLint'),
@@ -2561,7 +2561,7 @@ GlApi('glTexSubImage3D', 'void', [
 	GlArg('data', 'const GLvoid *')
 ])
 
-GlApi('glTextureView', 'void', [
+glTextureView = GlApi('glTextureView', 'void', [
 	GlArg('texture', 'GLuint'),
 	GlArg('target', 'GLenum'),
 	GlArg('origtexture', 'GLuint'),
@@ -2572,32 +2572,32 @@ GlApi('glTextureView', 'void', [
 	GlArg('numlayers', 'GLuint')
 ])
 
-GlApi('glTransformFeedbackVaryings', 'void', [
+glTransformFeedbackVaryings = GlApi('glTransformFeedbackVaryings', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('varyings', 'const char **'),
 	GlArg('bufferMode', 'GLenum')
 ])
 
-GlApi('glUniform1f', 'void', [
+glUniform1f = GlApi('glUniform1f', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLfloat')
 ])
 
-GlApi('glUniform2f', 'void', [
+glUniform2f = GlApi('glUniform2f', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLfloat'),
 	GlArg('v1', 'GLfloat')
 ])
 
-GlApi('glUniform3f', 'void', [
+glUniform3f = GlApi('glUniform3f', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLfloat'),
 	GlArg('v1', 'GLfloat'),
 	GlArg('v2', 'GLfloat')
 ])
 
-GlApi('glUniform4f', 'void', [
+glUniform4f = GlApi('glUniform4f', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLfloat'),
 	GlArg('v1', 'GLfloat'),
@@ -2605,25 +2605,25 @@ GlApi('glUniform4f', 'void', [
 	GlArg('v3', 'GLfloat')
 ])
 
-GlApi('glUniform1i', 'void', [
+glUniform1i = GlApi('glUniform1i', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLint')
 ])
 
-GlApi('glUniform2i', 'void', [
+glUniform2i = GlApi('glUniform2i', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLint'),
 	GlArg('v1', 'GLint')
 ])
 
-GlApi('glUniform3i', 'void', [
+glUniform3i = GlApi('glUniform3i', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLint'),
 	GlArg('v1', 'GLint'),
 	GlArg('v2', 'GLint')
 ])
 
-GlApi('glUniform4i', 'void', [
+glUniform4i = GlApi('glUniform4i', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLint'),
 	GlArg('v1', 'GLint'),
@@ -2631,25 +2631,25 @@ GlApi('glUniform4i', 'void', [
 	GlArg('v3', 'GLint')
 ])
 
-GlApi('glUniform1ui', 'void', [
+glUniform1ui = GlApi('glUniform1ui', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLuint')
 ])
 
-GlApi('glUniform2ui', 'void', [
+glUniform2ui = GlApi('glUniform2ui', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLuint'),
 	GlArg('v1', 'GLuint')
 ])
 
-GlApi('glUniform3ui', 'void', [
+glUniform3ui = GlApi('glUniform3ui', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLuint'),
 	GlArg('v1', 'GLuint'),
 	GlArg('v2', 'GLuint')
 ])
 
-GlApi('glUniform4ui', 'void', [
+glUniform4ui = GlApi('glUniform4ui', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('v0', 'GLuint'),
 	GlArg('v1', 'GLuint'),
@@ -2657,190 +2657,190 @@ GlApi('glUniform4ui', 'void', [
 	GlArg('v3', 'GLuint')
 ])
 
-GlApi('glUniform1fv', 'void', [
+glUniform1fv = GlApi('glUniform1fv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glUniform2fv', 'void', [
+glUniform2fv = GlApi('glUniform2fv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glUniform3fv', 'void', [
+glUniform3fv = GlApi('glUniform3fv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glUniform4fv', 'void', [
+glUniform4fv = GlApi('glUniform4fv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glUniform1iv', 'void', [
+glUniform1iv = GlApi('glUniform1iv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLint *')
 ])
 
-GlApi('glUniform2iv', 'void', [
+glUniform2iv = GlApi('glUniform2iv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLint *')
 ])
 
-GlApi('glUniform3iv', 'void', [
+glUniform3iv = GlApi('glUniform3iv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLint *')
 ])
 
-GlApi('glUniform4iv', 'void', [
+glUniform4iv = GlApi('glUniform4iv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLint *')
 ])
 
-GlApi('glUniform1uiv', 'void', [
+glUniform1uiv = GlApi('glUniform1uiv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLuint *')
 ])
 
-GlApi('glUniform2uiv', 'void', [
+glUniform2uiv = GlApi('glUniform2uiv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLuint *')
 ])
 
-GlApi('glUniform3uiv', 'void', [
+glUniform3uiv = GlApi('glUniform3uiv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLuint *')
 ])
 
-GlApi('glUniform4uiv', 'void', [
+glUniform4uiv = GlApi('glUniform4uiv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('value', 'const GLuint *')
 ])
 
-GlApi('glUniformMatrix2fv', 'void', [
+glUniformMatrix2fv = GlApi('glUniformMatrix2fv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('transpose', 'GLboolean'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glUniformMatrix3fv', 'void', [
+glUniformMatrix3fv = GlApi('glUniformMatrix3fv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('transpose', 'GLboolean'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glUniformMatrix4fv', 'void', [
+glUniformMatrix4fv = GlApi('glUniformMatrix4fv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('transpose', 'GLboolean'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glUniformMatrix2x3fv', 'void', [
+glUniformMatrix2x3fv = GlApi('glUniformMatrix2x3fv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('transpose', 'GLboolean'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glUniformMatrix3x2fv', 'void', [
+glUniformMatrix3x2fv = GlApi('glUniformMatrix3x2fv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('transpose', 'GLboolean'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glUniformMatrix2x4fv', 'void', [
+glUniformMatrix2x4fv = GlApi('glUniformMatrix2x4fv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('transpose', 'GLboolean'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glUniformMatrix4x2fv', 'void', [
+glUniformMatrix4x2fv = GlApi('glUniformMatrix4x2fv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('transpose', 'GLboolean'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glUniformMatrix3x4fv', 'void', [
+glUniformMatrix3x4fv = GlApi('glUniformMatrix3x4fv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('transpose', 'GLboolean'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glUniformMatrix4x3fv', 'void', [
+glUniformMatrix4x3fv = GlApi('glUniformMatrix4x3fv', 'void', [
 	GlArg('location', 'GLint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('transpose', 'GLboolean'),
 	GlArg('value', 'const GLfloat *')
 ])
 
-GlApi('glUniformBlockBinding', 'void', [
+glUniformBlockBinding = GlApi('glUniformBlockBinding', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('uniformBlockIndex', 'GLuint'),
 	GlArg('uniformblockBinding', 'GLuint')
 ])
 
-GlApi('glUniformSubroutinesuiv', 'void', [
+glUniformSubroutinesuiv = GlApi('glUniformSubroutinesuiv', 'void', [
 	GlArg('shadertype', 'GLenum'),
 	GlArg('count', 'GLsizei'),
 	GlArg('indices', 'const GLuint *')
 ])
 
-GlApi('glUseProgram', 'void', [
+glUseProgram = GlApi('glUseProgram', 'void', [
 	GlArg('program', 'GLuint')
 ])
 
-GlApi('glUseProgramStages', 'void', [
+glUseProgramStages = GlApi('glUseProgramStages', 'void', [
 	GlArg('pipeline', 'GLuint'),
 	GlArg('stages', 'GLbitfield'),
 	GlArg('program', 'GLuint')
 ])
 
-GlApi('glValidateProgram', 'void', [
+glValidateProgram = GlApi('glValidateProgram', 'void', [
 	GlArg('program', 'GLuint')
 ])
 
-GlApi('glValidateProgramPipeline', 'void', [
+glValidateProgramPipeline = GlApi('glValidateProgramPipeline', 'void', [
 	GlArg('pipeline', 'GLuint')
 ])
 
-GlApi('glVertexAttrib1f', 'void', [
+glVertexAttrib1f = GlApi('glVertexAttrib1f', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLfloat')
 ])
 
-GlApi('glVertexAttrib2f', 'void', [
+glVertexAttrib2f = GlApi('glVertexAttrib2f', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLfloat'),
 	GlArg('v1', 'GLfloat')
 ])
 
-GlApi('glVertexAttrib3f', 'void', [
+glVertexAttrib3f = GlApi('glVertexAttrib3f', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLfloat'),
 	GlArg('v1', 'GLfloat'),
 	GlArg('v2', 'GLfloat')
 ])
 
-GlApi('glVertexAttrib4f', 'void', [
+glVertexAttrib4f = GlApi('glVertexAttrib4f', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLfloat'),
 	GlArg('v1', 'GLfloat'),
@@ -2848,25 +2848,25 @@ GlApi('glVertexAttrib4f', 'void', [
 	GlArg('v3', 'GLfloat')
 ])
 
-GlApi('glVertexAttrib1s', 'void', [
+glVertexAttrib1s = GlApi('glVertexAttrib1s', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLshort')
 ])
 
-GlApi('glVertexAttrib2s', 'void', [
+glVertexAttrib2s = GlApi('glVertexAttrib2s', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLshort'),
 	GlArg('v1', 'GLshort')
 ])
 
-GlApi('glVertexAttrib3s', 'void', [
+glVertexAttrib3s = GlApi('glVertexAttrib3s', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLshort'),
 	GlArg('v1', 'GLshort'),
 	GlArg('v2', 'GLshort')
 ])
 
-GlApi('glVertexAttrib4s', 'void', [
+glVertexAttrib4s = GlApi('glVertexAttrib4s', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLshort'),
 	GlArg('v1', 'GLshort'),
@@ -2874,25 +2874,25 @@ GlApi('glVertexAttrib4s', 'void', [
 	GlArg('v3', 'GLshort')
 ])
 
-GlApi('glVertexAttrib1d', 'void', [
+glVertexAttrib1d = GlApi('glVertexAttrib1d', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLdouble')
 ])
 
-GlApi('glVertexAttrib2d', 'void', [
+glVertexAttrib2d = GlApi('glVertexAttrib2d', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLdouble'),
 	GlArg('v1', 'GLdouble')
 ])
 
-GlApi('glVertexAttrib3d', 'void', [
+glVertexAttrib3d = GlApi('glVertexAttrib3d', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLdouble'),
 	GlArg('v1', 'GLdouble'),
 	GlArg('v2', 'GLdouble')
 ])
 
-GlApi('glVertexAttrib4d', 'void', [
+glVertexAttrib4d = GlApi('glVertexAttrib4d', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLdouble'),
 	GlArg('v1', 'GLdouble'),
@@ -2900,25 +2900,25 @@ GlApi('glVertexAttrib4d', 'void', [
 	GlArg('v3', 'GLdouble')
 ])
 
-GlApi('glVertexAttribI1i', 'void', [
+glVertexAttribI1i = GlApi('glVertexAttribI1i', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLint')
 ])
 
-GlApi('glVertexAttribI2i', 'void', [
+glVertexAttribI2i = GlApi('glVertexAttribI2i', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLint'),
 	GlArg('v1', 'GLint')
 ])
 
-GlApi('glVertexAttribI3i', 'void', [
+glVertexAttribI3i = GlApi('glVertexAttribI3i', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLint'),
 	GlArg('v1', 'GLint'),
 	GlArg('v2', 'GLint')
 ])
 
-GlApi('glVertexAttribI4i', 'void', [
+glVertexAttribI4i = GlApi('glVertexAttribI4i', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLint'),
 	GlArg('v1', 'GLint'),
@@ -2926,25 +2926,25 @@ GlApi('glVertexAttribI4i', 'void', [
 	GlArg('v3', 'GLint')
 ])
 
-GlApi('glVertexAttribI1ui', 'void', [
+glVertexAttribI1ui = GlApi('glVertexAttribI1ui', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLuint')
 ])
 
-GlApi('glVertexAttribI2ui', 'void', [
+glVertexAttribI2ui = GlApi('glVertexAttribI2ui', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLuint'),
 	GlArg('v1', 'GLuint')
 ])
 
-GlApi('glVertexAttribI3ui', 'void', [
+glVertexAttribI3ui = GlApi('glVertexAttribI3ui', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLuint'),
 	GlArg('v1', 'GLuint'),
 	GlArg('v2', 'GLuint')
 ])
 
-GlApi('glVertexAttribI4ui', 'void', [
+glVertexAttribI4ui = GlApi('glVertexAttribI4ui', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLuint'),
 	GlArg('v1', 'GLuint'),
@@ -2952,25 +2952,25 @@ GlApi('glVertexAttribI4ui', 'void', [
 	GlArg('v3', 'GLuint')
 ])
 
-GlApi('glVertexAttribL1d', 'void', [
+glVertexAttribL1d = GlApi('glVertexAttribL1d', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLdouble')
 ])
 
-GlApi('glVertexAttribL2d', 'void', [
+glVertexAttribL2d = GlApi('glVertexAttribL2d', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLdouble'),
 	GlArg('v1', 'GLdouble')
 ])
 
-GlApi('glVertexAttribL3d', 'void', [
+glVertexAttribL3d = GlApi('glVertexAttribL3d', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLdouble'),
 	GlArg('v1', 'GLdouble'),
 	GlArg('v2', 'GLdouble')
 ])
 
-GlApi('glVertexAttribL4d', 'void', [
+glVertexAttribL4d = GlApi('glVertexAttribL4d', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLdouble'),
 	GlArg('v1', 'GLdouble'),
@@ -2978,7 +2978,7 @@ GlApi('glVertexAttribL4d', 'void', [
 	GlArg('v3', 'GLdouble')
 ])
 
-GlApi('glVertexAttrib4Nub', 'void', [
+glVertexAttrib4Nub = GlApi('glVertexAttrib4Nub', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v0', 'GLubyte'),
 	GlArg('v1', 'GLubyte'),
@@ -2986,268 +2986,268 @@ GlApi('glVertexAttrib4Nub', 'void', [
 	GlArg('v3', 'GLubyte')
 ])
 
-GlApi('glVertexAttrib1fv', 'void', [
+glVertexAttrib1fv = GlApi('glVertexAttrib1fv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLfloat *')
 ])
 
-GlApi('glVertexAttrib2fv', 'void', [
+glVertexAttrib2fv = GlApi('glVertexAttrib2fv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLfloat *')
 ])
 
-GlApi('glVertexAttrib3fv', 'void', [
+glVertexAttrib3fv = GlApi('glVertexAttrib3fv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLfloat *')
 ])
 
-GlApi('glVertexAttrib4fv', 'void', [
+glVertexAttrib4fv = GlApi('glVertexAttrib4fv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLfloat *')
 ])
 
-GlApi('glVertexAttrib1sv', 'void', [
+glVertexAttrib1sv = GlApi('glVertexAttrib1sv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLshort *')
 ])
 
-GlApi('glVertexAttrib2sv', 'void', [
+glVertexAttrib2sv = GlApi('glVertexAttrib2sv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLshort *')
 ])
 
-GlApi('glVertexAttrib3sv', 'void', [
+glVertexAttrib3sv = GlApi('glVertexAttrib3sv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLshort *')
 ])
 
-GlApi('glVertexAttrib4sv', 'void', [
+glVertexAttrib4sv = GlApi('glVertexAttrib4sv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLshort *')
 ])
 
-GlApi('glVertexAttrib1dv', 'void', [
+glVertexAttrib1dv = GlApi('glVertexAttrib1dv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLdouble *')
 ])
 
-GlApi('glVertexAttrib2dv', 'void', [
+glVertexAttrib2dv = GlApi('glVertexAttrib2dv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLdouble *')
 ])
 
-GlApi('glVertexAttrib3dv', 'void', [
+glVertexAttrib3dv = GlApi('glVertexAttrib3dv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLdouble *')
 ])
 
-GlApi('glVertexAttrib4dv', 'void', [
+glVertexAttrib4dv = GlApi('glVertexAttrib4dv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLdouble *')
 ])
 
-GlApi('glVertexAttribI1iv', 'void', [
+glVertexAttribI1iv = GlApi('glVertexAttribI1iv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLint *')
 ])
 
-GlApi('glVertexAttribI2iv', 'void', [
+glVertexAttribI2iv = GlApi('glVertexAttribI2iv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLint *')
 ])
 
-GlApi('glVertexAttribI3iv', 'void', [
+glVertexAttribI3iv = GlApi('glVertexAttribI3iv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLint *')
 ])
 
-GlApi('glVertexAttribI4iv', 'void', [
+glVertexAttribI4iv = GlApi('glVertexAttribI4iv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLint *')
 ])
 
-GlApi('glVertexAttribI1uiv', 'void', [
+glVertexAttribI1uiv = GlApi('glVertexAttribI1uiv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLuint *')
 ])
 
-GlApi('glVertexAttribI2uiv', 'void', [
+glVertexAttribI2uiv = GlApi('glVertexAttribI2uiv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLuint *')
 ])
 
-GlApi('glVertexAttribI3uiv', 'void', [
+glVertexAttribI3uiv = GlApi('glVertexAttribI3uiv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLuint *')
 ])
 
-GlApi('glVertexAttribI4uiv', 'void', [
+glVertexAttribI4uiv = GlApi('glVertexAttribI4uiv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLuint *')
 ])
 
-GlApi('glVertexAttribL1dv', 'void', [
+glVertexAttribL1dv = GlApi('glVertexAttribL1dv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLdouble *')
 ])
 
-GlApi('glVertexAttribL2dv', 'void', [
+glVertexAttribL2dv = GlApi('glVertexAttribL2dv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLdouble *')
 ])
 
-GlApi('glVertexAttribL3dv', 'void', [
+glVertexAttribL3dv = GlApi('glVertexAttribL3dv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLdouble *')
 ])
 
-GlApi('glVertexAttribL4dv', 'void', [
+glVertexAttribL4dv = GlApi('glVertexAttribL4dv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLdouble *')
 ])
 
-GlApi('glVertexAttrib4iv', 'void', [
+glVertexAttrib4iv = GlApi('glVertexAttrib4iv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLint *')
 ])
 
-GlApi('glVertexAttrib4bv', 'void', [
+glVertexAttrib4bv = GlApi('glVertexAttrib4bv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLbyte *')
 ])
 
-GlApi('glVertexAttrib4ubv', 'void', [
+glVertexAttrib4ubv = GlApi('glVertexAttrib4ubv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLubyte *')
 ])
 
-GlApi('glVertexAttrib4usv', 'void', [
+glVertexAttrib4usv = GlApi('glVertexAttrib4usv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLushort *')
 ])
 
-GlApi('glVertexAttrib4uiv', 'void', [
+glVertexAttrib4uiv = GlApi('glVertexAttrib4uiv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLuint *')
 ])
 
-GlApi('glVertexAttrib4Nbv', 'void', [
+glVertexAttrib4Nbv = GlApi('glVertexAttrib4Nbv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLbyte *')
 ])
 
-GlApi('glVertexAttrib4Nsv', 'void', [
+glVertexAttrib4Nsv = GlApi('glVertexAttrib4Nsv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLshort *')
 ])
 
-GlApi('glVertexAttrib4Niv', 'void', [
+glVertexAttrib4Niv = GlApi('glVertexAttrib4Niv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLint *')
 ])
 
-GlApi('glVertexAttrib4Nubv', 'void', [
+glVertexAttrib4Nubv = GlApi('glVertexAttrib4Nubv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLubyte *')
 ])
 
-GlApi('glVertexAttrib4Nusv', 'void', [
+glVertexAttrib4Nusv = GlApi('glVertexAttrib4Nusv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLushort *')
 ])
 
-GlApi('glVertexAttrib4Nuiv', 'void', [
+glVertexAttrib4Nuiv = GlApi('glVertexAttrib4Nuiv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLuiv *')
 ])
 
-GlApi('glVertexAttribI4bv', 'void', [
+glVertexAttribI4bv = GlApi('glVertexAttribI4bv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLbyte *')
 ])
 
-GlApi('glVertexAttribI4ubv', 'void', [
+glVertexAttribI4ubv = GlApi('glVertexAttribI4ubv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLubyte *')
 ])
 
-GlApi('glVertexAttribI4sv', 'void', [
+glVertexAttribI4sv = GlApi('glVertexAttribI4sv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLshort *')
 ])
 
-GlApi('glVertexAttribI4usv', 'void', [
+glVertexAttribI4usv = GlApi('glVertexAttribI4usv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLushort *')
 ])
 
-GlApi('glVertexAttribP1ui', 'void', [
+glVertexAttribP1ui = GlApi('glVertexAttribP1ui', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('type', 'GLenum'),
 	GlArg('normalized', 'GLboolean'),
 	GlArg('value', 'GLuint')
 ])
 
-GlApi('glVertexAttribP2ui', 'void', [
+glVertexAttribP2ui = GlApi('glVertexAttribP2ui', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('type', 'GLenum'),
 	GlArg('normalized', 'GLboolean'),
 	GlArg('value', 'GLuint')
 ])
 
-GlApi('glVertexAttribP3ui', 'void', [
+glVertexAttribP3ui = GlApi('glVertexAttribP3ui', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('type', 'GLenum'),
 	GlArg('normalized', 'GLboolean'),
 	GlArg('value', 'GLuint')
 ])
 
-GlApi('glVertexAttribP4ui', 'void', [
+glVertexAttribP4ui = GlApi('glVertexAttribP4ui', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('type', 'GLenum'),
 	GlArg('normalized', 'GLboolean'),
 	GlArg('value', 'GLuint')
 ])
 
-GlApi('glVertexAttribP1uiv', 'void', [
+glVertexAttribP1uiv = GlApi('glVertexAttribP1uiv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('type', 'GLenum'),
 	GlArg('normalized', 'GLboolean'),
 	GlArg('value', 'GLuint *')
 ])
 
-GlApi('glVertexAttribP2uiv', 'void', [
+glVertexAttribP2uiv = GlApi('glVertexAttribP2uiv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('type', 'GLenum'),
 	GlArg('normalized', 'GLboolean'),
 	GlArg('value', 'GLuint *')
 ])
 
-GlApi('glVertexAttribP3uiv', 'void', [
+glVertexAttribP3uiv = GlApi('glVertexAttribP3uiv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('type', 'GLenum'),
 	GlArg('normalized', 'GLboolean'),
 	GlArg('value', 'GLuint *')
 ])
 
-GlApi('glVertexAttribP4uiv', 'void', [
+glVertexAttribP4uiv = GlApi('glVertexAttribP4uiv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('type', 'GLenum'),
 	GlArg('normalized', 'GLboolean'),
 	GlArg('value', 'GLuint *')
 ])
 
-GlApi('glVertexAttribBinding', 'void', [
+glVertexAttribBinding = GlApi('glVertexAttribBinding', 'void', [
 	GlArg('attribindex', 'GLuint'),
 	GlArg('bindingindex', 'GLuint')
 ])
 
-GlApi('glVertexAttribDivisor', 'void', [
+glVertexAttribDivisor = GlApi('glVertexAttribDivisor', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('divisor', 'GLuint')
 ])
 
-GlApi('glVertexAttribFormat', 'void', [
+glVertexAttribFormat = GlApi('glVertexAttribFormat', 'void', [
 	GlArg('attribindex', 'GLuint'),
 	GlArg('size', 'GLuint'),
 	GlArg('type', 'GLenum'),
@@ -3255,21 +3255,21 @@ GlApi('glVertexAttribFormat', 'void', [
 	GlArg('relativeoffset', 'GLuint')
 ])
 
-GlApi('glVertexAttribIFormat', 'void', [
+glVertexAttribIFormat = GlApi('glVertexAttribIFormat', 'void', [
 	GlArg('attribindex', 'GLuint'),
 	GlArg('size', 'GLuint'),
 	GlArg('type', 'GLenum'),
 	GlArg('relativeoffset', 'GLuint')
 ])
 
-GlApi('glVertexAttribLFormat', 'void', [
+glVertexAttribLFormat = GlApi('glVertexAttribLFormat', 'void', [
 	GlArg('attribindex', 'GLuint'),
 	GlArg('size', 'GLuint'),
 	GlArg('type', 'GLenum'),
 	GlArg('relativeoffset', 'GLuint')
 ])
 
-GlApi('glVertexAttribPointer', 'void', [
+glVertexAttribPointer = GlApi('glVertexAttribPointer', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('size', 'GLint'),
 	GlArg('type', 'GLenum'),
@@ -3278,7 +3278,7 @@ GlApi('glVertexAttribPointer', 'void', [
 	GlArg('pointer', 'const GLvoid *')
 ])
 
-GlApi('glVertexAttribIPointer', 'void', [
+glVertexAttribIPointer = GlApi('glVertexAttribIPointer', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('size', 'GLint'),
 	GlArg('type', 'GLenum'),
@@ -3286,7 +3286,7 @@ GlApi('glVertexAttribIPointer', 'void', [
 	GlArg('pointer', 'const GLvoid *')
 ])
 
-GlApi('glVertexAttribLPointer', 'void', [
+glVertexAttribLPointer = GlApi('glVertexAttribLPointer', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('size', 'GLint'),
 	GlArg('type', 'GLenum'),
@@ -3294,25 +3294,25 @@ GlApi('glVertexAttribLPointer', 'void', [
 	GlArg('pointer', 'const GLvoid *')
 ])
 
-GlApi('glVertexBindingDivisor', 'void', [
+glVertexBindingDivisor = GlApi('glVertexBindingDivisor', 'void', [
 	GlArg('bindingindex', 'GLuint'),
 	GlArg('divisor', 'GLuint')
 ])
 
-GlApi('glViewport', 'void', [
+glViewport = GlApi('glViewport', 'void', [
 	GlArg('x', 'GLint'),
 	GlArg('y', 'GLint'),
 	GlArg('width', 'GLsizei'),
 	GlArg('height', 'GLsizei')
 ])
 
-GlApi('glViewportArrayv', 'void', [
+glViewportArrayv = GlApi('glViewportArrayv', 'void', [
 	GlArg('first', 'GLuint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('v', 'const GLfloat *')
 ])
 
-GlApi('glViewportIndexedf', 'void', [
+glViewportIndexedf = GlApi('glViewportIndexedf', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('x', 'GLfloat'),
 	GlArg('y', 'GLfloat'),
@@ -3320,12 +3320,12 @@ GlApi('glViewportIndexedf', 'void', [
 	GlArg('h', 'GLfloat')
 ])
 
-GlApi('glViewportIndexedfv', 'void', [
+glViewportIndexedfv = GlApi('glViewportIndexedfv', 'void', [
 	GlArg('index', 'GLuint'),
 	GlArg('v', 'const GLfloat *')
 ])
 
-GlApi('glWaitSync', 'void', [
+glWaitSync = GlApi('glWaitSync', 'void', [
 	GlArg('sync', 'GLsync'),
 	GlArg('flags', 'GLbitfield'),
 	GlArg('timeout', 'GLuint64')
