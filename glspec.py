@@ -369,6 +369,17 @@ glBindBufferBase = GlApi('glBindBufferBase', 'void', [
 	GlArg('buffer', 'GLuint')
 ])
 
+GlAvailability(glBindBufferBase, glv_3_0)
+GlAvailability(glBindBufferBase, glv_3_1)
+GlAvailability(glBindBufferBase, glv_3_2)
+GlAvailability(glBindBufferBase, glv_3_3)
+GlAvailability(glBindBufferBase, glv_4_0)
+GlAvailability(glBindBufferBase, glv_4_1)
+GlAvailability(glBindBufferBase, glv_4_2)
+GlAvailability(glBindBufferBase, glv_4_3)
+GlAvailability(glBindBufferBase, glv_4_4)
+GlAvailability(glBindBufferBase, glv_4_5)
+
 glBindBufferRange = GlApi('glBindBufferRange', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('index', 'GLuint'),
