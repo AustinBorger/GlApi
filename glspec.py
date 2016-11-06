@@ -301,6 +301,17 @@ glBeginTransformFeedback = GlApi('glBeginTransformFeedback', 'void', [
 	GlArg('primitiveMode', 'GLenum')
 ])
 
+GlAvailability(glBeginTransformFeedback, glv_3_0)
+GlAvailability(glBeginTransformFeedback, glv_3_1)
+GlAvailability(glBeginTransformFeedback, glv_3_2)
+GlAvailability(glBeginTransformFeedback, glv_3_3)
+GlAvailability(glBeginTransformFeedback, glv_4_0)
+GlAvailability(glBeginTransformFeedback, glv_4_1)
+GlAvailability(glBeginTransformFeedback, glv_4_2)
+GlAvailability(glBeginTransformFeedback, glv_4_3)
+GlAvailability(glBeginTransformFeedback, glv_4_4)
+GlAvailability(glBeginTransformFeedback, glv_4_5)
+
 glEndTransformFeedback = GlApi('glEndTransformFeedback', 'void', [])
 
 glBindAttribLocation = GlApi('glBindAttribLocation', 'void', [
