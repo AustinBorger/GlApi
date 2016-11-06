@@ -47,10 +47,10 @@ c.execute('''
 	CREATE TABLE function_availabilities
 	(
 		availability_id INT PRIMARY KEY NOT NULL,
-		version_id INT,
 		func_id INT,
-		FOREIGN KEY (version_id) REFERENCES versions(version_id),
-		FOREIGN KEY (func_id) REFERENCES functions(func_id)
+		version_id INT,
+		FOREIGN KEY (func_id) REFERENCES functions(func_id),
+		FOREIGN KEY (version_id) REFERENCES versions(version_id)
 	)
 ''')
 
@@ -62,6 +62,12 @@ class GlVersion:
 			INSERT INTO versions
 			VALUES ((SELECT count(*) FROM versions), %d, %d)
 		''' % (major, minor))
+
+		c.execute('''
+			SELECT count(*) - 1 FROM versions
+		''')
+
+		self.version_id, = c.fetchone()
 
 		self.major = major
 		self.minor = minor
@@ -111,7 +117,18 @@ class GlApi:
 
 class GlAvailability:
 	def __init__(self, func, version):
-		pass
+		self.func = func
+		self.version = version
+
+		c.execute('''
+			INSERT INTO function_availabilities
+			VALUES
+			(
+				(SELECT count(*) FROM function_availabilities),
+				%d,
+				%d
+			)
+		''' % (func.func_id, version.version_id))
 
 glv_1_0 = GlVersion(1, 0)
 glv_1_1 = GlVersion(1, 1)
