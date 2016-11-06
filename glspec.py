@@ -314,6 +314,17 @@ GlAvailability(glBeginTransformFeedback, glv_4_5)
 
 glEndTransformFeedback = GlApi('glEndTransformFeedback', 'void', [])
 
+GlAvailability(glEndTransformFeedback, glv_3_0)
+GlAvailability(glEndTransformFeedback, glv_3_1)
+GlAvailability(glEndTransformFeedback, glv_3_2)
+GlAvailability(glEndTransformFeedback, glv_3_3)
+GlAvailability(glEndTransformFeedback, glv_4_0)
+GlAvailability(glEndTransformFeedback, glv_4_1)
+GlAvailability(glEndTransformFeedback, glv_4_2)
+GlAvailability(glEndTransformFeedback, glv_4_3)
+GlAvailability(glEndTransformFeedback, glv_4_4)
+GlAvailability(glEndTransformFeedback, glv_4_5)
+
 glBindAttribLocation = GlApi('glBindAttribLocation', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('index', 'GLuint'),
