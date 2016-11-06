@@ -132,6 +132,12 @@ class GlAvailability:
 			)
 		''' % (func.func_id, version.version_id))
 
+		c.execute('''
+			SELECT count(*) - 1 FROM function_availabilities
+		''')
+
+		self.availability_id, = c.fetchone()
+
 glv_1_0 = GlVersion(1, 0)
 glv_1_1 = GlVersion(1, 1)
 glv_1_2 = GlVersion(1, 2)
