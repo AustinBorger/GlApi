@@ -290,6 +290,13 @@ glEndQueryIndexed = GlApi('glEndQueryIndexed', 'void', [
 	GlArg('index', 'GLuint')
 ])
 
+GlAvailability(glEndQueryIndexed, glv_4_0)
+GlAvailability(glEndQueryIndexed, glv_4_1)
+GlAvailability(glEndQueryIndexed, glv_4_2)
+GlAvailability(glEndQueryIndexed, glv_4_3)
+GlAvailability(glEndQueryIndexed, glv_4_4)
+GlAvailability(glEndQueryIndexed, glv_4_5)
+
 glBeginTransformFeedback = GlApi('glBeginTransformFeedback', 'void', [
 	GlArg('primitiveMode', 'GLenum')
 ])
