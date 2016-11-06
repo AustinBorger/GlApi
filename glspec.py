@@ -193,14 +193,14 @@ glBindBufferRange = GlApi('glBindBufferRange', 'void', [
 	GlArg('size', 'GLsizeiptr')
 ])
 
-GlApi('glBindBuffersBase', 'void', [
+glBindBuffersBase = GlApi('glBindBuffersBase', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('first', 'GLuint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('buffers', 'const GLuint *')
 ])
 
-GlApi('glBindBuffersRange', 'void', [
+glBindBuffersRange = GlApi('glBindBuffersRange', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('first', 'GLuint'),
 	GlArg('count', 'GLsizei'),
@@ -209,13 +209,13 @@ GlApi('glBindBuffersRange', 'void', [
 	GlArg('sizes', 'const GLintptr *')
 ])
 
-GlApi('glBindFragDataLocation', 'void', [
+glBindFragDataLocation = GlApi('glBindFragDataLocation', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('colorNumber', 'GLuint'),
 	GlArg('name', 'const char *')
 ])
 
-GlApi('glBindFragDataLocationIndexed', 'void', [
+glBindFragDataLocationIndexed = GlApi('glBindFragDataLocationIndexed', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('colorNumber', 'GLuint'),
 	GlArg('index', 'GLuint'),
