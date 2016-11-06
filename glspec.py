@@ -211,6 +211,17 @@ glBeginConditionalRender = GlApi('glBeginConditionalRender', 'void', [
 	GlArg('mode', 'GLenum')
 ])
 
+GlAvailability(glBeginConditionalRender, glv_3_0)
+GlAvailability(glBeginConditionalRender, glv_3_1)
+GlAvailability(glBeginConditionalRender, glv_3_2)
+GlAvailability(glBeginConditionalRender, glv_3_3)
+GlAvailability(glBeginConditionalRender, glv_4_0)
+GlAvailability(glBeginConditionalRender, glv_4_1)
+GlAvailability(glBeginConditionalRender, glv_4_2)
+GlAvailability(glBeginConditionalRender, glv_4_3)
+GlAvailability(glBeginConditionalRender, glv_4_4)
+GlAvailability(glBeginConditionalRender, glv_4_5)
+
 glEndConditionalRender = GlApi('glEndConditionalRender', 'void', [])
 
 glBeginQuery = GlApi('glBeginQuery', 'void', [
