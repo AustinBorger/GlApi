@@ -193,6 +193,19 @@ glAttachShader = GlApi('glAttachShader', 'void', [
 	GlArg('shader', 'GLuint')
 ])
 
+GlAvailability(glAttachShader, glv_2_0)
+GlAvailability(glAttachShader, glv_2_1)
+GlAvailability(glAttachShader, glv_3_0)
+GlAvailability(glAttachShader, glv_3_1)
+GlAvailability(glAttachShader, glv_3_2)
+GlAvailability(glAttachShader, glv_3_3)
+GlAvailability(glAttachShader, glv_4_0)
+GlAvailability(glAttachShader, glv_4_1)
+GlAvailability(glAttachShader, glv_4_2)
+GlAvailability(glAttachShader, glv_4_3)
+GlAvailability(glAttachShader, glv_4_4)
+GlAvailability(glAttachShader, glv_4_5)
+
 glBeginConditionalRender = GlApi('glBeginConditionalRender', 'void', [
 	GlArg('id', 'GLuint'),
 	GlArg('mode', 'GLenum')
