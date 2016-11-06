@@ -258,6 +258,20 @@ glEndQuery = GlApi('glEndQuery', 'void', [
 	GlArg('target', 'GLenum')
 ])
 
+GlAvailability(glEndQuery, glv_1_5)
+GlAvailability(glEndQuery, glv_2_0)
+GlAvailability(glEndQuery, glv_2_1)
+GlAvailability(glEndQuery, glv_3_0)
+GlAvailability(glEndQuery, glv_3_1)
+GlAvailability(glEndQuery, glv_3_2)
+GlAvailability(glEndQuery, glv_3_3)
+GlAvailability(glEndQuery, glv_4_0)
+GlAvailability(glEndQuery, glv_4_1)
+GlAvailability(glEndQuery, glv_4_2)
+GlAvailability(glEndQuery, glv_4_3)
+GlAvailability(glEndQuery, glv_4_4)
+GlAvailability(glEndQuery, glv_4_5)
+
 glBeginQueryIndexed = GlApi('glBeginQueryIndexed', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('index', 'GLuint'),
