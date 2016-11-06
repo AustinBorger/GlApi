@@ -406,6 +406,9 @@ glBindBuffersBase = GlApi('glBindBuffersBase', 'void', [
 	GlArg('buffers', 'const GLuint *')
 ])
 
+GlAvailability(glBindBuffersBase, glv_4_4)
+GlAvailability(glBindBuffersBase, glv_4_5)
+
 glBindBuffersRange = GlApi('glBindBuffersRange', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('first', 'GLuint'),
@@ -414,6 +417,9 @@ glBindBuffersRange = GlApi('glBindBuffersRange', 'void', [
 	GlArg('offsets', 'const GLintptr *'),
 	GlArg('sizes', 'const GLintptr *')
 ])
+
+GlAvailability(glBindBuffersRange, glv_4_4)
+GlAvailability(glBindBuffersRange, glv_4_5)
 
 glBindFragDataLocation = GlApi('glBindFragDataLocation', 'void', [
 	GlArg('program', 'GLuint'),
