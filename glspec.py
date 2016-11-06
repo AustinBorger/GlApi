@@ -172,6 +172,22 @@ glActiveTexture = GlApi('glActiveTexture', 'void', [
 	GlArg('texture', 'GLenum')
 ])
 
+GlAvailability(glActiveTexture, glv_1_3)
+GlAvailability(glActiveTexture, glv_1_4)
+GlAvailability(glActiveTexture, glv_1_5)
+GlAvailability(glActiveTexture, glv_2_0)
+GlAvailability(glActiveTexture, glv_2_1)
+GlAvailability(glActiveTexture, glv_3_0)
+GlAvailability(glActiveTexture, glv_3_1)
+GlAvailability(glActiveTexture, glv_3_2)
+GlAvailability(glActiveTexture, glv_3_3)
+GlAvailability(glActiveTexture, glv_4_0)
+GlAvailability(glActiveTexture, glv_4_1)
+GlAvailability(glActiveTexture, glv_4_2)
+GlAvailability(glActiveTexture, glv_4_3)
+GlAvailability(glActiveTexture, glv_4_4)
+GlAvailability(glActiveTexture, glv_4_5)
+
 glAttachShader = GlApi('glAttachShader', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('shader', 'GLuint')
