@@ -17,8 +17,8 @@ r = c.execute('''
 	CREATE TABLE functions
 	(
 		func_id INT PRIMARY KEY NOT NULL,
-		func_name TEXT,
-		func_type TEXT
+		func_name TEXT NOT NULL,
+		func_type TEXT NOT NULL
 	)
 ''')
 
@@ -26,10 +26,10 @@ c.execute('''
 	CREATE TABLE arguments
 	(
 		arg_id INT PRIMARY KEY NOT NULL,
-		func_id INT,
-		arg_order INT,
-		arg_name TEXT,
-		arg_type TEXT,
+		func_id INT NOT NULL,
+		arg_order INT NOT NULL,
+		arg_name TEXT NOT NULL,
+		arg_type TEXT NOT NULL,
 		FOREIGN KEY (func_id) REFERENCES functions(func_id)
 	)
 ''')
@@ -115,6 +115,8 @@ class GlApi:
 
 			arg_order += 1
 
+		self.args = args
+
 class GlAvailability:
 	def __init__(self, func, version):
 		self.func = func
@@ -153,6 +155,12 @@ glActiveShaderProgram = GlApi('glActiveShaderProgram', 'void', [
 	GlArg('pipeline', 'GLuint'),
 	GlArg('program', 'GLuint')
 ])
+
+GlAvailability(glActiveShaderProgram, glv_4_1)
+GlAvailability(glActiveShaderProgram, glv_4_2)
+GlAvailability(glActiveShaderProgram, glv_4_3)
+GlAvailability(glActiveShaderProgram, glv_4_4)
+GlAvailability(glActiveShaderProgram, glv_4_5)
 
 glActiveTexture = GlApi('glActiveTexture', 'void', [
 	GlArg('texture', 'GLenum')
