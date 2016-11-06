@@ -54,8 +54,6 @@ c.execute('''
 	)
 ''')
 
-conn.commit()
-
 class GlVersion:
 	def __init__(self, major, minor):
 		global c
@@ -64,6 +62,9 @@ class GlVersion:
 			INSERT INTO versions
 			VALUES ((SELECT count(*) FROM versions), %d, %d)
 		''' % (major, minor))
+
+		self.major = major
+		self.minor = minor
 
 class GlArg:
 	def __init__(self, name, c_type):
@@ -100,7 +101,17 @@ class GlApi:
 				)
 			''' % (arg_order, arg.name, arg.c_type))
 
+			c.execute('''
+				SELECT count(*) - 1 FROM arguments
+			''')
+
+			arg.arg_id, = c.fetchone()
+
 			arg_order += 1
+
+class GlAvailability:
+	def __init__(self, func, version):
+		pass
 
 glv_1_0 = GlVersion(1, 0)
 glv_1_1 = GlVersion(1, 1)
