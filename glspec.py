@@ -427,6 +427,17 @@ glBindFragDataLocation = GlApi('glBindFragDataLocation', 'void', [
 	GlArg('name', 'const char *')
 ])
 
+GlAvailability(glBindFragDataLocation, glv_3_0)
+GlAvailability(glBindFragDataLocation, glv_3_1)
+GlAvailability(glBindFragDataLocation, glv_3_2)
+GlAvailability(glBindFragDataLocation, glv_3_3)
+GlAvailability(glBindFragDataLocation, glv_4_0)
+GlAvailability(glBindFragDataLocation, glv_4_1)
+GlAvailability(glBindFragDataLocation, glv_4_2)
+GlAvailability(glBindFragDataLocation, glv_4_3)
+GlAvailability(glBindFragDataLocation, glv_4_4)
+GlAvailability(glBindFragDataLocation, glv_4_5)
+
 glBindFragDataLocationIndexed = GlApi('glBindFragDataLocationIndexed', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('colorNumber', 'GLuint'),
