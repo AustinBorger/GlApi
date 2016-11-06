@@ -135,57 +135,57 @@ glAttachShader = GlApi('glAttachShader', 'void', [
 	GlArg('shader', 'GLuint')
 ])
 
-GlApi('glBeginConditionalRender', 'void', [
+glBeginConditionalRender = GlApi('glBeginConditionalRender', 'void', [
 	GlArg('id', 'GLuint'),
 	GlArg('mode', 'GLenum')
 ])
 
-GlApi('glEndConditionalRender', 'void', [])
+glEndConditionalRender = GlApi('glEndConditionalRender', 'void', [])
 
-GlApi('glBeginQuery', 'void', [
+glBeginQuery = GlApi('glBeginQuery', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('id', 'GLuint')
 ])
 
-GlApi('glEndQuery', 'void', [
+glEndQuery = GlApi('glEndQuery', 'void', [
 	GlArg('target', 'GLenum')
 ])
 
-GlApi('glBeginQueryIndexed', 'void', [
+glBeginQueryIndexed = GlApi('glBeginQueryIndexed', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('index', 'GLuint'),
 	GlArg('id', 'GLuint')
 ])
 
-GlApi('glEndQueryIndexed', 'void', [
+glEndQueryIndexed = GlApi('glEndQueryIndexed', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('index', 'GLuint')
 ])
 
-GlApi('glBeginTransformFeedback', 'void', [
+glBeginTransformFeedback = GlApi('glBeginTransformFeedback', 'void', [
 	GlArg('primitiveMode', 'GLenum')
 ])
 
-GlApi('glEndTransformFeedback', 'void', [])
+glEndTransformFeedback = GlApi('glEndTransformFeedback', 'void', [])
 
-GlApi('glBindAttribLocation', 'void', [
+glBindAttribLocation = GlApi('glBindAttribLocation', 'void', [
 	GlArg('program', 'GLuint'),
 	GlArg('index', 'GLuint'),
 	GlArg('name', 'const GLchar *')
 ])
 
-GlApi('glBindBuffer', 'void', [
+glBindBuffer = GlApi('glBindBuffer', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('buffer', 'GLuint')
 ])
 
-GlApi('glBindBufferBase', 'void', [
+glBindBufferBase = GlApi('glBindBufferBase', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('index', 'GLuint'),
 	GlArg('buffer', 'GLuint')
 ])
 
-GlApi('glBindBufferRange', 'void', [
+glBindBufferRange = GlApi('glBindBufferRange', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('index', 'GLuint'),
 	GlArg('buffer', 'GLuint'),
