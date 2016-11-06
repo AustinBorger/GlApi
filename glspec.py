@@ -222,12 +222,12 @@ glBindFragDataLocationIndexed = GlApi('glBindFragDataLocationIndexed', 'void', [
 	GlArg('name', 'const char *')
 ])
 
-GlApi('glBindFramebuffer', 'void', [
+glBindFramebuffer = GlApi('glBindFramebuffer', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('framebuffer', 'GLuint')
 ])
 
-GlApi('glBindImageTexture', 'void', [
+glBindImageTexture = GlApi('glBindImageTexture', 'void', [
 	GlArg('unit', 'GLuint'),
 	GlArg('texture', 'GLuint'),
 	GlArg('level', 'GLint'),
@@ -237,27 +237,27 @@ GlApi('glBindImageTexture', 'void', [
 	GlArg('format', 'GLenum')
 ])
 
-GlApi('glBindImageTextures', 'void', [
+glBindImageTextures = GlApi('glBindImageTextures', 'void', [
 	GlArg('first', 'GLuint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('textures', 'const GLuint *')
 ])
 
-GlApi('glBindProgramPipeline', 'void', [
+glBindProgramPipeline = GlApi('glBindProgramPipeline', 'void', [
 	GlArg('pipeline', 'GLuint')
 ])
 
-GlApi('glBindRenderbuffer', 'void', [
+glBindRenderbuffer = GlApi('glBindRenderbuffer', 'void', [
 	GlArg('target', 'GLenum'),
 	GlArg('renderbuffer', 'GLuint')
 ])
 
-GlApi('glBindSampler', 'void', [
+glBindSampler = GlApi('glBindSampler', 'void', [
 	GlArg('unit', 'GLuint'),
 	GlArg('sampler', 'GLuint')
 ])
 
-GlApi('glBindSamplers', 'void', [
+glBindSamplers = GlApi('glBindSamplers', 'void', [
 	GlArg('first', 'GLuint'),
 	GlArg('count', 'GLsizei'),
 	GlArg('samplers', 'const GLuint *')
